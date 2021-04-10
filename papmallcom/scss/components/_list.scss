@@ -1,0 +1,355 @@
+ul.list-style-1 {
+	margin: 0;
+	list-style-type: none;
+	> li {
+		> a {
+			display: flex;
+			align-items: center;
+			padding: 8px 15px;
+			font-size: 16px;			
+			img.active {
+				display: none;
+			}
+			&.active {
+				img:not(.active) {
+					display: none;
+				}
+				img.active {
+					display: inline-block;
+				}
+			}
+		}
+		&:not(:last-child) > a {
+			border-bottom: 1px solid #ddd;
+		}
+		&:hover > a {
+			img:not(.active) {
+				display: none;
+			}
+			img.active {
+				display: inline-block;
+			}
+		}
+		&:hover > a {
+			color: $secondary-color;
+		}
+	}
+}
+
+.scrollable {
+	max-height: 290px;
+	overflow-y: auto;
+	@include scrollbar();
+}
+
+.list-voucher {
+	.list-voucher-item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding-right: 15px;
+		border: 1px solid $red;
+		border-left: none;
+		&.disabled {
+			* {
+				color: #969696 !important;
+			}
+			border-color: #DDD;
+			.list-voucher-logo {
+				background-image: url('./../images/bg-voucher-shop-disabled.svg');
+				img {
+					filter: grayscale(50%);
+				}
+			}
+		}
+		.best-choice-voucher {
+			position: absolute;
+			font-size: 12px;
+			color: $white;
+			font-weight: 500;
+			top: -13px;
+			left: 105px;
+			background-color: $green;
+			padding: 5px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -6px;
+				width: 7px;
+				height: 12px;
+				background-color: #219653;
+				clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			}
+		}
+		.voucher-cancel {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	.list-voucher-logo {
+		width: 88px;
+		height: 80px;
+		background-image: url('./../images/bg-voucher-shop.svg');
+		padding: 10px 0 10px 18px;
+	}
+}
+.list-circle-gray {
+	li {
+		position: relative;
+		a {
+			padding-left: 5px;
+			&::before {
+				content: "";
+			    background-image: url('../images/icon-dot-gray.svg');
+			    position: absolute;
+			    left: 0;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    width: 8px;
+			    height: 8px;
+			}
+			&:hover {
+				&::before {
+					background-image: url('../images/icon-dot-secondary.svg');
+				}
+			}
+		}
+	}
+}
+
+.topic-alphabet {
+	width: fit-content;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	li {
+		a {
+			display: block;
+			width: 36px;
+			height: 36px;
+			background-color: $white;
+			border-radius: 50%;
+			color: $secondary-color;
+			font-size: 18px;
+			font-weight: 500;
+			text-align: center;
+			line-height: 36px;
+			min-width: 36px;
+			transition: $transition;
+			&:hover {
+				background-color: $secondary-color;
+				color: $white;
+			}
+			&.disabled {
+				pointer-events: none;
+				color: #DDD;
+			}
+		}
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+		&.active a {
+			background-color: $secondary-color;
+			color: $white;
+		}
+	}
+}
+
+.circle-list {
+	list-style: none;
+	margin-bottom: 0;
+	> li {
+		position: relative;
+		margin-bottom: 16px;
+		font-size: 16px;
+		padding: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			left: -18px;
+			top: 7px;
+			width: 8px;
+			height: 8px;
+			background-color: $primary-color;
+			border-radius: 100%;
+		}
+		a {
+			display: block;
+			transition: $transition-1;
+		}
+		&:hover {
+			a {
+				color: $primary-color
+			}
+		}
+	}
+	&.d-lg-flex {
+		padding-left: 20px;
+	}
+}
+
+.faq-categories-list {
+	margin-top: 20px;
+	list-style: none;
+	> li {
+		margin-bottom: 20px;
+		font-size: 16px;
+		color: $text-base;
+		font-weight: 500;
+		a {
+			display: block;
+			@include behaviorLink() {
+				color: $secondary-color;
+			}
+		}
+		&.active {
+			a {
+				color: $secondary-color;
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}
+
+.base-list {
+	list-style: none;
+	> li {
+		padding: 16px 20px;
+		background-color: white;
+		border-bottom: 1px solid $border;
+		&:first-child {
+			border-top-left-radius: $base-radius;
+			border-top-right-radius: $base-radius;
+		}
+		&:last-child {
+			border-bottom-left-radius: $base-radius;
+			border-bottom-right-radius: $base-radius;
+			border-bottom: 0;
+		}
+		a {
+			font-size: 16px;
+			display: block;
+			@include behaviorLink() {
+				color: $secondary-color
+			}
+		}
+		&.active {
+			a {
+				color: $secondary-color;
+			}
+		}
+		@include media-breakpoint-down(md) {
+			border-radius: 0!important;
+		}
+	}
+}
+
+.basic-nav {
+	li.active a , li.active button{
+		color: $secondary-color;
+	}
+}
+ul.list-style-2 {
+	margin: 0;
+	list-style-type: none;
+	> li {
+		> a {
+			display: flex;
+			align-items: center;
+			padding: 8px 15px;
+			font-size: 16px;			
+			img.active {
+				display: none;
+			}
+			&.active {
+				img:not(.active) {
+					display: none;
+				}
+				img.active {
+					display: inline-block;
+				}
+			}
+		}
+		&:not(:last-child) > a {
+			border-bottom: 1px solid #ddd;
+		}
+		&:hover > a {
+			img:not(.active) {
+				display: none;
+			}
+			img.active {
+				display: inline-block;
+			}
+		}
+		&:hover > a {
+			color: $secondary-color;
+		}
+	}
+}
+
+.list-voucher-2 {
+	.list-voucher-item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding-right: 15px;
+		border: 1px solid $primary-color;
+		border-left: none;
+		&.disabled {
+			* {
+				color: #969696 !important;
+			}
+			border-color: #DDD;
+			pointer-events: none;
+			.list-voucher-logo {
+				background-image: url('./../images/bg-voucher-shop-disabled.svg');
+				img {
+					filter: grayscale(50%);
+				}
+			}
+		}
+		.best-choice-voucher {
+			position: absolute;
+			font-size: 12px;
+			color: $white;
+			font-weight: 500;
+			top: -13px;
+			left: 105px;
+			background-color: $green;
+			padding: 5px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -6px;
+				width: 7px;
+				height: 12px;
+				background-color: #219653;
+				clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+			}
+		}
+		.voucher-cancel {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	.list-voucher-logo {
+		width: 88px;
+		height: 80px;
+		background-image: url('./../images/bg-voucher-shop-2.svg');
+		padding: 10px 10px 10px 18px;
+	}
+}
+
+.list-raw {
+	li {
+		&::before {
+			display: none;
+		}
+	}
+}

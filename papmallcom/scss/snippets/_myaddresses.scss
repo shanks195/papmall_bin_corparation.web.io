@@ -1,0 +1,72 @@
+.address-blank{
+	margin-top:204px;
+}
+.address-content{
+	max-width: 900px;
+	color: #767676;
+	//background-color:#ffffff;
+	border-radius: 6px;
+	line-height: 24px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.address-detail{
+	max-width: 800px;
+}
+.address-default{
+	color: #F37721;
+	background-color: white;
+	float: right;
+}
+.address-popup{
+	max-width: 640px;
+	border-radius: 6px;
+	height: 664px;
+	margin-top: 220px;
+}
+.address-delete{
+	border-radius: 6px;
+	max-width: 540px;
+	height: 240px;
+	background-color: white;
+	margin-top: 220px;
+}
+.border-xs-0{
+	@include media-breakpoint-down(md){
+		border: none!important;
+	}
+}
+.max-w-640{
+	max-width: 640px;
+}
+.max-w-68{
+	max-width: 68px;
+}
+.address-delete-account{
+	border-radius: 6px;
+	max-width: 540px;
+	height: 240px;
+	background-color: white;
+	margin-top: 320px;
+	margin-left: 150px;
+	@include media-breakpoint-down(md){
+		width: auto!important;
+		margin-left: 10px!important;
+		margin-right: 10px!important;
+		margin-top: 140px!important;
+		max-width: 320px!important;
+	}
+}
+.mx-xs-0{
+	@include media-breakpoint-down(md){
+		margin-left: 10px!important;
+		margin-right: 10px!important;
+	}
+}
+.min-h-xs-700{
+	@include media-breakpoint-down(md){
+		min-height: 700px!important;
+	}
+}
+
+

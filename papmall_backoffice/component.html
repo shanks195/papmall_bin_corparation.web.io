@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Component</title>
+    <link rel="stylesheet" href="css/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="js/select2/select2.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.min.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+
+<body>
+<div class="container">
+    <h1>Component</h1>
+    <div class="mb-5">
+        <h3>Dropdown</h3>
+        <div class="mb-3">
+            <div class="btn-group dropdown">
+                <a href="#" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                   title="Settings" class="btn label-default dropdown-toggle"> <i class="bi bi-gear-fill"></i> </a>
+                <div class="dropdown-menu custom-dropdown">
+                    <div class="dropdown-group">
+                        <div class="dropdown-item dropdown-title">Branding</div>
+                        <a href="#" title="" target="_self" class="dropdown-item">Logo</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Company & contacts</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Theme colors & fonts</a>
+                    </div>
+                    <div class="dropdown-group">
+                        <div class="dropdown-item dropdown-title">Legal documents
+                        </div>
+                        <a href="#" title="" target="_self" class="dropdown-item">Terms for customers</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Privacy policy</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">GDPR</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Returns and exchanges</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="btn label-paid dropdown-toggle" href="#" role="button"
+                   id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                   aria-expanded="false">
+                    Complete
+                </a>
+
+                <div class="dropdown-menu custom-dropdown dropdown-hover" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Paid</a>
+                    <a class="dropdown-item" href="#">Complete</a>
+                    <a class="dropdown-item" href="#">Open</a>
+                    <a class="dropdown-item" href="#">Failed</a>
+                    <a class="dropdown-item" href="#">Declined</a>
+                    <a class="dropdown-item" href="#">Backordered</a>
+                    <a class="dropdown-item" href="#">Canceled</a>
+                    <a class="dropdown-item" href="#">Awaiting call</a>
+                    <a class="dropdown-item" href="#">Incomplete</a>
+                </div>
+            </div>
+        </div>
+        <h3>Checkbox and Radio</h3>
+        <div class="my-3">
+            <div class="radio main m-2">
+                <input type="radio" name="name" value="" id="name1" checked>
+                <span class="checkmark"></span>
+                <label for="name1">Active</label>
+            </div>
+
+            <div class="radio main m-2">
+                <input type="radio" name="name" value="" id="name2">
+                <span class="checkmark"></span>
+                <label for="name2">De-Active</label>
+            </div>
+
+            <div class="checkbox main m-2">
+                <input type="checkbox" name="name" id="main">
+                <span class="checkmark"></span>
+                <label for="main"> Normal </label>
+            </div>
+
+            <div class="checkbox accent m-2">
+                <input type="checkbox" name="name" id="accent" checked>
+                <span class="checkmark"></span>
+                <label for="accent"> Normal </label>
+            </div>
+        </div>
+
+        <h3>Text</h3>
+        <div class="mb-3">
+            <p class="text-success">
+                $53,993.13
+            </p>
+        </div>
+
+        <h3>Table</h3>
+        <div class="mb-3">
+            <div class="content-wrap">
+                <div class="table-mobile">
+                    <table class="table table-bordered-bottom table-hover-show-action">
+                        <thead class="thead-mobile">
+                        <th class="hidden-mobile">
+                            <div class="checkbox main">
+                                <input type="checkbox" name="name">
+                                <span class="checkmark"></span>
+                            </div>
+                        </th>
+                        <th>ID</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th>Customer</th>
+                        <th>Phone</th>
+                        <th class="mobile-hide col-tool">&nbsp;</th>
+                        <th class="text-right">Total</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="hidden-mobile">
+                                <div class="checkbox main">
+                                    <input type="checkbox" name="name" id="main">
+                                    <span class="checkmark"></span>
+                                </div>
+                            </td>
+                            <td data-title="ID">
+                                <a href="" title="" target="_self">Order #1</a>
+                                <p><small>Simtech</small></p>
+                            </td>
+                            <td data-title="Status">
+                                <div class="dropdown">
+                                    <a class="btn label-paid dropdown-toggle" href="#" role="button"
+                                       id="dropdownMenuLink0" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        Complete
+                                    </a>
+
+                                    <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuLink0">
+                                        <a class="dropdown-item" href="#">Paid</a>
+                                        <a class="dropdown-item" href="#">Complete</a>
+                                        <a class="dropdown-item" href="#">Open</a>
+                                        <a class="dropdown-item" href="#">Failed</a>
+                                        <a class="dropdown-item" href="#">Declined</a>
+                                        <a class="dropdown-item" href="#">Backordered</a>
+                                        <a class="dropdown-item" href="#">Canceled</a>
+                                        <a class="dropdown-item" href="#">Awaiting call</a>
+                                        <a class="dropdown-item" href="#">Incomplete</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-title="Date">
+                                12/01/2020, 12:15
+                            </td>
+                            <td data-title="Customer">
+                                <a href="mailto:customer@40example.com">@</a>
+                                <a href="" title="Customer Customer" target="_self">Customer Customer</a>
+                            </td>
+                            <td data-title="Phone">
+                                <a href="tel:+1646-386-3600" title="+1 646-386-3600" target="_self">+1 646-386-3600</a>
+                            </td>
+                            <td data-title="Actions">
+                                <div class="dropdown hidden-action">
+                                    <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                       id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">
+                                        <i class="bi bi-gear-fill"></i>
+                                    </a>
+
+                                    <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuLink1">
+                                        <a class="dropdown-item" href="#">View</a>
+                                        <a class="dropdown-item" href="#">Edit</a>
+                                        <a class="dropdown-item" href="#">Copy</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-title="Total" class="text-right">
+                                $677.95
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="clearfix">
+                            <table class="float-right">
+                                <tbody>
+                                <tr>
+                                    <td class="p-1">Gross total:</td>
+                                    <td>
+                                        $<span>69,650.15</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="text-medium-bold p-1"><h4>Total paid:</h4></td>
+                                    <td class="text-price">
+                                        $<span>53,993.13</span>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-3 mt-lg-0 order-lg-0">
+                        <ul class="pagination ">
+                            <li class="disabled"><span class="item">«</span></li>
+                            <li class="disabled"><span class="item">Previous</span></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        1-10 of 60
+                                    </a>
+
+                                    <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">10 per page</a>
+                                        <a class="dropdown-item" href="#">20 per page</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a class="item" href="">Next</a></li>
+                            <li><a class="item" href="">»</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h3>Pagination</h3>
+
+        <div class="mb-3">
+            <ul class="pagination ">
+                <li class="disabled"><span class="item">«</span></li>
+                <li class="disabled"><span class="item">Previous</span></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button"
+                           id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            1-10 of 60
+                        </a>
+
+                        <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">10 per page</a>
+                            <a class="dropdown-item" href="#">20 per page</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="item"
+                       href="">Next</a></li>
+                <li><a class="item" href="">»</a>
+                </li>
+            </ul>
+        </div>
+
+        <h3>Form</h3>
+        <div class="mb-3">
+            <div class="alert alert-primary" role="alert">
+                A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+                A simple secondary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+                A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+                A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+                A simple warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+                A simple info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+                A simple light alert—check it out!
+            </div>
+            <div class="alert alert-dark" role="alert">
+                A simple dark alert—check it out!
+            </div>
+            <div class="my-3">
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input name="" id="username" type="text" class="form-control" placeholder="User Name">
+                    <div class="text-success mt-1">text sucsess</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input id="password" name="" type="password" class="form-control" placeholder="Your account password">
+                        <button type="button" class="eyes-input-form">
+                            <img src="images/icon-eyes-show.svg" alt="" title="" data-icon-show="images/icon-eyes-hide.svg"
+                                 data-icon-hide="images/icon-eyes-show.svg">
+                        </button>
+                    </div>
+                    <div class="text-danger mt-1">Password wrong</div>
+                </div>
+
+                <div class="form-group">
+                    <label>Filter Time</label>
+                    <div class="position-relative select-wrapper">
+                        <select class="select2-option">
+                            <option></option>
+                            <option value="Option 1" selected>per month</option>
+                            <option value="Option 2">per year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPhone">Phone Number</label>
+                    <div class="position-relative phone-select2">
+                        <input id="txtPhone" name="txtPhone" type="tel" class="form-control" placeholder="Phone number *">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPhone">Time</label>
+                    <div class="input-date-time">
+                        <input class="calendar form-control" type="text" value="31 May, 2020" />
+
+                    </div>
+                    <div class="append-date-picker current-right-all"></div>
+                </div>
+
+                <div class="form-group">
+                    <div class="toogle-wrapper">
+                        <div class="toggle-btn">
+                            <input type="checkbox" class="value">
+                            <span class="circle"></span>
+                        </div>
+                        Set as default
+                    </div>
+                </div>
+
+                <div class="checkbox main mb-2">
+                    <input type="checkbox" name="name" value="" checked>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-amount">
+                        <button class="decrement">
+                            <img src="images/icon-minus.svg" alt="" title="">
+                        </button>
+                        <input type="number" value="1" class="form-control">
+                        <button class="increment">
+                            <img src="images/icon-plus.svg" alt="" title="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.5.min.js"></script>
+<script src="js/intlTelInput.min.js"></script>
+<script src="js/select2/select2.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/style.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $(".select2-option").select2({
+        placeholder: "",
+    });
+
+    $(document).ready(function () {
+        var profileTel = $('input[name=txtPhone]');
+        profileTel.intlTelInput({
+            autoPlaceholder: "on",
+            initialCountry: "vn",
+            formatOnDisplay: true,
+            // utilsScript: "js/utils.min.js",
+        });
+    });
+
+    $(".calendar").datepicker({
+        dateFormat : "dd M, yy",
+    });
+</script>
+</body>
+
+</html>

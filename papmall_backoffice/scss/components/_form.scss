@@ -1,0 +1,36 @@
+.form-control:focus, .btn.focus, .btn:focus, button:focus{
+  box-shadow: none;
+  outline:none;
+}
+
+.form-control{
+  font-size: 13px;
+}
+
+form, .collapse-group-custom{
+  *[data-toggle="collapse"]{
+    cursor: pointer;
+  }
+  h4{
+    > i[class*=" bi-"]{
+      font-size: 14px;
+      &:before{
+        vertical-align: text-top;
+      }
+    }
+  }
+  *[aria-expanded="true"]{
+    > i[class*=" bi-"]{
+      &:before{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      &.deg-180 {
+        &:before{
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

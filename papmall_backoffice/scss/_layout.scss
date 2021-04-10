@@ -1,0 +1,14 @@
+.main-content {
+  background-color: #eef1f3;
+  padding: 15px 0;
+  transition: padding 0.3s linear;
+  //max-height: calc(100vh - 128px);
+  //overflow: auto;
+}
+
+
+.content-wrap {
+  box-shadow: $shadow;
+  padding: 20px;
+  background-color: white;
+}

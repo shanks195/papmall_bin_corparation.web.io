@@ -1,0 +1,77 @@
+.table-cart {
+    font-size: 16px;
+    thead {
+        tr {
+            th {
+                background-color: $white;
+                &:first-child {
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+                &:last-child {
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            &:not(:last-child) {
+                border-bottom: 1px solid #ddd;
+            }
+            td {
+                background-color: $white;
+            }
+            &:first-child {
+                td {
+                    &:first-child {
+                        border-top-left-radius: 6px;
+                    }
+                    &:last-child {
+                        border-top-right-radius: 6px;
+                    }
+                }
+            }
+            &:last-child {
+                td {
+                    &:first-child {
+                        border-bottom-left-radius: 6px;
+                    }
+                    &:last-child {
+                        border-bottom-right-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+    td {
+        vertical-align: middle;
+    }
+}
+
+.table:not(.table-cart) {
+    td, th {
+        padding: 0.45rem;
+    }
+}
+
+.table-align-top {
+    td {
+        vertical-align: top;
+    }
+}
+
+.table-cart tbody.mg-row:before {
+    line-height:20px;
+    content:"\200C";
+    display:table;
+    @include media-breakpoint-down(md){
+        line-height:12px;
+    }
+}
+.table-cart .mg-row:first-of-type::before,.table-cart .mg-row:last-of-type::before{
+    @include media-breakpoint-down(md){
+            display: none;
+        }
+}

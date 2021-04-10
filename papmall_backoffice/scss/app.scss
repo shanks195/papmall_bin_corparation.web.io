@@ -1,0 +1,43 @@
+@import "theme";
+@import 'bootstrap-4.5/bootstrap';
+
+@import "snippets/header";
+@import "snippets/footer";
+@import "snippets/background";
+@import "snippets/badge";
+@import "snippets/list";
+@import "snippets/sidebar-search";
+@import "snippets/input-count";
+@import "snippets/rating";
+@import "snippets/comment";
+
+@import "components/dropdown";
+@import "components/button";
+@import "components/input";
+@import "components/form";
+@import "components/list";
+@import "components/modal";
+@import "components/toogle";
+@import "components/select";
+
+@import "components/paginations";
+@import "components/label";
+@import "components/table";
+@import "components/radio-checkbox";
+
+
+@import "layout";
+@import "class";
+
+@import "components/card";
+@import "components/tabs";
+@import "components/table";
+
+@import "utilities/spacing";
+@import "utilities/text";
+@import "utilities/bg";
+
+
+@import 'reset';
+
+

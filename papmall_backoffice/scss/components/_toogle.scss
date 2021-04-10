@@ -1,0 +1,61 @@
+$size: 16px;
+$widthToogle: 48px;
+$spacing: 4px;
+$positionCircleActive: $widthToogle - 2 - $size - $spacing;
+.toggle-btn {
+  width: $widthToogle;
+  height: 24px;
+  border: 1px solid #DDDDDD;
+  border-radius: 12px;
+  display: inline-block;
+  background: #F1F1F1;
+
+  position: relative;
+  cursor: pointer;
+  transition: background-color $transition;
+
+  .value {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    margin: 0;
+  }
+  .circle {
+    width: $size;
+    height: $size;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: transform $transition;
+    transform: translate($spacing,-50%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  &.active {
+    background-color: $primary-color;
+    .circle {
+      transform: translate($positionCircleActive,-50%);
+
+    }
+  }
+}
+
+.toogle-wrapper {
+  display: inline-flex;
+  align-items: center;
+  .toggle-btn {
+    margin-right: 10px;
+    &.prefix {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  }
+}

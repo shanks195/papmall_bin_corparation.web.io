@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup verify phone number</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="js/select2/select2.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+    <body>
+        <header id="import_header" class="header d-none d-lg-block"></header>
+        <header class="header-only-title">
+            <a class="btn btn-reset" href="" title="SIGN UP" target="_self"><img src="images/icon-arrow-left-white-header.svg" alt="" title=""></a>
+            SIGN UP
+        </header>
+        <main class="main-login">
+            <div class="py-lg-50">
+                <div class="container">
+                    <div class="box-form-verify-code">
+                        <div class="box-form-verify-code-head">
+                            <h1 class="text-22 text-lg-24">Please Enter Verification Code</h1>
+                            <p class="text-16">Your verification code will be sent by text message</p>
+                            <p class="text-18"><strong>(+84) 123456789</strong></p>
+                        </div>
+                        <form action="">
+                            <div class="group-input-verify error">
+                                <input id="txtVerifyCode1" name="txtVerifyCode1" type="text" class="verify-code-input" maxlength="1"
+                                       min="0" max="9" pattern="[0-9]{1}" value="8">
+                                <input id="txtVerifyCode2" name="txtVerifyCode2" type="text" class="verify-code-input" maxlength="1"
+                                       min="0" max="9" pattern="[0-9]{1}" value="8">
+                                <input id="txtVerifyCode3" name="txtVerifyCode3" type="text" class="verify-code-input" maxlength="1"
+                                       min="0" max="9" pattern="[0-9]{1}" value="8">
+                                <input id="txtVerifyCode4" name="txtVerifyCode4" type="text" class="verify-code-input" maxlength="1"
+                                       min="0" max="9" pattern="[0-9]{1}" value="8">
+                                <input id="txtVerifyCode5" name="txtVerifyCode5" type="text" class="verify-code-input" maxlength="1"
+                                       min="0" max="9" pattern="[0-9]{1}" value="8">
+                                <input id="txtVerifyCode6" name="txtVerifyCode6" type="text" class="verify-code-input" maxlength="1"
+                                       min="0" max="9" pattern="[0-9]{1}" value="8">
+                            </div>
+                            <p class="text-danger d-inline-flex mb-3"><img class="mr-2" src="images/icon-warning.svg" alt="" title="">Invalid verification code</p>
+                            <div class="action-button form-group form-large mb-lg-30">
+                                <button type="button" class="btn btn-outline-gray w-100 mr-10 text-16">Cancel</button>
+                                <button type="button" class="btn btn-outline-secondary w-100 text-16">Verify</button>
+                            </div>
+
+                        </form>
+                        <p class="text-center mb-0 text-16">
+                            Didn't receive the code?
+                        </p>
+                        <p class="text-center text-16 m-0"><a href="" class="text-secondary text-medium">Resend</a> or <a href="" class="text-main text-medium">try using another verification method</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer p-0" id="import_footer"></footer>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.5.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+        <script src="js/lazysizes.min.js"></script>
+        <script src="js/ls.bgset.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#import_header").load("import/header.html");
+                $("#import_footer").load("import/footer.html");
+                $("#import_user-control").load("import/user-control.html");
+            });
+            $(".verify-code-input").on('keyup', function () {
+                if (this.value.length == this.maxLength) {
+                    $(this).next('.verify-code-input').focus();
+                }
+            });
+        </script>
+    </body>
+</html>

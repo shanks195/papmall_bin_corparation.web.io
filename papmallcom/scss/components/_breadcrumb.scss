@@ -1,0 +1,37 @@
+.breadcrumb {
+    background-color: transparent;
+    padding: 10px 0;
+    color: #fff;
+    font-size: $font-size;
+    &.absolute {
+        position: absolute;
+        top: 0;
+    }
+    .breadcrumb-item {
+        color: $light-gray-1;
+        &.active {
+            color: $text-base;
+        }
+        &:first-child:before {
+            content: url("../images/icon-home-breadcrumb.svg");
+            margin-right: 6px;
+        }
+        &+.breadcrumb-item:before {
+            content: url("../images/icon-arrow-right-base-black.svg");
+            color: $text-base;
+        }
+        &:hover {
+            color: $secondary-color !important;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.breadcrumb-bg {
+  background-color: #F1F1F1;
+}

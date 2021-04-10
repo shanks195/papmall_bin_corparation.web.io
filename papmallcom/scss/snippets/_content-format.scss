@@ -1,0 +1,56 @@
+.content-format {
+    
+    a {
+        color: $secondary-color;
+        word-break: break-all;
+    }
+    h2,
+    p,
+    ul,
+    ol {
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    ul,
+    ol {
+        padding-left: 30px;
+    }
+    ul {
+        list-style: none;
+    }
+    ul li {
+        position: relative;
+        font-size: 16px;
+        margin-bottom: 20px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: -15px;
+            width: 7px;
+            height: 7px;
+            background: #767676;
+            border-radius: 50%;
+        }
+    }
+    ol li {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(md) {
+        h2 {
+            font-size: 16px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    }
+}

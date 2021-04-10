@@ -1,0 +1,149 @@
+.category-sidebar {
+	position: relative;
+	.list-style-1 {
+		border-bottom-left-radius: 6px;
+		> li {
+			> a {
+				position: relative;
+			}
+			> a::after {
+				content: url("./../images/icon-arrow-right.svg");
+				position: absolute;
+				top: 50%;
+				right:15px;
+				transform: translateY(-50%);
+			}
+			&:hover {
+				.sidebar-dropdown {
+					display: block;
+				}
+				> a {
+					color: $white;
+					background-color: $secondary-color;
+					&::after {
+						content: url("./../images/icon-arrow-right-white.svg");
+					}
+				}
+				img {
+				}
+			}
+			&:last-child:hover {
+				> a {
+					border-bottom-left-radius: 6px;
+				}
+			}
+		}
+	}
+}
+.sidebar-dropdown {
+	position: absolute;
+	display: none;
+	top:0;
+	left: calc(100% - 1px);
+	width: calc(((100% + 30px) * 3) + 1px);
+	height: 100%;
+	background: $white;
+	padding: 30px 15px;
+	box-shadow: $shadow;
+	border: 1px solid #f1f1f1;
+	border-bottom-right-radius: 6px;
+	z-index: 1000;
+}
+
+.sidebar-toggle-wrapper {
+	position: relative;
+	.sidebar-toggle-dropdown {
+	display: none;
+	position: absolute;
+	width: 100%;
+	}
+	&.active:hover {
+		.sidebar-toggle-dropdown {
+			display: block;
+		}
+	}
+}
+
+.sidebar-list-home {
+	border-top-left-radius: 6px;
+	> li {
+		&:first-child:hover {
+			> a {
+				border-top-left-radius: 6px;
+			}
+		}
+	}
+	.sidebar-dropdown {
+		box-shadow: none;
+		border-top-right-radius: 6px;
+	}
+}
+
+.filter-wrapper{
+	@include media-breakpoint-down(md){
+		position: fixed;
+		top: 0;
+		right: calc(50px - 100%);
+		height: 100%;
+		width: calc(100% - 50px);
+		padding-bottom: 96px;
+		background: $white;
+		z-index: 1051;
+		transition: all 0.2s ease-in-out;
+		overflow-y: auto;
+		&.open{
+			right: 0;
+		}
+		.title-filter{
+			padding:16px;
+			border-bottom:10px solid $gray-1;
+			margin-bottom: 20px;
+		}
+		.search-box-item{
+			padding:0 16px;
+		}
+	}
+	.title-filter{
+		margin-bottom:17px;
+		font-size: 18px;
+		color: $dark-black;
+	}
+}
+
+.shadow-filter{
+	display: none;
+	@include media-breakpoint-down(md){
+		display: block;
+		position: fixed;
+		top: 0;
+		left: -50px;
+		height: 100vh;
+		width: 50px;
+		z-index: 1050;
+		background-color: rgb(0 0 0 / 70%);
+		transition: all 0.2s ease-in-out;
+		&.open{
+			left: 0;
+		}
+		#closeFilter{
+			position: absolute;
+			left: 15px;
+			top: 16px;
+		}
+	}
+}
+.address-wrapper{
+	@include media-breakpoint-down(md){
+		position: fixed;
+		top: 60px;
+		right: 100%;
+		height: 100%;
+		width: 100%;
+		background-color: #F1F1F1;
+		z-index: 1051;
+		transition: all 0.2s ease-in-out;
+		&.open{
+			right:0;
+		}
+	}
+}

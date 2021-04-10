@@ -1,0 +1,63 @@
+.form-group{
+  label{
+  }
+  .form-control {
+    min-height: 40px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    &:focus {
+      box-shadow: none;
+    }
+    &.bg-white {
+      color: $text-base !important;
+      &::placeholder {
+        color: $text-base !important;
+      }
+      &:focus {
+        background-color: #fff !important;
+      }
+    }
+    option{
+      color: $text-base;
+    }
+  }
+  &.text-base {
+    select option {
+      color: $text-base;
+    }
+  }
+}
+
+.form-large.form-group {
+  .form-control {
+    min-height: 48px;
+  }
+}
+
+.form-large {
+	.select2-container,
+	.select2-selection--single,
+	.select2-selection--single .select2-selection__rendered {
+		height: 48px !important;
+	}
+	.select2-selection--single .select2-selection__rendered {
+		line-height: 48px !important;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow b {
+		top: calc(50% + 4px);
+	}
+}
+
+.form-large {
+  .intl-tel-input .selected-flag::after {
+    top: 11px;
+  }
+}
+
+.has-error{
+  .form-control, .select2, input, textarea, select{
+    border-color: $red !important;
+  }
+}

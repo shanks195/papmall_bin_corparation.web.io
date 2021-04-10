@@ -1,0 +1,14 @@
+.media-main {
+    &.media-medium {
+        @include media-breakpoint-up(lg) {
+            img {
+                width: 200px !important;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        img {
+            width: 120px !important;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@mixin labelColor($color, $darkColor) {
+  background-color: $color;
+  color: white;
+  &.btn {
+    min-height: auto;
+    padding: 4px 8px;
+  }
+  &:hover {
+    background-color: $darkColor;
+    color: white;
+  }
+}
+
+.label-paid {
+ @include labelColor($paid, $paidDark);
+}
+
+.label-complete {
+ @include labelColor($complete, $completeDark);
+}
+
+.label-open {
+  @include labelColor($open, $openDark);
+}
+
+.label-failed {
+  @include labelColor($failed, $failedDark);
+}
+
+.label-decline {
+  @include labelColor($declined, $declinedDark);
+}
+
+.label-canceled {
+  @include labelColor($canceled, $canceled);
+}
+
+.label-waiting-call {
+  @include labelColor($waitingCall, $waitingCallDark);
+}
+
+.label-default {
+  border: 1px solid #d3dbe2;
+  background-color: #fff;
+  &:hover {
+    background-color: #f0f1f2;
+  }
+}
+
+.btn {
+  &[class*="label-"] {
+    min-width: 88px;
+  }
+  &.label-default {
+    min-width: auto;
+  }
+}

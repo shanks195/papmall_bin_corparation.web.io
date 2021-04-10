@@ -1,0 +1,37 @@
+.chat-tool-box {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: $white;
+	box-shadow: $shadow;
+	z-index: 1;
+	border-radius: 6px;
+	@include media-breakpoint-down(md) {
+		bottom: 70px;
+		right: 10px;
+	}
+	.chat-tool-wrapper {
+		position: relative;
+		padding: 20px;
+	}
+	.chat-tool-amount-wrapper {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		height: 16px;
+	}
+	.chat-tool-amount {
+		font-size: 14px;
+		color:$white;
+		
+		min-width:16px;
+		
+		font-weight: 500;
+		padding: 0 5px;
+		background-color: $secondary-color;
+		border-radius: 1000px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

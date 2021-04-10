@@ -1,0 +1,19 @@
+.nav-pills{
+  > li{
+    margin:3px 6px 3px 0;
+  }
+  .nav-link{
+    background: $background-hover-tabs;
+    &:hover{
+      background: $border-color;
+    }
+    &.active{
+      background: $primary-color;
+    }
+  }
+}
+
+.tab-header {
+  border-bottom: 1px solid $border;
+  padding-bottom: 20px;
+}

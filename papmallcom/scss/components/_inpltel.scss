@@ -1,0 +1,33 @@
+.intl-tel-input .selected-flag .iti-flag {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+
+.intl-tel-input .selected-flag .iti-arrow {
+    display: none;
+}
+.intl-tel-input.allow-dropdown .selected-flag, .intl-tel-input.separate-dial-code .selected-flag {
+    width: 40px;
+}
+
+.intl-tel-input .selected-flag {
+    padding: 0 0 0 10px;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 24px;
+        top: 7px;
+        right: 0;
+        background-color: #DDD;
+    }
+}
+.intl-tel-input.allow-dropdown input,
+.intl-tel-input.allow-dropdown input[type=tel],
+.intl-tel-input.allow-dropdown input[type=text],
+.intl-tel-input.separate-dial-code input,
+.intl-tel-input.separate-dial-code input[type=tel],
+.intl-tel-input.separate-dial-code input[type=text] {
+    padding-left: 50px;
+}

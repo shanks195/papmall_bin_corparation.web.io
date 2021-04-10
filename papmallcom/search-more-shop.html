@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Search</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="js/select2/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body>
+<header id="import_header" class="header shadow d-none d-lg-block"></header>
+<header class="header-search">
+    <div class="header-search-group">
+        <a class="btn btn-reset" href="" title="LOGIN" target="_self"><img src="images/icon-arrow-prev-white-thin.svg" alt="" title=""></a>
+        <form class="d-flex position-relative flex-grow-1 mr-10">
+            <div class="form-group">
+                <input type="text" class="form-control search-text" placeholder="What are you looking for?">
+                <a href="#" target="_self" title="Search" class="btn-search">
+                    <img src="./images/icon-search-white.svg" data-src="./images/icon-search.svg" alt="Search" title="Search" class="lazyload">
+                </a>
+            </div>
+        </form>
+        <a class="d-flex align-items-center" href="#" title="" target="_self">
+            <img class="mr-5" src="images/icon-filter-header-search.svg" title="" alt="" />
+            Filter
+        </a>
+    </div>
+    <div class="group-sort-button">
+        <a class="btn-sort active" href="#" title="" target="_self">Relevance</a>
+        <a class="btn-sort" href="#" title="" target="_self">Latest</a>
+        <a class="btn-sort" href="#" title="" target="_self">Top Sales</a>
+        <a class="btn-sort" href="#" title="" target="_self">Price<img class="ml-5" src="images/icon-up-down.svg" title="" alt="" /></a>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-30">
+                <li class="breadcrumb-item">
+                    <a href="#" title="Home" target="_self">Home</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="#" title="Search" target="_self">Search</a>
+                </li>
+            </ol>
+        </nav>
+
+        <div class="d-flex mb-20 mt-xs-30">
+            <h1 class="mr-auto mb-0 text-18">Shops related to "<span class="text-secondary">laptop</span>"</h1>
+        </div>
+        <div class="store-box mb-20 pb-xs-20">
+                <div class="store-desc">
+                    <div class="store-image-wrapper">
+                        <a href="#" title="" target="_self"><img src="images/store-thumb.jpg" title="" alt=""/></a>
+                    </div>
+                    <div>
+                        <a href="#" title="" target="_self"><h3 class="pr-xs-30">Apple Flagship Store</h3></a>
+                        <div class="d-none d-lg-block">
+                            <a class="btn btn-outline-gray btn-smaller mr-10 mt-10" href="#" title="" target="_self"><img src="images/icon-shop-base.svg" title="" alt=""/>Visit Shop</a>
+                            <a class="btn btn-outline-gray btn-smaller mt-10" href="#" title="" target="_self"><img src="images/icon-add.svg" title="" alt=""/>Follow</a>
+                        </div>
+                        <div class="d-block d-lg-none text-16">
+                            Product: <span class="text-main">123</span>
+                        </div>
+                        <div class="d-block d-lg-none text-16">
+                            Rating:
+                            <div class="rating-wrapper d-inline-block">
+                                <div class="rating-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-detail">
+                    <div class="row mb-10">
+                        <div class="col-5">
+                            Product: <span class="text-main">123</span>
+                        </div>
+                        <div class="col-7">
+                            Rating:
+                            <div class="rating-wrapper d-inline-block">
+                                <div class="rating-fill" style="width: 80%;"></div>
+                            </div>
+                            (3,7k rates)
+                        </div>
+                    </div>
+                    <div class="row mb-10">
+                        <div class="col-5">
+                            Followers: <span class="text-main">4567</span>
+                        </div>
+                        <div class="col-7">
+                            Joined: <span class="text-main">28 months ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        Replying rate: <span class="text-main">100%</span>
+                    </div>
+                </div>
+                <span class="icon-click-sign">
+                            <img src="images/icon-arrow-next-thin.svg" title="" alt="" />
+                        </span>
+            </div>
+        <div class="store-box mb-20 pb-xs-20">
+            <div class="store-desc">
+                <div class="store-image-wrapper">
+                    <a href="#" title="" target="_self"><img src="images/store-thumb.jpg" title="" alt=""/></a>
+                </div>
+                <div>
+                    <a href="#" title="" target="_self"><h3 class="pr-xs-30">Apple Flagship Store</h3></a>
+                    <div class="d-none d-lg-block">
+                        <a class="btn btn-outline-gray btn-smaller mr-10 mt-10" href="#" title="" target="_self"><img src="images/icon-shop-base.svg" title="" alt=""/>Visit Shop</a>
+                        <a class="btn btn-outline-gray btn-smaller mt-10" href="#" title="" target="_self"><img src="images/icon-add.svg" title="" alt=""/>Follow</a>
+                    </div>
+                    <div class="d-block d-lg-none text-16">
+                        Product: <span class="text-main">123</span>
+                    </div>
+                    <div class="d-block d-lg-none text-16">
+                        Rating:
+                        <div class="rating-wrapper d-inline-block">
+                            <div class="rating-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store-detail">
+                <div class="row mb-10">
+                    <div class="col-5">
+                        Product: <span class="text-main">123</span>
+                    </div>
+                    <div class="col-7">
+                        Rating:
+                        <div class="rating-wrapper d-inline-block">
+                            <div class="rating-fill" style="width: 80%;"></div>
+                        </div>
+                        (3,7k rates)
+                    </div>
+                </div>
+                <div class="row mb-10">
+                    <div class="col-5">
+                        Followers: <span class="text-main">4567</span>
+                    </div>
+                    <div class="col-7">
+                        Joined: <span class="text-main">28 months ago</span>
+                    </div>
+                </div>
+                <div>
+                    Replying rate: <span class="text-main">100%</span>
+                </div>
+            </div>
+            <span class="icon-click-sign">
+                            <img src="images/icon-arrow-next-thin.svg" title="" alt="" />
+                        </span>
+        </div>
+        <div class="paginations white mt-lg-25 mb-lg-50 d-none d-lg-block">
+            <ul class="list-inline d-flex justify-content-center text-center mb-0">
+                <li>
+                    <a href="?page=2" title="" target="_self">
+                        <img src="./images/icon-pagination-arrow-left.svg" class="active" alt="Prev" title="Prev">
+                        <img src="./images/icon-pagination-arrow-left-disabled.svg" alt="Prev" title="Prev">
+                    </a>
+                </li>
+                <li>
+                    <a href="?page=1" title="" target="_self">1</a>
+                </li>
+                <li>
+                    <a href="?page=2" title="" target="_self">2</a>
+                </li>
+                <li class="active">
+                    <a href="?page=3" title="" target="_self">3</a>
+                </li>
+                <li>
+                    <a href="?page=3" title="" target="_self">
+                        <img src="./images/icon-pagination-ellipses.svg" alt="..." title="...">
+                    </a>
+                </li>
+                <li>
+                    <a href="?page=4" title="" target="_self">
+                        <img src="./images/icon-pagination-arrow-right" alt="Next" title="Next">
+                        <img src="./images/icon-pagination-arrow-right-disabled.svg" class="active" alt="Next" title="Next">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex align-items-center justify-content-center d-lg-none mb-40">
+                    <span class="btn-loading">
+                        loading...
+                    </span>
+        </div>
+    </div>
+</main>
+<div id="import_user-control" class="user-control-box shadow"></div>
+<div class="chat-tool-box">
+    <div class="chat-tool-wrapper">
+        <a href="" target="" title="" class="text-accent text-18 text-medium">
+            <img src="./images/sx.svg" data-src="./images/icon-chat-secondary.svg" alt="Chat" title="Chat" class="lazyload mr-5"/> Chat
+        </a> <span class="chat-tool-amount">1</span>
+    </div>
+</div>
+<footer class="footer" id="import_footer"></footer>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.5.min.js"></script>
+<script src="js/select2/select2.min.js"></script>
+<script src="js/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/ls.bgset.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#import_header").load("import/header.html");
+        $("#import_footer").load("import/footer.html");
+        $("#import_user-control").load("import/user-control.html");
+        $(".selectPrice").select2({
+            placeholder: "Price",
+        });
+    });
+</script>
+</body>
+</html>

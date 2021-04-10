@@ -1,0 +1,39 @@
+.input-amount {
+  display: inline-flex;
+
+  >button {
+    height: $sizeInput;
+    width: $sizeInput;
+    border-radius: $radius;
+    border: 1px solid $border;
+    outline: none;
+    background-color: #F1F1F1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+    cursor: pointer;
+    transition: border-color $transition;
+    &:hover, &:focus, &:active {
+      border-color: #b5b5b5;
+    }
+  }
+  >input {
+    margin: 0 10px;
+    min-width: 60px;
+    width: 60px;
+    height: $sizeInput;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    -moz-appearance: textfield;
+  }
+  .decrement[disabled] {
+    cursor: default;
+    img {
+      opacity: 0.5;
+    }
+  }
+}

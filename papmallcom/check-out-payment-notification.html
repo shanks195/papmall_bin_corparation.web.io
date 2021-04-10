@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="js/select2/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/app.css?v=1" />
+</head>
+
+<body>
+    <header class="header d-none d-lg-block" id="import_header">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-hd-wrapper">
+                    <div class="top-hd-left">
+                        <ul class="top-hd-nav">
+                            <li class="ml-0">
+                                <a href="#" target="_self" title="Seller Center">Seller Center</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_self" title="Contact Us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-hd-right">
+                        <ul class="login-btn-group top-hd-nav">
+                            <li>
+                                <a class="btn-login" href="#" target="_self" title="Sign Up">Sign Up</a>
+                            </li>
+                            <li>
+                                <a class="btn-login" href="#" target="_self" title="Login">Login</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" id="user-toggle" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./images/sx.svg" data-src="./images/avatar-placeholder.png" class="lazyload mr-5" alt="Username" title="Username" />
+                                <span class="text-medium">Username</span>
+                            </a>
+                            <div class="dropdown-box dropdown-menu dropdown-user shadow-1" aria-labelledby="user-toggle">
+                                <ul class="list-style-1">
+                                    <li>
+                                        <a href="#" target="_self" title="My Account">
+                                            <img src="./images/icon-user.svg" title="My Account" alt="My Account" class="mr-10" />
+                                            <img src="./images/icon-user-secondary.svg" title="My Account" alt="My Account" class="active mr-10" />My Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_self" title="My Purchase">
+                                            <img src="./images/icon-purchase.svg" title="My Purchase" alt="My Purchase" class="mr-10" />
+                                            <img src="./images/icon-purchase-secondary.svg" title="My Purchase" alt="My Purchase" class="active mr-10" />My Purchase
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_self" title="Logout">
+                                            <img src="./images/icon-logout.svg" title="Logout" alt="Logout" class="mr-10" />
+                                            <img src="./images/icon-logout-secondary.svg" title="Logout" alt="Logout" class="active mr-10" />Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 d-flex justify-content-between">
+                        <a href="#" target="_self" title="Logo">
+                            <img src="./images/sx.svg" data-src="./images/logo.svg" alt="Logo" title="Logo" class="d-none d-lg-block lazyload" />
+                            <img src="./images/sx.svg" data-src="./images/logo-mobile.svg" alt="Logo" title="Logo" class="d-block d-lg-none lazyload" />
+                        </a>
+                        <div class="d-flex d-lg-none">
+                            <a href="javascript:void(0)" target="_self" title="Search" class="position-relative mr-15 search-toggle">
+                            </a>
+                            <a href="#" target="_self" title="Cart" class="position-relative d-inline-block mr-20">
+                                <img src="./images/sx.svg" data-src="./images/icon-cart.svg" alt="Cart" title="Cart" class="lazyload" />
+                                <span class="cart-amount">99+</span>
+                            </a>
+                            <a href="#" target="_self" title="Chat">
+                                <img src="./images/sx.svg" data-src="./images/icon-chat.svg" alt="Chat" title="Chat" class="lazyload" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 mt-xs-15 search-toggle-landing">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <div class="hd-search-box">
+                                    <form class="d-flex">
+                                        <div class="form-group flex-grow-1">
+                                            <input type="text" class="form-control search-text border-0" placeholder="What are you looking for?" />
+                                        </div>
+                                        <div class="form-group w-220 hidden-xs">
+                                            <div class="position-relative">
+                                                <select class="selectCategory">
+                                                    <option></option>
+                                                    <option value="Loại 1">Loại 1</option>
+                                                    <option value="Loại 2">Loại 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#" target="_self" title="Search" class="btn btn-primary btn-smaller text-16 d-xs-flex">
+                                                <img src="./images/sx.svg" data-src="./images/icon-search-white.svg" alt="Search" title="Search" class="mr-5 lazyload" />
+                                                <span class="hidden-xs">Search</span>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-3 hidden-xs">
+                                <div class="cart-hd-wrapper">
+                                    <a href="#" target="_self" title="Shoping Cart" class="btn btn-outline-secondary btn-icon text-nowrap">
+                                        <img src="./images/icon-cart-secondary.svg" alt="Shoping Cart" title="Shoping Cart" class="mr-10" />
+                                        <img src="./images/icon-cart-white.svg" alt="Shoping Cart" title="Shoping Cart" class="mr-10 active" />
+                                        Shoping Cart
+                                        <span class="cart-amount">99+</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20 hidden-xs">
+                    <div class="col-12 col-lg-3 mb-xs-15">
+                        <div class="sidebar-toggle-wrapper is_sidebar_homepage">
+                            <h3 class="text-main text-18 title-icon mb-0 pb-10 sidebar-toggle">
+                                <a href="#" target="_self" title="PRODUCT CATEGORY" class="text-link btn-icon no-transition">
+                                    <img src="./images/icon-menu-main.svg" alt="PRODUCT CATEGORY" title="PRODUCT CATEGORY" class="mr-10" />
+                                    <img src="./images/icon-menu-secondary.svg" alt="PRODUCT CATEGORY" title="PRODUCT CATEGORY" class="active mr-10" />
+                                    PRODUCT CATEGORY
+                                </a>
+                            </h3>
+                            <div class="sidebar-toggle-dropdown">
+                                <div id="import_sidebar" class="category-sidebar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <span><strong>Popular keywords:</strong></span>
+                                <a href="#" class="keyword-tag" target="_self" title="Watch">Watch</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Shoes">Shoes</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Kids Mask">Kids Mask</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Dress">Dress</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Skincare">Skincare</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Smartphone">Smartphone</a>
+                            </div>
+                            <div class="col-3">
+                                <div class="notification-wrapper dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Notification" class="active mr-10 dropdown-toggle d-inline-block" id="notification-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="noti-bell">
+                                            <img src="./images/sx.svg" data-src="./images/icon-bell.svg" alt="Notification" title="Notification" class="lazyload" />
+                                        </span>
+                                        Notification
+                                    </a>
+                                    <div class="dropdown-box dropdown-menu dropdown-notification shadow-1" aria-labelledby="notification-toggle">
+                                        <p class="notification-title"><strong>Recently Received Notifications</strong></p>
+                                        <hr class="m-0" />
+                                        <ul class="list-notification">
+                                            <li>
+                                                <a href="#" title="CNY Fashion Sale" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-1.jpg" alt="CNY Fashion Sale" title="CNY Fashion Sale" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">CNY Fashion Sale</p>
+                                                        <p class="noti-text">Looking for CNY outfit ideas? 👚 Shop deals under $8.88, up to 80% OFF Under Armour, adidas & more + Extra 18% Cashback voucher inside 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Welcome to Papmall !" target="_self" class="notification-item noti-seen">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-2.jpg" alt="Welcome to Papmall !" title="Welcome to Papmall !" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">Welcome to Papmall !</p>
+                                                        <p class="noti-text">Hi John Solomon, here's a $5 OFF sitewide voucher for your first purchase 🎉 Shop now 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="CNY Fashion Sale" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-1.jpg" alt="CNY Fashion Sale" title="CNY Fashion Sale" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">CNY Fashion Sale</p>
+                                                        <p class="noti-text">Looking for CNY outfit ideas? 👚 Shop deals under $8.88, up to 80% OFF Under Armour, adidas & more + Extra 18% Cashback voucher inside 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Welcome to Papmall !" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-2.jpg" alt="Welcome to Papmall !" title="Welcome to Papmall !" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">Welcome to Papmall !</p>
+                                                        <p class="noti-text">Hi John Solomon, here's a $5 OFF sitewide voucher for your first purchase 🎉 Shop now 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="text-center m-0">
+                                            <a class="btn-raw-secondary btn-block py-10" href="#" target="_self" title="View all">
+                                                View all <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary.svg" alt="View all" title="View all" class="lazyload" />
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" target="_self" title="Help" class="d-inline-block">
+                                    <img src="./images/sx.svg" data-src="./images/icon-help.svg" alt="Help" title="Help" class="lazyload" />
+                                    Help
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="main-header bg-primary d-flex pb-15 d-lg-none position-fixed w-100 z-index-10000 header-search align-items-center">
+        <a href="#" title="Back" target="_self">
+            <img src="./images/sx.svg" data-src="./images/icon-arrow-left-white-smaller.svg" alt="GET FREE GIFT(S) WITH MIN. SPEND" title="GET FREE GIFT(S) WITH MIN. SPEND" class="lazyload ml-15">
+        </a>
+        <div class="d-flex justify-content-center w-xs-100">
+            <span class="text-18 text-white text-uppercase">PAYMENT</span>
+        </div>
+    </header>
+    <main>
+        <div class="padding-block m-h-500">
+
+        </div>
+        <div class="modal-payment d-flex justify-content-center align-items-center">
+            <div class="py-lg-50 w-100">
+                <div class="container">
+                    <div class="box-form-verify-code-2 text-center success-form px-0">
+                        <div>
+                            <h1>Payment Successful</h1>
+                            <p class="mt-20">PAPMALL has notified the Seller to ship your order.</p>
+                        </div>
+                        <div class="border-top pt-15">
+                            <button type="button" class="btn btn-secondary mw-lg-200 w-170 text-16 mr-10 btn-confirm">OK</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+    </main>
+    
+    <div id="import_user-control" class="user-control-box shadow"></div>
+    <div class="chat-tool-box d-none">
+        <div class="chat-tool-wrapper">
+            <a href="" target="" title="" class="text-accent text-18 text-medium">
+                <img src="./images/sx.svg" data-src="./images/icon-chat-secondary.svg" alt="Chat" title="Chat" class="lazyload mr-5" /> Chat
+            </a>
+            <span class="chat-tool-amount">1</span>
+        </div>
+    </div>
+    <footer class="footer " id="import_footer">
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.5.min.js"></script>
+    <script src="js/select2/select2.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/ls.bgset.min.js"></script>
+    <script src="js/style.js?v=1"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#import_sidebar").load("import/sidebar.html", function () {
+            $(".selectCategory").select2({
+                placeholder: "Product Category",
+            });
+            $("#import_footer").load("import/footer.html");
+            $("#import_user-control").load("import/user-control.html");
+        })
+    });
+    </script>
+</body>
+
+</html>

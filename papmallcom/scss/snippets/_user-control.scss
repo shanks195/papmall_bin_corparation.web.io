@@ -1,0 +1,11 @@
+.user-control-box {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: $white;
+	z-index: 9999;
+	display: none;
+	@include media-breakpoint-down(md) {
+		display: block;
+	}
+}

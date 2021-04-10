@@ -1,0 +1,204 @@
+input.form-control {
+    &:focus {
+        border-color: $primary-color;
+    }
+}
+
+.form-input input:focus,
+.form-input input:valid,
+.form-input textarea:focus,
+.form-input textarea:valid {
+    border-bottom: 2px solid $primary-color!important;
+}
+.form-input input:focus + .placeholder,
+.form-input input:valid + .placeholder,
+.form-input textarea:focus + .placeholder,
+.form-input textarea:valid + .placeholder {
+    top: 0;
+    cursor: inherit;
+    font-size: 14px;
+    color: $primary-color!important;;
+}
+textarea {
+    &.form-control {
+        height: 96px !important;
+        resize: none;
+    }
+    &.height-input{
+        height:48px !important;
+        line-height:34px;
+    }
+}
+.search-box {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $secondary-color;
+    z-index: 2;
+    transition: left 0.3s;
+}
+.cancel-search-box {
+    cursor: pointer;
+    font-size: 48px;
+    line-height: 48px;
+    margin-left: 30px;
+    color: #fff;
+    @include media-breakpoint-down(md) {
+        margin-left: 10px;
+    }
+}
+.form-password {
+    position: relative;
+    .togglePassword {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        width: 20px;
+        height: 15px;
+        background-image: url("./../images/icon-eye-slash.svg");
+        &.active {
+            background-image: url("./../images/icon-eye-show.svg");
+        }
+    }
+}
+.input-number-wrapper, .input-number-wrapper-product {
+    display: flex;
+    input.form-control {
+        text-align: center;
+        width: 60px;
+        border-radius: 6px;
+        z-index: 2;
+    }
+    .plus , .sub {
+        background-color: #F3F3F3;
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #DDDDDD;
+        border-radius: 6px;
+        transition: 0.3s;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover , &:active , &:focus {
+            cursor: pointer;
+            background-color:  #9b9b9b;
+        }
+    }
+    .plus {
+        margin-left: 10px;
+        background-image: url(../images/icon-plus.svg);
+        &:hover {
+            background-image: url(../images/icon-plus-white.svg);
+        }
+    }
+    .sub {
+        margin-right: 10px;
+        background-image: url(../images/icon-sub.svg);
+        
+        &:hover {
+            background-image: url(../images/icon-sub-white.svg);
+        }
+    }
+    &.disabled {
+        .plus {
+            background-image: url(../images/icon-plus-disabled.svg);
+            pointer-events: none;
+        }
+        .sub {
+            background-image: url(../images/icon-sub-disabled.svg);
+            pointer-events: none;
+        }
+    }
+}
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.verify-code-input {
+    background: rgba(white, 0.04);
+    border-radius: 8px 8px 0px 0px;
+    width: 44px;
+    height: 50px;
+    margin-right: 7px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: $primary-color;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid $border;
+}
+
+.verify-code-input:focus {
+    outline: 0
+}
+
+.input-search {
+    position: relative;
+    .close-search-input {
+        display: none;
+        width: 16px;
+    }
+    .btn-close {
+        display: none;
+        img {
+            width: 16px;
+        }
+    }
+    input[type='text'] {
+        box-shadow: $shadow1;
+        height: 48px;
+        border-color: transparent;
+        padding-right: 100px;
+        &::placeholder {
+            color: #969696;
+        }
+        &.value-active {
+            &~.btn-close {
+                display: block;
+            }
+        }
+    }
+    > .btn {
+        position: absolute;
+        right: 8px;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        width: 40px;
+        border-radius: 0;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        &.btn-close {
+            right: 48px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+input[type='radio'] {
+    visibility: hidden;
+}
+

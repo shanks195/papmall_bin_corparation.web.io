@@ -1,0 +1,144 @@
+.bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-primary {
+    background-color: $primary-color!important;
+}
+
+.bg-red-blur {
+    background-color: rgba($red, 0.05) !important;
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.bg-light-gray {
+    background-color: $light-gray !important;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.bg-black-blur-10 {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.bg-white-85 {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.bg-light-gray {
+    background-color: $light-gray;
+}
+
+.bg-gray-contact{
+    background-color: #ECECEC;
+}
+.bg-light-dark{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.bg-gray-1 {
+    background-color: $gray-1!important;
+}
+
+.bg-no-repeat {
+    background: no-repeat !important;
+}
+
+.bg-bottom-blue {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.bg-blue-blur-80 {
+    background-image: linear-gradient(0deg, rgba(5, 32, 61, 0.8), rgba(5, 32, 61, 0.8));
+}
+
+.bg-image-stardard {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-secondary {
+    background-color: $secondary-color!important;
+}
+.bg-paginations{
+    background-color: $gray-1 !important;
+}
+
+@include media-breakpoint-down(md) {
+    .bg-xs-white {
+        background-color: $white!important;
+    }
+    .bg-xs-gray-1 {
+        background-color: $gray-1!important;
+    }
+    .bg-xs-primary {
+      background-color: $primary-color!important;
+    }
+    .bg-xs-secondary{
+        background-color: rgb(243, 119, 33, 0.05) !important;
+    }
+}
+
+.bg-faq {
+    position: relative;
+}
+
+.center-content-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(xs) {
+        bottom: auto;
+    }
+    .main-content-absolute {
+        text-align: center;
+        padding: 0 40px;
+        @include media-breakpoint-down(md) {
+            margin-top: 40px;
+        }
+    }
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1066; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.modal-payment{
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    @include media-breakpoint-down(md){
+        background-color: #f1f1f1;
+    }
+}

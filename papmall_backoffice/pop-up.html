@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Popup</title>
+    <link rel="stylesheet" href="css/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="js/select2/select2.min.css">
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+
+<body>
+<header>
+    <nav id="menuDesktop" class="navbar">
+        <div class="navbar-collapse">
+            <div class="header-mobile">
+                <div class="dropdown-top" data-toggle="collapse" data-target="#collapseEmail" aria-expanded="false" aria-controls="collapseEmail">
+                    <span>phatloc@bin.com.vn</span>
+                    <ul class="collapse list-unstyled" id="collapseEmail">
+                        <li>
+                            <a class="dropdown-item disabled" tabindex="-1" href="#"><strong>Signed in as</strong>
+                                <br> phatloc@bin.com.vn</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Edit profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign out</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-cancel"></div>
+            </div>
+            <div class="header-top d-block d-lg-none">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="active" href="#" title="" target=""> View Storefront </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" title="" target=""> Home </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar header-top">
+                <a href="#" target="_self" title=""><img class="opacity-5" src="images/shopping-cart-icon.png" alt="" title=""/></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseAddon" aria-expanded="false" aria-controls="collapseAddon">Add-ons</a>
+                        <ul class="dropdown-menu collapse" id="collapseAddon">
+                            <li class="dropdown-submenu pull-left">
+                                <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#collapseManageAddon" aria-expanded="false" aria-controls="collapseManageAddon">Manage add-ons</a>
+                                <ul class="dropdown-menu collapse" id="collapseManageAddon">
+                                    <li>
+                                        <a class="dropdown-item" href="#">CS-Cart</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">Administration</a>
+                        <ul class="dropdown-menu collapse" id="collapseAdmin">
+                            <li>
+                                <a class="dropdown-item" href="#">Storefronts</a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Payment methods</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseSetting" aria-expanded="false" aria-controls="collapseSetting">Settings</a>
+                        <ul class="dropdown-menu pull-right collapse" id="collapseSetting">
+                            <li>
+                                <a class="dropdown-item" href="#">General</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Appearance</a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Company</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseDesign" aria-expanded="false" aria-controls="collapseDesign">Design</a>
+                        <ul class="dropdown-menu pull-right collapse" id="collapseDesign">
+                            <li>
+                                <a class="dropdown-item" href="#">Themes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseCurrency" aria-expanded="false" aria-controls="collapseCurrency"><span class="hidden-mobile">&#36;</span><span class="d-inline-block d-lg-none">Currency</span></a>
+                        <ul class="dropdown-menu pull-right collapse" id="collapseCurrency">
+                            <li class="active">
+                                <a class="dropdown-item" href="#">US Dollar (&#36;)</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Euro (&#128;)</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">GB Pound (&#163;)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown hidden-mobile">
+                        <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseNoti" aria-expanded="false" aria-controls="collapseNoti"><i class="bi bi-bell-fill"></i>
+
+                        </a>
+                        <div class="dropdown-menu custom-dropdown-noti pull-right collapse" id="collapseNoti">
+                            <div class="noti-title">Notification</div>
+                            <div class="noti-content"><div class="all-read">No notification</div></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown hidden-mobile">
+                        <a href="#" title="" target="_self"><i class="bi bi-person-fill"></i></a>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a class="dropdown-item disabled" tabindex="-1" href="#"><strong>Signed in as</strong>
+                                    <br/> phatloc@bin.com.vn</a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Edit profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Login as vendor</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Sign out</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="scroll-wrapper">
+                <div class="navbar header-main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="icon-home" href="#" title="" target="_self"><i class="bi bi-house-door-fill"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseOrder" aria-expanded="false" aria-controls="collapseOrder">Orders</a>
+                            <ul class="dropdown-menu collapse" id="collapseOrder">
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>View orders</span> <span class="hint">
+                                    View, process and print invoices slips for orders placed from your web site.
+                                </span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Sales reports</span> <span class="hint">
+                                    Detailed statistics on the sales.
+                                </span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">Products</a>
+                            <ul class="dropdown-menu collapse" id="collapseProduct">
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Categories</span> <span class="hint">
+                                    View product categories which are used to group products in your store.
+                                </span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Products</span> <span class="hint">
+                                    View, add and edit products that are shown to visitors of your store.
+                                </span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseCustomer" aria-expanded="false" aria-controls="collapseCustomer">Customer</a>
+                            <ul class="dropdown-menu collapse" id="collapseCustomer">
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Administrators</span> <span class="hint">
+                                    List of store administrators, registered users with an administrator account.
+                                </span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Vendor's administrators</span>
+                                        <span class="hint">
+                                    List of vendor's administrators, registered users with a vendor account.
+                                </span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseMarketing" aria-expanded="false" aria-controls="collapseMarketing">Marketing</a>
+                            <ul class="dropdown-menu collapse" id="collapseMarketing">
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Promotions</span>
+                                        <span class="hint">
+                                    Promote goods and offer bonuses basing on customers memberships.
+                                </span> </a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#collapseNews" aria-expanded="false" aria-controls="collapseNews">
+                                        <span>Newsletters</span> <span class="hint">
+                                    Create and send newsletters to your customer.
+                                </span> </a>
+                                    <ul class="dropdown-menu collapse" id="collapseNews">
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span>Newsletters</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span>Templates</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span>Autoresponders</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseWebsite" aria-expanded="false" aria-controls="collapseWebsite">Website</a>
+                            <ul class="dropdown-menu collapse" id="collapseWebsite">
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Blog</span> <span class="hint">
+                                    Manage your blog posts.
+                                </span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Pages</span> <span class="hint">
+                                    Create and publish pages, polls, forms and links.
+                                </span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" title="" target="_self" data-toggle="collapse" data-target="#collapseVendors" aria-expanded="false" aria-controls="collapseVendors">Vendors</a>
+                            <ul class="dropdown-menu collapse" id="collapseVendors">
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Vendors</span> <span class="hint">
+                                    Sorted list of vendor accounts registered in the store.
+                                </span> </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#"> <span>Accounting</span> <span class="hint">
+                                    Income and expenditure statistics (total income, vendor balance, vendor withdrawals).
+                                </span> </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="flex-row d-none d-lg-flex">
+                        <div class="dropdown mr-3">
+                            <a href="#" title="" target="_self" class="btn btn-outline-secondary quick-button"> Quick start menu </a>
+                            <ul class="dropdown-menu menu-container list-unstyled">
+                                <li>
+                                    <span>Branding</span>
+                                </li>
+                                <li><a href="#" title="" target="_self">Logo</a></li>
+                                <li><a href="#" title="" target="_self">Company & contacts</a></li>
+                                <li><a href="#" title="" target="_self">Theme colors & fonts</a></li>
+                                <li>
+                                    <span>Legal documents</span>
+                                </li>
+                                <li><a href="#" title="" target="_self">Terms for customers</a></li>
+                            </ul>
+                        </div>
+                        <div class="input-group">
+                            <input type="search" class="form-control search-header" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-search" type="button"><i class="bi bi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-title">
+                    <button class="btn btn-outline-primary mr-2">
+                        <i class="bi bi-arrow-90deg-left"></i>
+                    </button>
+                    <h2>Order</h2>
+
+                    <div class="action-in-title ml-auto">
+                        <a class="btn btn-icon btn-primary" href=""><i class="bi bi-plus-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="menuMobile" class="d-block d-lg-none">
+        <div class="header-main d-flex align-items-center">
+            <button class="btn btn-outline-primary mobile-menu-toggle mr-2" type="button"><i class="bi bi-justify"></i>
+            </button>
+            <h2 class="mb-0 mr-auto">Order</h2>
+            <button class="btn btn-outline-primary" type="button" id="searchMobileBtn"><i class="bi bi-search"></i>
+            </button>
+            <div class="search-mobile-block hidden">
+                <button class="search-mobile-back" type="button" id="search_mobile_back"><i class="bi bi-x"></i>
+                </button>
+                <button class="search_button search-mobile-button" type="submit" id="search_button_mobile">
+                    <i class="bi bi-search"></i></button>
+                <label for="search_text_mobile" class="search-mobile-label"><input type="text"
+                                                                                   class="search-mobile-input"
+                                                                                   id="search_text_mobile" name="q"
+                                                                                   value="" placeholder="Tìm kiếm"
+                                                                                   autocomplete="off"
+                                                                                   aria-invalid="false"></label>
+            </div>
+        </div>
+        <div class="action-in-title-mobile">
+            <a class="btn btn-icon main" href=""><i class="bi bi-plus-circle"></i></a>
+        </div>
+    </nav>
+</header>
+<main class="main-content header-has-action">
+    <div class="container-fluid">
+        <div class="row">
+
+
+        </div>
+    </div>
+</main>
+<footer>
+    <button id="bottom_button" class="bottom-button" title="Show admin toolbar">
+        Demo Store
+    </button>
+    <div id="bottom_panel_admin" class="bottom-panel bottom-panel-disabled">
+        <div class="bottom-panel-left">
+            <a href="/" target="_self" data-toggle="tooltip" title="Go to Dashboard" class="d-none d-lg-flex">Demo
+                Store</a>
+            <a href="#" title="" target="_self">Storefront</a>
+            <a href="#" title="" target="_self" class="active">Admin Panel</a>
+        </div>
+        <div class="bottom-panel-right">
+            <div class="btn-group dropdown">
+                <a href="#" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                   title="Settings" class="d-none d-lg-flex"> <i class="bi bi-gear-fill"></i> </a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-group">
+                        <div class="dropdown-item dropdown-title">Branding</div>
+                        <a href="#" title="" target="_self" class="dropdown-item">Logo</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Company & contacts</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Theme colors & fonts</a>
+                    </div>
+                    <div class="dropdown-group">
+                        <div class="dropdown-item dropdown-title">Legal documents
+                        </div>
+                        <a href="#" title="" target="_self" class="dropdown-item">Terms for customers</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Privacy policy</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">GDPR</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Returns and exchanges</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group dropdown">
+                <a href="#" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                   title="Help" class="d-none d-lg-flex"> <i class="bi bi-question-circle-fill"></i>
+                </a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-group">
+                        <a href="#" title="" target="_self" class="dropdown-item">Documentation</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Community forums</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Video tutorials</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">FAQ</a>
+                    </div>
+                    <div class="dropdown-group">
+                        <a href="#" title="" target="_self" class="dropdown-item">Contact support</a>
+                        <a href="#" title="" target="_self" class="dropdown-item">Hire a developer</a>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0)" target="_self" class="close-bottom-panel" title="Hide admin toolbar">
+                <i class="bi bi-x"></i> </a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.5.min.js"></script>
+<script src="js/select2/select2.min.js"></script>
+<script src="fckeditor/fckeditor.js"></script>
+<script src="js/style.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
+</script>
+
+<!-- Modal -->
+<div class="modal fade " id="popup" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-size-1">
+        <div class="modal-content">
+            <form action="">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">New vendor plan</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <ul class="nav nav-pills tab-header">
+                            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#General">General</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="pill"
+                                                    href="#Commission">Commission</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#Restrictions">Restrictions</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" data-toggle="pill"
+                                                    href="#Categories">Categories</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#Storefronts">Storefronts</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#Rating">Rating</a></li>
+                        </ul>
+                        <div class="tab-content mt-4">
+                            <div id="General" class="tab-pane fade ">
+                                <div class="row mb-3">
+                                    <div class="col-lg-3 right-label">
+                                        <label for="">Name <span class="text-danger">*</span></label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-lg-3 text-lg-right">
+                                        <label for="">Offer as the best choice: </label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="d-inline-block">
+                                            <div class="checkbox main">
+                                                <input type="checkbox" name="name" value="" id="name1" checked>
+                                                <span class="checkmark"></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-lg-3 text-lg-right">
+                                        <label for="">Description: </label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="overflow-auto">
+                                            <textarea id="editor" name="editor"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-lg-3 right-label">
+                                        <label for="">Position: </label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-lg-3 text-lg-right">
+                                        <label for="">Status: </label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="d-inline-flex">
+                                            <div class="radio main mr-3">
+                                                <input type="radio" name="status" value="" id="active" checked>
+                                                <span class="checkmark"></span>
+                                                <label for="active">Active</label>
+                                            </div>
+
+                                            <div class="radio main mr-3">
+                                                <input type="radio" name="status" value="" id="hidden">
+                                                <span class="checkmark"></span>
+                                                <label for="hidden">Hidden</label>
+                                            </div>
+
+                                            <div class="radio main mr-3">
+                                                <input type="radio" name="status" value="" id="disabled">
+                                                <span class="checkmark"></span>
+                                                <label for="disabled">Disabled</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="Commission" class="tab-pane fade">
+                                <div class="row form-group">
+                                    <div class="col-lg-3 right-label">
+                                        <label for="">Price ($):</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control initial-raidus"
+                                                   aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <div class="input-group-append ml-1">
+                                                <div class="position-relative select-wrapper">
+                                                    <select class="select2-option">
+                                                        <option></option>
+                                                        <option value="Option 1" selected>per month</option>
+                                                        <option value="Option 2">per year</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 right-label">
+                                        <label>Transaction fee: </label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="p-2">% +</div>
+                                            <div class="flex-grow-1">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="p-2">$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Restrictions" class="tab-pane fade">
+                                <div class="row form-group">
+                                    <div class="col-lg-3 right-label">
+                                        <label for="">Max. products:</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control">
+                                        <p class="mt-2">Set the maximum number of products a vendor can have on this
+                                            plan. Leave empty to allow unlimited number of products.</p>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-lg-3 right-label">
+                                        <label for="">Revenue up to ($):</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control">
+                                        <p class="mt-2">The maximum monthly revenue allowed for the vendors who use this
+                                            plan. Leave this field empty to allow unlimited revenue.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-lg-3 text-lg-right">
+                                        <label for="">Vendor microstore:</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="checkbox main">
+                                            <input type="checkbox" name="name" id="main">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <p class="mt-2">A vendor can have his or her own microstore at a separate
+                                            address like example.com/vendor/. A microstore only contains products of the
+                                            vendor who owns this microstore. Also, search results in a vendor's
+                                            microstore only include products of this vendor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Categories" class="tab-pane fade in active show">
+                                <div class="clearfix mb-4">
+                                    <button type="button" class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#addCategories">
+                                        <i class="bi bi-plus-circle"></i> Add Categories
+                                    </button>
+                                </div>
+                                <div class="table-mobile">
+                                    <table class="table table-bordered-bottom table-hover-show-action">
+                                        <thead class="thead-mobile">
+                                        <tr><th>Name</th>
+                                            <th class="mobile-hide col-tool">&nbsp;</th>
+                                        </tr></thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="hidden-mobile">
+                                                <a href="">Electronics</a>
+                                            </td>
+
+                                            <td data-title="Actions">
+                                                <div class="dropdown hidden-action">
+                                                    <a class="btn label-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bi bi-gear-fill"></i>
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuLink1">
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="Storefronts" class="tab-pane fade">
+                                <div class="clearfix mb-4">
+                                    <button type="button" class="btn btn-outline-primary float-right"
+                                            data-toggle="modal" data-target="#addStorefront">
+                                        <i class="bi bi-plus-circle"></i> Add storefront
+                                    </button>
+                                </div>
+                                <div class="table-mobile">
+                                    <table class="table table-bordered-bottom table-hover-show-action">
+                                        <thead class="thead-mobile">
+                                        <tr><th>Name</th>
+                                            <th class="mobile-hide col-tool">&nbsp;</th>
+                                        </tr></thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="hidden-mobile">
+                                                <a href="">apparel.mv.unitheme.net</a>
+                                            </td>
+
+                                            <td data-title="Actions">
+                                                <div class="dropdown hidden-action">
+                                                    <a class="btn label-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bi bi-gear-fill"></i>
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown" aria-labelledby="dropdownMenuLink1">
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="Rating" class="tab-pane fade">
+                                <div class="row form-group">
+                                    <div class="col-lg-3 right-label">
+                                        <label for="">Manual vendor plan rating:</label>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control" value="0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Search</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="addStorefront" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-size-1">
+        <div class="modal-content">
+            <form action="">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Add Storefront</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <div class="group-search">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="customer">Name</label>
+                                        <input type="text" class="form-control" id="customer">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="url">URL</label>
+                                        <input type="text" class="form-control" id="url">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="">Status</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-3">
+                                <div class="d-flex align-items-center mb-4">
+                                    <button class="btn btn-outline-primary" type="button">Search</button>
+
+                                    <button class="ml-3 btn-reset" type="button" data-toggle="collapse"
+                                            data-target="#search" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-arrow-down-short deg-180 f-25"></i>
+                                    </button>
+                                </div>
+
+
+                                <div class="collapse" id="search">
+                                    <div class="row form-group">
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <label class="col-lg-4 mt-2" for="">Languages</label>
+                                                <div class="col-lg-8">
+                                                    <select class="form-control max-w-100" name="language_ids[]"
+                                                            multiple="multiple" id="elm_languages">
+                                                        <option value="2">English</option>
+                                                        <option value="3">العربية</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <label class="col-lg-4 right-label" for="">Currencies</label>
+                                                <div class="col-lg-8">
+                                                    <select class="form-control max-w-100" name="currency_ids[]"
+                                                            multiple="multiple" id="elm_currencis">
+                                                        <option value="1">USD</option>
+                                                        <option value="2">EUR</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <label class="col-lg-4 mt-2" for="">Countries</label>
+                                                <div class="col-lg-8">
+                                                    <select class="form-control max-w-100" name="country_codes[]"
+                                                            multiple="multiple" id="elm_countries" size="10"
+                                                            aria-invalid="false">
+                                                        <option value="AF">Afghanistan</option>
+                                                        <option value="AX">Aland Islands</option>
+                                                        <option value="AL">Albania</option>
+                                                        <option value="DZ">Algeria</option>
+                                                        <option value="AS">American Samoa</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix mt-4">
+                                    <label>Vendors</label>
+                                    <button class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#addVendor"><i
+                                            class="bi bi-plus-circle"></i> Add vendors
+                                    </button>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 offset-2">
+                                        <div class="table-mobile">
+                                            <table class="table table-bordered-bottom table-hover-show-action">
+                                                <thead class="thead-mobile">
+                                                <th>Name</th>
+                                                <th class="mobile-hide col-tool">&nbsp;</th>
+                                                </tr></thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="hidden-mobile">
+                                                        <a href="">ASOS</a>
+                                                    </td>
+
+                                                    <td data-title="Actions">
+                                                        <div class="dropdown hidden-action">
+                                                            <a class="btn label-default dropdown-toggle" href="#"
+                                                               role="button" id="dropdownMenuLink1"
+                                                               data-toggle="dropdown" aria-haspopup="true"
+                                                               aria-expanded="false">
+                                                                <i class="bi bi-gear-fill"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu custom-dropdown"
+                                                                 aria-labelledby="dropdownMenuLink1">
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-mobile">
+                        <table class="table table-bordered-bottom table-hover-show-action">
+                            <thead class="thead-mobile">
+                            <tr>
+                                <th class="hidden-mobile">
+                                    <div class="checkbox main">
+                                        <input type="checkbox" name="name">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </th>
+                                <th class="text-left">Name</th>
+
+                                <th class="text-right">URL</th>
+                                <th class="text-right">Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="hidden-mobile">
+                                    <div class="checkbox main">
+                                        <input type="checkbox" name="name" id="main">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </td>
+                                <td data-title="Name">
+                                    <a href="" class="text-primary">apparel.mv.unitheme.net</a> <span>(Default)</span>
+                                </td>
+
+                                <td data-title="URL" class="text-right">
+                                    <a href="" class="text-primary">apparel.demos.mv.cs-cart.com/092b65a6596d0122</a>
+                                </td>
+
+                                <td data-title="Status" class="text-right">
+                                    <div class="toogle-wrapper">
+                                        <div class="toggle-btn">
+                                            <input type="checkbox" class="value">
+                                            <span class="circle"></span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add storefronts and close</button>
+                    <button type="submit" class="btn btn-primary">Add storefronts</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addVendor" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-size-1">
+        <div class="modal-content">
+            <form action="">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Add Vendors</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <div class="group-search">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="customer">Name</label>
+                                        <input type="text" class="form-control" id="customer">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="text" class="form-control" id="email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="">Plan</label>
+                                        <div class="position-relative select-wrapper">
+                                            <select class="select2-option">
+                                                <option></option>
+                                                <option value="Option 1" selected>PRO ($1,000.00)</option>
+                                                <option value="Option 2">Start ($0.00)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-3">
+                                <div class="d-flex align-items-center mb-4">
+                                    <button class="btn btn-outline-primary" type="button">Search</button>
+
+                                    <button class="ml-3 btn-reset " type="button" data-toggle="collapse"
+                                            data-target="#search" aria-expanded="false" aria-controls="collapseExample">
+                                        <i class="bi bi-arrow-down-short deg-180 f-25"></i>
+                                    </button>
+                                </div>
+
+
+                                <div class="collapse show" id="search">
+                                    <div class="row form-group">
+                                        <div class="col-lg-6">
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">Address</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">City</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">Country</label>
+                                                <div class="col-lg-8">
+                                                    <select name="" id="" class="form-control max-w-100">
+                                                        <option value="selected" selected>- Select country -</option>
+                                                        <option value="">VietNam</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">State/Province</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">Status</label>
+                                                <div class="col-lg-8">
+                                                    <select name="" id="" class="form-control max-w-100">
+                                                        <option value="selected" selected>--</option>
+                                                        <option value="">Active</option>
+                                                        <option value="">Pending</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">Zip/postal code</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">Phone</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <label class="col-lg-4 mt-2" for="">URL</label>
+                                                <div class="col-lg-8">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-mobile">
+                        <table class="table table-bordered-bottom table-hover-show-action">
+                            <thead class="thead-mobile">
+                            <tr>
+                                <th class="hidden-mobile">
+                                    <div class="checkbox main">
+                                        <input type="checkbox" name="name">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </th>
+                                <th>ID</th>
+                                <th>Name</th>
+
+                                <th>E-mail</th>
+                                <th>Registered</th>
+                                <th>Active</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="hidden-mobile">
+                                    <div class="checkbox main">
+                                        <input type="checkbox" name="name" id="main">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </td>
+                                <td data-title="ID">
+                                    <a href="">10</a>
+                                </td>
+                                <td data-title="Name">
+                                    <a href="">6pm</a>
+                                </td>
+
+                                <td data-title="Email">
+                                    <a href="">6pm@example.com</a>
+                                </td>
+                                <td data-title="Registered">
+                                    02/22/2021, 11:46
+                                </td>
+
+                                <td data-title="Active">
+                                    Active
+                                </td>
+
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add vendors and close</button>
+                    <button type="submit" class="btn btn-primary">Add vendors</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="addCategories" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-size-1 max-size-height">
+        <div class="modal-content">
+            <form action="">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Add Categories</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover-show-action mb-0">
+                        <thead class="hidden-mobile">
+                        <tr>
+                            <th width="50px">
+                                <div class="checkbox main">
+                                    <input type="checkbox" name="name" id="main">
+                                    <span class="checkmark"></span>
+                                </div>
+                            </th>
+
+                            <th>
+                                Name
+                            </th>
+
+
+                            <th width="50px">
+                                Product
+                            </th>
+                        </tr>
+                        </thead>
+
+                    </table>
+                    <div class="table-middle">
+                        <div class="table-data-item">
+
+                            <table class="table  table-hover-show-action mb-0">
+
+                                <tbody>
+                                <tr>
+                                    <td width="5%">
+                                        <div class="checkbox main">
+                                            <input type="checkbox" name="name" checked>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </td>
+                                    <td width="8%" class="hidden-mobile">
+                                        <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                    </td>
+                                    <td width="54%" data-title="Name">
+                                        <a class="btn pl-0" data-toggle="collapse" data-target="#electronics">
+                                            <i class="bi bi-caret-down-fill"></i>
+                                        </a>
+                                        <a href="#">
+                                            Electronics
+                                        </a>
+                                    </td >
+                                    <td width="12%">
+                                        <span class="badge badge-primary">0</span>
+                                    </td>
+                                    <td width="5%" class="hidden-mobile">
+                                        <div class="dropdown dropleft hidden-action">
+                                            <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                               id="dropdownMenuLink1"
+                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="bi bi-gear-fill"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                 aria-labelledby="dropdownMenuLink1">
+                                                <a class="dropdown-item" href="#">View</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Copy</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                        <div class="dropdown dropleft">
+                                            <a class="" href="#" role="button" id="dropdownMenuLink"
+                                               data-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">
+                                                Active
+                                            </a>
+
+                                            <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                 aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Active</a>
+                                                <a class="dropdown-item" href="#">Disabled</a>
+                                                <a class="dropdown-item" href="#">Hidden</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="collapse" id="electronics">
+                                <div class="table-data-item">
+                                    <table class="table  table-hover-show-action mb-0">
+                                        <tbody>
+                                        <tr>
+                                            <td width="5%">
+                                                <div class="checkbox main">
+                                                    <input type="checkbox" name="name">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </td>
+                                            <td width="8%" class="hidden-mobile">
+                                                <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                            </td>
+                                            <td width="54%" data-title="Name">
+                                                <a class="btn pl-3" data-toggle="collapse" data-target="#electronics_1">
+                                                    <i class="bi bi-caret-down-fill"></i>
+                                                </a>
+                                                <a href="#">
+                                                    Electronics 1
+                                                </a>
+                                            </td >
+                                            <td width="12%">
+                                                <span class="badge badge-primary">0</span>
+                                            </td>
+                                            <td width="5%" class="hidden-mobile">
+                                                <div class="dropdown dropleft hidden-action">
+                                                    <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                                       id="dropdownMenuLink1"
+                                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bi bi-gear-fill"></i>
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                         aria-labelledby="dropdownMenuLink1">
+                                                        <a class="dropdown-item" href="#">View</a>
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Copy</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                                <div class="dropdown dropleft">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                       data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                                                        Active
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                         aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Active</a>
+                                                        <a class="dropdown-item" href="#">Disabled</a>
+                                                        <a class="dropdown-item" href="#">Hidden</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="collapse" id="electronics_1">
+                                        <table class="table  table-hover-show-action mb-0">
+                                            <tbody>
+                                            <tr>
+                                                <td width="5%">
+                                                    <div class="checkbox main">
+                                                        <input type="checkbox" name="name">
+                                                        <span class="checkmark"></span>
+                                                    </div>
+                                                </td>
+                                                <td width="8%" class="hidden-mobile">
+                                                    <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                                </td>
+                                                <td width="54%" data-title="Name">
+                                                    <a class="btn pl-4" data-toggle="collapse" data-target="#electronics_end">
+
+                                                    </a>
+                                                    <a href="#">
+                                                        Electronics end
+                                                    </a>
+                                                </td >
+                                                <td width="12%">
+                                                    <span class="badge badge-primary">0</span>
+                                                </td>
+                                                <td width="5%" class="hidden-mobile">
+                                                    <div class="dropdown dropleft hidden-action">
+                                                        <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                                           id="dropdownMenuLink1"
+                                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="bi bi-gear-fill"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                             aria-labelledby="dropdownMenuLink1">
+                                                            <a class="dropdown-item" href="#">View</a>
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Copy</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                                    <div class="dropdown dropleft">
+                                                        <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                           data-toggle="dropdown"
+                                                           aria-haspopup="true" aria-expanded="false">
+                                                            Active
+                                                        </a>
+
+                                                        <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                             aria-labelledby="dropdownMenuLink">
+                                                            <a class="dropdown-item" href="#">Active</a>
+                                                            <a class="dropdown-item" href="#">Disabled</a>
+                                                            <a class="dropdown-item" href="#">Hidden</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="table-data-item">
+
+                            <table class="table  table-hover-show-action mb-0">
+
+                                <tbody>
+                                <tr>
+                                    <td width="5%">
+                                        <div class="checkbox main">
+                                            <input type="checkbox" name="name" checked>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </td>
+                                    <td width="8%" class="hidden-mobile">
+                                        <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                    </td>
+                                    <td width="54%" data-title="Name">
+                                        <a class="btn pl-0" data-toggle="collapse" data-target="#categories2">
+                                            <i class="bi bi-caret-down-fill"></i>
+                                        </a>
+                                        <a href="#">
+                                            categories2
+                                        </a>
+                                    </td >
+                                    <td width="12%">
+                                        <span class="badge badge-primary">0</span>
+                                    </td>
+                                    <td width="5%" class="hidden-mobile">
+                                        <div class="dropdown dropleft hidden-action">
+                                            <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                               id="dropdownMenuLink1"
+                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="bi bi-gear-fill"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                 aria-labelledby="dropdownMenuLink1">
+                                                <a class="dropdown-item" href="#">View</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Copy</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                        <div class="dropdown dropleft">
+                                            <a class="" href="#" role="button" id="dropdownMenuLink"
+                                               data-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">
+                                                Active
+                                            </a>
+
+                                            <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                 aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Active</a>
+                                                <a class="dropdown-item" href="#">Disabled</a>
+                                                <a class="dropdown-item" href="#">Hidden</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="collapse" id="categories2">
+                                <div class="table-data-item">
+                                    <table class="table  table-hover-show-action mb-0">
+                                        <tbody>
+                                        <tr>
+                                            <td width="5%">
+                                                <div class="checkbox main">
+                                                    <input type="checkbox" name="name">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </td>
+                                            <td width="8%" class="hidden-mobile">
+                                                <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                            </td>
+                                            <td width="54%" data-title="Name">
+                                                <a class="btn pl-3" data-toggle="collapse" data-target="#categories2_sub">
+                                                    <i class="bi bi-caret-down-fill"></i>
+                                                </a>
+                                                <a href="#">
+                                                    categories2_sub
+                                                </a>
+                                            </td >
+                                            <td width="12%">
+                                                <span class="badge badge-primary">0</span>
+                                            </td>
+                                            <td width="5%" class="hidden-mobile">
+                                                <div class="dropdown dropleft hidden-action">
+                                                    <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                                       id="dropdownMenuLink1"
+                                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bi bi-gear-fill"></i>
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                         aria-labelledby="dropdownMenuLink1">
+                                                        <a class="dropdown-item" href="#">View</a>
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Copy</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                                <div class="dropdown dropleft">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                       data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                                                        Active
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                         aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Active</a>
+                                                        <a class="dropdown-item" href="#">Disabled</a>
+                                                        <a class="dropdown-item" href="#">Hidden</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="collapse" id="categories2_sub">
+                                        <table class="table  table-hover-show-action mb-0">
+                                            <tbody>
+                                            <tr>
+                                                <td width="5%">
+                                                    <div class="checkbox main">
+                                                        <input type="checkbox" name="name">
+                                                        <span class="checkmark"></span>
+                                                    </div>
+                                                </td>
+                                                <td width="8%" class="hidden-mobile">
+                                                    <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                                </td>
+                                                <td width="54%" data-title="Name">
+                                                    <a class="btn pl-4">
+
+                                                    </a>
+                                                    <a href="#">
+                                                        categories2_end
+                                                    </a>
+                                                </td >
+                                                <td width="12%">
+                                                    <span class="badge badge-primary">0</span>
+                                                </td>
+                                                <td width="5%" class="hidden-mobile">
+                                                    <div class="dropdown dropleft hidden-action">
+                                                        <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                                           id="dropdownMenuLink1"
+                                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="bi bi-gear-fill"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                             aria-labelledby="dropdownMenuLink1">
+                                                            <a class="dropdown-item" href="#">View</a>
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Copy</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                                    <div class="dropdown dropleft">
+                                                        <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                           data-toggle="dropdown"
+                                                           aria-haspopup="true" aria-expanded="false">
+                                                            Active
+                                                        </a>
+
+                                                        <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                             aria-labelledby="dropdownMenuLink">
+                                                            <a class="dropdown-item" href="#">Active</a>
+                                                            <a class="dropdown-item" href="#">Disabled</a>
+                                                            <a class="dropdown-item" href="#">Hidden</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="table-data-item">
+
+                            <table class="table  table-hover-show-action mb-0">
+
+                                <tbody>
+                                <tr>
+                                    <td width="5%">
+                                        <div class="checkbox main">
+                                            <input type="checkbox" name="name" checked>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </td>
+                                    <td width="8%" class="hidden-mobile">
+                                        <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                    </td>
+                                    <td width="54%" data-title="Name">
+                                        <a class="btn pl-0" data-toggle="collapse" data-target="#categories3">
+                                            <i class="bi bi-caret-down-fill"></i>
+                                        </a>
+                                        <a href="#">
+                                            categories3
+                                        </a>
+                                    </td >
+                                    <td width="12%">
+                                        <span class="badge badge-primary">0</span>
+                                    </td>
+                                    <td width="5%" class="hidden-mobile">
+                                        <div class="dropdown dropleft hidden-action">
+                                            <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                               id="dropdownMenuLink1"
+                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="bi bi-gear-fill"></i>
+                                            </a>
+
+                                            <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                 aria-labelledby="dropdownMenuLink1">
+                                                <a class="dropdown-item" href="#">View</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Copy</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                        <div class="dropdown dropleft">
+                                            <a class="" href="#" role="button" id="dropdownMenuLink"
+                                               data-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">
+                                                Active
+                                            </a>
+
+                                            <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                 aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Active</a>
+                                                <a class="dropdown-item" href="#">Disabled</a>
+                                                <a class="dropdown-item" href="#">Hidden</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="collapse" id="categories3">
+                                <div class="table-data-item">
+                                    <table class="table  table-hover-show-action mb-0">
+                                        <tbody>
+                                        <tr>
+                                            <td width="5%">
+                                                <div class="checkbox main">
+                                                    <input type="checkbox" name="name">
+                                                    <span class="checkmark"></span>
+                                                </div>
+                                            </td>
+                                            <td width="8%" class="hidden-mobile">
+                                                <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                            </td>
+                                            <td width="54%" data-title="Name">
+                                                <a class="btn pl-3" data-toggle="collapse" data-target="#categories3_sub">
+                                                    <i class="bi bi-caret-down-fill"></i>
+                                                </a>
+                                                <a href="#">
+                                                    categories3_sub
+                                                </a>
+                                            </td >
+                                            <td width="12%">
+                                                <span class="badge badge-primary">0</span>
+                                            </td>
+                                            <td width="5%" class="hidden-mobile">
+                                                <div class="dropdown dropleft hidden-action">
+                                                    <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                                       id="dropdownMenuLink1"
+                                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bi bi-gear-fill"></i>
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                         aria-labelledby="dropdownMenuLink1">
+                                                        <a class="dropdown-item" href="#">View</a>
+                                                        <a class="dropdown-item" href="#">Edit</a>
+                                                        <a class="dropdown-item" href="#">Copy</a>
+                                                        <a class="dropdown-item" href="#">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                                <div class="dropdown dropleft">
+                                                    <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                       data-toggle="dropdown"
+                                                       aria-haspopup="true" aria-expanded="false">
+                                                        Active
+                                                    </a>
+
+                                                    <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                         aria-labelledby="dropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Active</a>
+                                                        <a class="dropdown-item" href="#">Disabled</a>
+                                                        <a class="dropdown-item" href="#">Hidden</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="collapse" id="categories3_sub">
+                                        <table class="table  table-hover-show-action mb-0">
+                                            <tbody>
+                                            <tr>
+                                                <td width="5%">
+                                                    <div class="checkbox main">
+                                                        <input type="checkbox" name="name">
+                                                        <span class="checkmark"></span>
+                                                    </div>
+                                                </td>
+                                                <td width="8%" class="hidden-mobile">
+                                                    <input style="width: 50px;" type="text" class="form-control input-static-view" value="10">
+                                                </td>
+                                                <td width="54%" data-title="Name">
+                                                    <a class="btn pl-4">
+
+                                                    </a>
+                                                    <a href="#">
+                                                        categories3_end
+                                                    </a>
+                                                </td >
+                                                <td width="12%">
+                                                    <span class="badge badge-primary">0</span>
+                                                </td>
+                                                <td width="5%" class="hidden-mobile">
+                                                    <div class="dropdown dropleft hidden-action">
+                                                        <a class="btn label-default dropdown-toggle" href="#" role="button"
+                                                           id="dropdownMenuLink1"
+                                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="bi bi-gear-fill"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                             aria-labelledby="dropdownMenuLink1">
+                                                            <a class="dropdown-item" href="#">View</a>
+                                                            <a class="dropdown-item" href="#">Edit</a>
+                                                            <a class="dropdown-item" href="#">Copy</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <td style="width: 10%; text-align: right" class="hidden-mobile">
+                                                    <div class="dropdown dropleft">
+                                                        <a class="" href="#" role="button" id="dropdownMenuLink"
+                                                           data-toggle="dropdown"
+                                                           aria-haspopup="true" aria-expanded="false">
+                                                            Active
+                                                        </a>
+
+                                                        <div class="dropdown-menu custom-dropdown dropdown-hover"
+                                                             aria-labelledby="dropdownMenuLink">
+                                                            <a class="dropdown-item" href="#">Active</a>
+                                                            <a class="dropdown-item" href="#">Disabled</a>
+                                                            <a class="dropdown-item" href="#">Hidden</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <button type="button" class="btn btn-primary">Add Categories</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+    $('#popup').modal('show');
+    $(".select2-option").select2({
+        placeholder: "",
+    });
+
+    $(".select2-categories").select2({
+        multiple: true,
+    });
+    window.onload = function () {
+        var oFCKeditor2 = new FCKeditor('editor');
+        oFCKeditor2.Height = '400';
+        oFCKeditor2.Width = '700';
+        oFCKeditor2.ToolbarSet = "Default";
+        oFCKeditor2.Basepath = './fckeditor/';
+        oFCKeditor2.ReplaceTextarea();
+    }
+</script>
+</html>

@@ -1,0 +1,96 @@
+.banner {
+	height: 240px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.banner-630 {
+	height: 630px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media-breakpoint-down(md) {
+		height: 600px;
+	}
+}
+
+.banner-wrapper {
+	height: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0.09) 100%);
+}
+
+.banner-aboutus{
+	padding:100px 0;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.banner-aboutus-content{
+		max-width: 900px;
+	}
+}
+
+#banner-slider {
+	.absolute-center {
+		width: 100%;
+		padding: 15px 0px;
+	}
+}
+
+.project-assets-slider {
+	.carousel-indicators {
+		margin: 0;
+		bottom: -30px;
+	}
+	@media screen and (min-width: 1400px) {
+		.carousel-control-prev {
+			padding-left: 0px !important;
+			left: -116px;
+		}
+		.carousel-control-next {
+			padding-right: 0px !important;
+			right: -116px;
+		}
+	}
+	@media screen and (min-width: 1271px) and (max-width: 1399px) {
+		.carousel-control-prev {
+			padding-left: 0px !important;
+			left: -45px;
+		}
+		.carousel-control-next {
+			padding-right: 0px !important;
+			right: -45px;
+		}
+	}
+	@media screen and (min-width: 992px) and (max-width: 1270px) {
+		.carousel-control-prev {
+			padding-left: 0px !important;
+			left: 15px;
+		}
+		.carousel-control-next {
+			padding-right: 0px !important;
+			right: 15px;
+		}
+	}
+	@media screen and (max-width: 991px){
+		.carousel-control-prev {
+			display: none;
+		}
+		.carousel-control-next {
+			display: none;
+		}
+	}
+}
+
+
+#thu-vien {
+	.bx-viewport {
+		height: 314px !important;
+	}
+}
+
+.carousel-search {
+	.absolute-center {
+		@include media-breakpoint-down (md) {
+			top: 25%;
+		}
+	}
+}

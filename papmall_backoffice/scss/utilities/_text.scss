@@ -1,0 +1,26 @@
+.text-price {
+  font-size: 18px;
+  color: $success!important;
+  font-weight: bold;
+}
+
+.text-medium-bold {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-gray {
+  color: #999;
+}
+
+
+.text-main{
+  color: $primary-color !important;
+  &:hover{
+    color: darken($primary-color,20%) !important;
+  }
+}
+
+.text-muted {
+  color: #999!important;
+}

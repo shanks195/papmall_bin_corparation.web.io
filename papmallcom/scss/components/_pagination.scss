@@ -1,0 +1,94 @@
+.paginations {
+    button {
+        padding: 0;
+        border: none;
+        background: none;
+    }
+    li {
+        margin-right: 16px;
+        a,
+        button {
+            font-size: 16px;
+            box-sizing: border-box;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            background-color: $gray-1;
+            color: $dark-gray;
+            img.active {
+                display: none;
+            }
+            &:hover {
+                border: 2px solid $secondary-color;
+                color: $secondary-color;
+            }
+        }
+        &.active {
+            a,
+            button {
+                color: $white;
+                border: none;
+                background-color: $secondary-color;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &.white {
+        li {
+            a,
+            button {
+                background-color: white;
+            }
+            &.active {
+                a,
+                button {
+                    color: $white;
+                    border: none;
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.bg-xs-gray-1 {
+    @include media-breakpoint-down(md) {
+        .paginations li {
+            a,
+            button {
+                background-color: $white;
+            }
+            &.active {
+                a,
+                button {
+                    color: $white;
+                    border: none;
+                    background-color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+.bg-gray-1 {
+    .paginations li {
+        a,
+        button {
+            background-color: $white;
+        }
+        &.active {
+            a,
+            button {
+                color: $white;
+                border: none;
+                background-color: $secondary-color;
+            }
+        }
+    }
+}

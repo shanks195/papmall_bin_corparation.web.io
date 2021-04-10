@@ -1,0 +1,74 @@
+.btn{
+  font-size:13px;
+  min-height:35px;
+}
+.btn-search{
+  border:1px solid #ced4da;
+  &:hover{
+    background: #f5f6f7;
+  }
+}
+
+.mobile-menu-toggle{
+  .bi{
+    font-size:16px;
+    line-height: 1;
+  }
+}
+
+.btn-dropdown-default {
+  border: 1px solid $border;
+  background-color: #fff;
+}
+
+
+@mixin colorButtonIcon($color) {
+  background-color: $color;
+  color: white;
+}
+
+.btn-icon {
+  width: 41px;
+  height: $sizeInput;
+  display: inline-flex;
+  align-items: end;
+  justify-content: center;
+  border: 1px solid $border;
+  &.main {
+    @include colorButtonIcon($primary-color);
+  }
+}
+
+.group-action-btn {
+  @include media-breakpoint-down(md) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    >.btn-group {
+      display: flex;
+      flex: 1;
+      position: static;
+    }
+    .custom-dropdown {
+      width: 100%;
+    }
+  }
+}
+
+.btn-reset {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.btn-outline-default {
+  color: $primary-text;
+  &.same-primary {
+    &:hover {
+      color: white;
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}

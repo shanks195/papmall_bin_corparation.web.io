@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add-on Deals</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="js/select2/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/app.css?v=1" />
+</head>
+
+<body>
+    <header class="header d-none d-lg-block" id="import_header">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-hd-wrapper">
+                    <div class="top-hd-left">
+                        <ul class="top-hd-nav">
+                            <li class="ml-0">
+                                <a href="#" target="_self" title="Seller Center">Seller Center</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_self" title="Contact Us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-hd-right">
+                        <ul class="login-btn-group top-hd-nav">
+                            <li>
+                                <a class="btn-login" href="#" target="_self" title="Sign Up">Sign Up</a>
+                            </li>
+                            <li>
+                                <a class="btn-login" href="#" target="_self" title="Login">Login</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" id="user-toggle" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./images/sx.svg" data-src="./images/avatar-placeholder.png" class="lazyload mr-5" alt="Username" title="Username" />
+                                <span class="text-medium">Username</span>
+                            </a>
+                            <div class="dropdown-box dropdown-menu dropdown-user shadow-1" aria-labelledby="user-toggle">
+                                <ul class="list-style-1">
+                                    <li>
+                                        <a href="#" target="_self" title="My Account">
+                                            <img src="./images/icon-user.svg" title="My Account" alt="My Account" class="mr-10" />
+                                            <img src="./images/icon-user-secondary.svg" title="My Account" alt="My Account" class="active mr-10" />My Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_self" title="My Purchase">
+                                            <img src="./images/icon-purchase.svg" title="My Purchase" alt="My Purchase" class="mr-10" />
+                                            <img src="./images/icon-purchase-secondary.svg" title="My Purchase" alt="My Purchase" class="active mr-10" />My Purchase
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_self" title="Logout">
+                                            <img src="./images/icon-logout.svg" title="Logout" alt="Logout" class="mr-10" />
+                                            <img src="./images/icon-logout-secondary.svg" title="Logout" alt="Logout" class="active mr-10" />Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 d-flex justify-content-between">
+                        <a href="#" target="_self" title="Logo">
+                            <img src="./images/sx.svg" data-src="./images/logo.svg" alt="Logo" title="Logo" class="d-none d-lg-block lazyload" />
+                            <img src="./images/sx.svg" data-src="./images/logo-mobile.svg" alt="Logo" title="Logo" class="d-block d-lg-none lazyload" />
+                        </a>
+                        <div class="d-flex d-lg-none">
+                            <a href="javascript:void(0)" target="_self" title="Search" class="position-relative mr-15 search-toggle">
+                            </a>
+                            <a href="#" target="_self" title="Cart" class="position-relative d-inline-block mr-20">
+                                <img src="./images/sx.svg" data-src="./images/icon-cart.svg" alt="Cart" title="Cart" class="lazyload" />
+                                <span class="cart-amount">99+</span>
+                            </a>
+                            <a href="#" target="_self" title="Chat">
+                                <img src="./images/sx.svg" data-src="./images/icon-chat.svg" alt="Chat" title="Chat" class="lazyload" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 mt-xs-15 search-toggle-landing">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <div class="hd-search-box">
+                                    <form class="d-flex">
+                                        <div class="form-group flex-grow-1">
+                                            <input type="text" class="form-control search-text border-0" placeholder="What are you looking for?" />
+                                        </div>
+                                        <div class="form-group w-220 hidden-xs">
+                                            <div class="position-relative">
+                                                <select class="selectCategory">
+                                                    <option></option>
+                                                    <option value="Loại 1">Loại 1</option>
+                                                    <option value="Loại 2">Loại 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#" target="_self" title="Search" class="btn btn-primary btn-smaller text-16 d-xs-flex">
+                                                <img src="./images/sx.svg" data-src="./images/icon-search-white.svg" alt="Search" title="Search" class="mr-5 lazyload" />
+                                                <span class="hidden-xs">Search</span>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-3 hidden-xs">
+                                <div class="cart-hd-wrapper">
+                                    <a href="#" target="_self" title="Shoping Cart" class="btn btn-outline-secondary btn-icon text-nowrap">
+                                        <img src="./images/icon-cart-secondary.svg" alt="Shoping Cart" title="Shoping Cart" class="mr-10" />
+                                        <img src="./images/icon-cart-white.svg" alt="Shoping Cart" title="Shoping Cart" class="mr-10 active" />
+                                        Shoping Cart
+                                        <span class="cart-amount">99+</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20 hidden-xs">
+                    <div class="col-12 col-lg-3 mb-xs-15">
+                        <div class="sidebar-toggle-wrapper is_sidebar_homepage">
+                            <h3 class="text-main text-18 title-icon mb-0 pb-10 sidebar-toggle">
+                                <a href="#" target="_self" title="PRODUCT CATEGORY" class="text-link btn-icon no-transition">
+                                    <img src="./images/icon-menu-main.svg" alt="PRODUCT CATEGORY" title="PRODUCT CATEGORY" class="mr-10" />
+                                    <img src="./images/icon-menu-secondary.svg" alt="PRODUCT CATEGORY" title="PRODUCT CATEGORY" class="active mr-10" />
+                                    PRODUCT CATEGORY
+                                </a>
+                            </h3>
+                            <div class="sidebar-toggle-dropdown">
+                                <div id="import_sidebar" class="category-sidebar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <span><strong>Popular keywords:</strong></span>
+                                <a href="#" class="keyword-tag" target="_self" title="Watch">Watch</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Shoes">Shoes</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Kids Mask">Kids Mask</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Dress">Dress</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Skincare">Skincare</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Smartphone">Smartphone</a>
+                            </div>
+                            <div class="col-3">
+                                <div class="notification-wrapper dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Notification" class="active mr-10 dropdown-toggle d-inline-block" id="notification-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="noti-bell">
+                                            <img src="./images/sx.svg" data-src="./images/icon-bell.svg" alt="Notification" title="Notification" class="lazyload" />
+                                        </span>
+                                        Notification
+                                    </a>
+                                    <div class="dropdown-box dropdown-menu dropdown-notification shadow-1" aria-labelledby="notification-toggle">
+                                        <p class="notification-title"><strong>Recently Received Notifications</strong></p>
+                                        <hr class="m-0" />
+                                        <ul class="list-notification">
+                                            <li>
+                                                <a href="#" title="CNY Fashion Sale" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-1.jpg" alt="CNY Fashion Sale" title="CNY Fashion Sale" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">CNY Fashion Sale</p>
+                                                        <p class="noti-text">Looking for CNY outfit ideas? 👚 Shop deals under $8.88, up to 80% OFF Under Armour, adidas & more + Extra 18% Cashback voucher inside 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Welcome to Papmall !" target="_self" class="notification-item noti-seen">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-2.jpg" alt="Welcome to Papmall !" title="Welcome to Papmall !" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">Welcome to Papmall !</p>
+                                                        <p class="noti-text">Hi John Solomon, here's a $5 OFF sitewide voucher for your first purchase 🎉 Shop now 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="CNY Fashion Sale" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-1.jpg" alt="CNY Fashion Sale" title="CNY Fashion Sale" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">CNY Fashion Sale</p>
+                                                        <p class="noti-text">Looking for CNY outfit ideas? 👚 Shop deals under $8.88, up to 80% OFF Under Armour, adidas & more + Extra 18% Cashback voucher inside 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Welcome to Papmall !" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-2.jpg" alt="Welcome to Papmall !" title="Welcome to Papmall !" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">Welcome to Papmall !</p>
+                                                        <p class="noti-text">Hi John Solomon, here's a $5 OFF sitewide voucher for your first purchase 🎉 Shop now 👉</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="text-center m-0">
+                                            <a class="btn-raw-secondary btn-block py-10" href="#" target="_self" title="View all">
+                                                View all <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary.svg" alt="View all" title="View all" class="lazyload" />
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" target="_self" title="Help" class="d-inline-block">
+                                    <img src="./images/sx.svg" data-src="./images/icon-help.svg" alt="Help" title="Help" class="lazyload" />
+                                    Help
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="main-header bg-primary d-flex pb-15 d-lg-none justify-content-between position-fixed w-100 z-index-10000 header-search">
+        <a href="#" title="Back" target="_self">
+            <img src="./images/sx.svg" data-src="./images/icon-arrow-left-white-smaller.svg" alt="GET FREE GIFT(S) WITH MIN. SPEND" title="GET FREE GIFT(S) WITH MIN. SPEND" class="lazyload ml-15">
+        </a> 
+            <span class="text-18 text-white ml-10 text-uppercase">ADD-ON DEALS</span>
+            <a href="#" title="Edit" target="_self" class="text-16 mr-10">
+                Edit
+            </a>
+    </header>
+    <main>
+        <div class="container pb-lg-40 pb-0 pr-0 pl-lg-15 pl-0 pr-lg-15">
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#" title="Home" target="_self">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#" title="Shopping Cart" target="_self">Shopping Cart</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a href="#" title="Add-on Deals" target="_self">Add-on Deals</a>
+                    </li>
+                </ol>
+            </nav>
+            <h1 class="title-main backgr-gray hidden-xs pt-30 mb-20">
+                Add-on Deals
+            </h1>
+            <table class="table table-borderless table-cart mb-0">
+                <thead class="hidden-xs">
+                    <tr>
+                        <th width="50%">
+                            <div class="checkbox">
+                                <label for="checkbox-4">
+                                        <input id="checkbox-4" type="checkbox" />
+                                        <span class="checkmark rounded mb-0"></span>
+                                        All Product
+                                    </label>
+                            </div>
+                        </th>
+                        <th></th>
+                        <th></th>
+                        <th class="text-right">Unit Price</th>
+                        <th class="text-center">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody class="mg-row">
+                    <tr>
+                        <td class="d-flex align-items-lg-center ">
+                            <div class="checkbox-disabled">
+                                <label>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark-disabled rounded mb-0"></span>
+                                    </label>
+                            </div>
+                            <div class="icon-80-round d-inline-block ml-10 mr-15 bd-basic rounded flex-shrink-0">
+                                <a href="#" title="image-product" target="_self">
+                                    <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
+                                </a>
+                            </div>
+                            <div class="d-xs-flex flex-xs-column justify-content-between">
+                                <a href="#" title="image-product" target="_self" class="hover-secondary"><h3 class="text-16">Lorem Ipsum is simply dummy text of the printing</h3></a>
+                                <div class="d-lg-none">
+                                    <span><strong>$3,400</strong></span>
+                                    <span class="text-gray-1 m-0 text-line-through d-lg-none">$3,579</span>
+                                </div>
+                            </div>
+                            <div class="mx-50 dropdown hidden-xs">
+                                <a href="#" class="btn btn-outline-gray btn-tiny text-gray-1 text-nowrap pl-10 variations-wrapper" target="_self" title="Variations" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Variations
+                                    </a>
+                                <div class="dropdown-box dropdown-menu shadow-1 pt-50 pb-15" aria-labelledby="user-toggle">
+                                    <h3 class="text-18 pl-15">Product type:</h3>
+                                    <div class="variation-tag-group-store d-flex align-items-center px-15">
+                                        <input id="silver-drop-1" target="_self" title="Silver" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                        <label for="silver-drop-1" class="variation-tag mr-10 mb-10">Silver</label>
+                                        <input id="graphite-drop-1" target="_self" title="graphite" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                        <label class="variation-tag mr-10 mb-10" for="graphite-drop-1">Graphite</label>
+                                        <input id="gold-drop-1" target="_self" title="gold" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                        <label for="gold-drop-1" class="variation-tag mr-10 mb-10">Gold</label>
+                                        <input id="pacificblue-drop-1" target="_self" title="pacificblue" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                        <label for="pacificblue-drop-1" class="variation-tag mr-10 mb-10">Pacific Blue</label>
+                                    </div>
+                                    <hr class="mt-30" />
+                                    <h3 class="text-18 pl-15">Storage:</h3>
+                                    <div class="variation-tag-group-store d-flex align-items-center px-15">
+                                        <input id="64gb-drop-1" target="_self" title="64gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                        <label for="64gb-drop-1" class="variation-tag mr-10 mb-10">64 GB</label>
+                                        <input id="128gb-drop-1" target="_self" title="128gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                        <label class="variation-tag mr-10 mb-10" for="128gb-drop-1">128 GB</label>
+                                        <input id="256gb-drop-1" target="_self" title="256gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                        <label for="256gb-drop-1" class="variation-tag mr-10 mb-10">256 GB</label>
+                                        <input id="512gb-drop-1" target="_self" title="512gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                        <label for="512gb-drop-1" class="variation-tag mr-10 mb-10">512 GB</label>
+                                    </div>
+                                    <hr class="mt-30" />
+                                    <div class="text-center">
+                                        <a href="javascript:void(0)" target="_self" title="Cancel" class="btn btn-gray mw-200 mr-10" data-toggle="dropdown">Cancel</a>
+                                        <a href="#" target="_self" title="Confirm" class="btn btn-secondary mw-200">Confirm</a>
+                                    </div>
+                                </div>
+                                <p class="text-nowrap mt-10">Silver, 48 inch</p>
+                            </div>
+                        </td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs text-right">
+                            <p class="m-0"><strong>$3,400</strong></p>
+                            <p class="text-gray-1 m-0 text-line-through">$3,579</p>
+                        </td>
+                        <td class="d-block d-lg-table-cell pl-150 pl-lg-0 rounded-xs-0">
+                            <div class="d-lg-none">
+                                <a href="#" class="btn btn-outline-gray btn-tiny text-gray-1 text-nowrap pl-10 variations-wrapper" target="_self" title="Variations" data-toggle="modal" data-target="#Variation">
+                                        Variations
+                                </a>
+                                <p class="text-nowrap mt-10 text-14 text-lg-16">Silver, 48 inch</p>
+                            </div>
+                                <div class="input-number-wrapper d-flex justify-content-lg-center">
+                                    <div class="sub"></div>
+                                    <input type="number" value="1" class="form-control" />
+                                    <div class="plus"></div>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="mg-row">
+                    <tr>
+                        <td colspan="5" class="rounded-xs-0">
+                           <h2 class="text-18 text-medium mb-0">Add on more items to enjoy add-on savings</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex align-items-lg-center">
+                            <div class="checkbox">
+                                <label>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark rounded mb-0"></span>
+                                    </label>
+                            </div>
+                            <div class="icon-80-round d-inline-block ml-10 mr-15 bd-basic rounded flex-shrink-0">
+                                <a href="#" title="image-product" target="_self">
+                                    <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
+                                </a>
+                            </div>
+                            <div class="d-xs-flex flex-xs-column justify-content-between">
+                                <a href="#" title="image-product" target="_self" class="hover-secondary"><h3 class="text-16">Lorem Ipsum is simply dummy text of the printing</h3></a>
+                                <div class="d-lg-none">
+                                    <span class="old-price text-16 text-red"><strong>$0.00</strong></span>
+                                    <span class="text-gray-1 m-0 text-line-through text-16">$29.00</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs"></td>
+                        <td class="hidden-xs text-right">
+                            <div class="d-flex flex-column">
+                                <span class="old-price text-16 text-red"><strong>$0.00</strong></span>
+                                <span class="text-gray-1 m-0 text-line-through text-16">$29.00</span>
+                            </div>
+                        </td>
+                        <td class="d-block d-lg-table-cell pl-150 pl-lg-0 rounded-xs-0">
+                                <div class="input-number-wrapper d-flex justify-content-lg-center disabled">
+                                    <div class="sub"></div>
+                                    <input type="number" value="1" class="form-control" disabled/>
+                                    <div class="plus"></div>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="d-flex align-items-lg-center" colspan="2">
+                            <div class="checkbox">
+                                <label>
+                                        <input type="checkbox"/>
+                                        <span class="checkmark disabled rounded mb-0"></span>
+                                    </label>
+                            </div>
+                            <div class="icon-80-round d-inline-block ml-10 mr-15 bd-basic rounded flex-shrink-0">
+                                <a href="#" title="image-product" target="_self">
+                                    <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
+                                </a>
+                            </div>
+                            <div class="d-xs-flex flex-xs-column justify-content-between">
+                                <a href="#" title="image-product" target="_self" class="hover-secondary"><h3 class="text-16">Lorem Ipsum is simply dummy text of the printing</h3></a>
+                                <div class="d-lg-none">
+                                    <span class="old-price text-16 text-red"><strong>$0.00</strong></span>
+                                    <span class="text-gray-1 m-0 text-line-through text-16">$29.00</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-right hidden-xs">
+                        </td>
+                        <td class="hidden-xs text-right" colspan="2">
+                            <div class="d-flex flex-column">
+                                <span class="old-price text-16 text-red"><strong>$0.00</strong></span>
+                                <span class="text-gray-1 m-0 text-line-through text-16">$29.00</span>
+                            </div>
+                        </td>
+                        <td class="d-block d-lg-table-cell pl-150 pl-lg-0 rounded-xs-0">
+                                <div class="input-number-wrapper d-flex justify-content-lg-center disabled">
+                                    <div class="sub"></div>
+                                    <input type="number" value="1" class="form-control" disabled />
+                                    <div class="plus"></div>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="mg-row viewgilf bg-xs-white z-index-10000 border-top">
+                    <tr class="d-xs-flex justify-content-between align-items-center">
+                        <td colspan="2">
+                            <div class="d-flex align-items-center">
+                                <p class="text-medium mb-0">Select 1/2</p>
+                            </div>
+                        </td>
+                        <td class="text-right text-xs-left" colspan="3">
+                            <button type="submit" value="ok" class="btn btn-block btn-secondary mw-xs-90 max-w-lg-200">OK</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main> 
+    <div id="import_user-control" class="user-control-box shadow"></div>
+    <div class="modal fade border-6 pr-0 z-index-10000" id="Variation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg align-items-end align-items-lg-center m-0 max-w-xs-none  h-xs-100" role="document">
+          <div class="modal-content rounded-xs-0 border-0 max-h-700">
+            <div class="modal-header border-0 pt-15 pt-lg-30">
+              <h3 class="modal-title" id="exampleModalLongTitle">Select variation</h3>
+              <button type="button" class="close d-lg-none" data-dismiss="modal" aria-label="Close">
+                <img src="./images/sx.svg" data-src="./images/icon-close-smaller.svg" alt="Close" title="Close" class="lazyload" />
+              </button>
+            </div>
+            <div class="modal-body p-0">
+                <div>
+                    <ul class="list-unstyled list-voucher m-0">
+                        <li class="list-voucher-item border-0 my-10 align-items-lg-stretch pl-10">
+                            <div>
+                               
+                            </div>
+                            <div class="flex-shrink-0">
+                                <a href="#" title="" target="_self">
+                                    <img
+                                    src="./images/sx.svg"
+                                    data-src="./images/iphone-12-pro-max-lager-1.jpg"
+                                    alt="iphone color"
+                                    title="iphone color"
+                                    class="lazyload h-80 box-hover"
+                                />
+                                </a>
+                            </div>
+
+                            <div class="ml-15 mb-0">
+                                <div>
+                                    <span class="old-price text-16"><strong>$3400</strong></span>
+                                    <span class="text-gray-1 m-0 text-line-through text-16">$3757</span>
+                                </div>
+                                <p class="text-16"><strong>Stock: 150</strong></p>
+                            </div>
+                            
+                        </li>
+                        <hr>
+                        <li class="list-voucher-item border-0 my-10 flex-column align-items-baseline pl-10">
+                            <p>Product type:</p>
+                            <div class="variation-tag-group-store">
+                                <input id="silver-modal-buynow" target="_self" title="Silver" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                <label for="silver-modal-buynow" class="variation-tag mr-10 mb-10">Silver</label>
+                                <input id="graphite-modal-buynow" target="_self" title="graphite" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                <label class="variation-tag mr-10 mb-10" for="graphite-modal-buynow">Graphite</label>
+                                <input id="gold-modal-buynow" target="_self" title="gold" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                <label for="gold-modal-buynow" class="variation-tag mr-10 mb-10">Gold</label>
+                                <input id="pacificblue-modal-buynow" target="_self" title="pacificblue" type="radio" name="radiocolorproduct" class="d-none"></input>
+                                <label for="pacificblue-modal-buynow" class="variation-tag mr-10 mb-10">Pacific Blue</label>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="list-voucher-item border-0 my-10 flex-column align-items-baseline pl-10">
+                            <p>Storage:</p>
+                            <div class="variation-tag-group-store">
+                                <input id="64gb-modal-buynow" target="_self" title="64gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                <label for="64gb-modal-buynow" class="variation-tag mr-10 mb-10">64 GB</label>
+                                <input id="128gb-modal-buynow" target="_self" title="128gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                <label class="variation-tag mr-10 mb-10" for="128gb-modal-buynow">128 GB</label>
+                                <input id="256gb-modal-buynow" target="_self" title="256gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                <label for="256gb-modal-buynow" class="variation-tag mr-10 mb-10">256 GB</label>
+                                <input id="512gb-modal-buynow" target="_self" title="512gb" type="radio" name="radioromproduct" class="d-none"></input>
+                                <label for="512gb-modal-buynow" class="variation-tag mr-10 mb-10">512 GB</label>
+                            </div>
+                        </li>
+                        <hr>
+                        <li class="list-voucher-item border-0 my-10 pl-10">
+                                
+                                <div class="w-100 d-flex align-items-center justify-content-between">
+                                    <p>Quantity:</p>
+                                    <div class="input-number-wrapper">
+                                        <div class="sub"></div>
+                                        <input type="number" value="1" class="form-control" />
+                                        <div class="plus"></div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    </ul>
+                    <div class="modal-footer d-flex p-16 justify-content-around px-10 py-20">
+                      <button type="button" class="btn btn-secondary w-100 text-16 m-0 h-40" data-dismiss="modal"><span class="text-14">Confirm</span></button>
+                      
+                    </div>
+                </div>
+                
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <div class="chat-tool-box d-none">
+        <div class="chat-tool-wrapper">
+            <a href="" target="" title="" class="text-accent text-18 text-medium">
+                <img src="./images/sx.svg" data-src="./images/icon-chat-secondary.svg" alt="Chat" title="Chat" class="lazyload mr-5" /> Chat
+            </a>
+            <span class="chat-tool-amount">1</span>
+        </div>
+    </div>
+    <footer class="footer " id="import_footer">
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.5.min.js"></script>
+    <script src="js/select2/select2.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/ls.bgset.min.js"></script>
+    <script src="js/style.js?v=1"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#import_sidebar").load("import/sidebar.html", function () {
+            $(".selectCategory").select2({
+                placeholder: "Product Category",
+            });
+            $("#import_footer").load("import/footer.html");
+            $("#import_user-control").load("import/user-control.html");
+        })
+    });
+    </script>
+</body>
+
+</html>

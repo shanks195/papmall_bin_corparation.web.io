@@ -1,0 +1,375 @@
+$btn-height: 48px;
+.btn {
+  background-color: $primary-color;
+  color: $white;
+  font-size: $font-size;
+  font-weight: 500;
+  height: $btn-height;
+  transition: $transition;
+  border-radius: $base-radius;
+  padding: 0 15px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &.thick{
+    border-width:2px;
+    &:hover, &:focus, &:active{
+      border-width:2px !important;
+    }
+  }
+}
+
+.btn-view-details {
+  background-color: #f1f1f1;
+  color: inherit;
+  height: 40px;
+  padding: 0 10px;
+  &:hover{
+      background-color: #F37721;
+      color: #FFF;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten(#CCC, 10%);
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  &:hover {
+    background-color: $accent;
+    color: white;
+  }
+}
+.btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  img.active {
+    display: none;
+  }
+  &:hover {
+    img:not(.active) {
+      display: none;
+    }
+    img.active {
+      display: inline-block;
+    }
+  }
+  &.active {
+    img:not(.active) {
+      display: none;
+    }
+    img.active {
+      display: inline-block;
+    }
+  }
+}
+
+.btn-raw-secondary {
+  color: $secondary-color;
+  font-weight: 500;
+  &:hover, &:focus, &:active {
+    @include backgroundFade($orange, 0.1);
+    color: $secondary-color;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  &:hover, &:focus, &:active {
+    background-color: $orange;
+  }
+}
+
+.btn-smaller {
+  height: $btn-height - 8px;
+  line-height: $btn-height - 8px;
+}
+
+.btn-tiny {
+  height: $btn-height - 16px;
+  line-height: $btn-height - 16px;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  &:hover, &:focus, &:active {
+    color: $white !important;
+    background-color: $secondary-color !important;
+    border: 2px solid $secondary-color!important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($secondary-color, 30%) !important;
+  }
+}
+
+.btn-outline-orange {
+  background-color: $white;
+  color: $orange;
+  border: 2px solid $orange;
+  &:hover, &:focus, &:active {
+    color: $white;
+    background-color: $orange;
+    border: 2px solid $orange;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($orange, 30%);
+  }
+}
+.btn-outline-primary {
+  background-color: transparent;
+  color: $white;
+  border: 1px solid $white;
+  &:hover, &:focus, &:active {
+    color: $primary-color;
+    background-color: $white;
+    border: 1px solid $primary-color;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($orange, 30%);
+  }
+}
+.btn-outline-gray {
+  background-color: $white;
+  color: $black;
+  border: 2px solid #DDD;
+  &:hover, &:focus, &:active {
+    background-color: #DDD;
+    border: 2px solid #DDD;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten(#DDD, 10%);
+  }
+}
+
+.btn-outline-gray-2 {
+  background-color: $white;
+  color: $black;
+  border: 2px solid #CCC;
+  &:hover, &:focus, &:active {
+    background-color: #CCC;
+    border: 2px solid #CCC;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten(#CCC, 10%);
+  }
+}
+.hover-y-btn {
+  transition: color 0.4s, background-color 0.4s, transform 0.8s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.btn-gray {
+  background-color: #DDD;
+  color: inherit;
+  &:hover, &:focus, &:active {
+    background-color: darken(#DDD, 10%);
+  }
+}
+
+.btn-light-gray {
+  background-color: #F1F1F1;
+  color: inherit;
+  &:hover, &:focus, &:active {
+    background-color: darken(#F1F1F1, 10%);
+  }
+}
+
+.btn-cancel {
+  width: 20px;
+  height: 20px;
+  background-color: $red;
+  background-image: url("./../images/icon-cancel-white.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.btn-showmore{
+  color: $primary-color;
+  padding-right: 24px;
+  background: url("./../images/icon-arrow-down-main.svg") center right no-repeat;
+  display: inline-block;
+  &:hover{
+    color: $primary-color;
+  }
+}
+
+.btn-reset {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+@mixin btn-outline-variant-social($bg, $text) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: $bg;
+  border: 2px solid $bg;
+  font-size: 16px;
+  line-height: initial;
+  height: 48px;
+  .icon-hover {
+    display: none;
+  }
+  &:hover, &:focus, &:active {
+    color: $text;
+    background-color: $bg;
+    border: 2px solid $bg;
+    img {
+      display: none;
+    }
+    .icon-hover {
+      display: inline-block;
+    }
+  }
+}
+
+.btn-outline-fb {
+  @include btn-outline-variant-social($fb, white);
+}
+
+.btn-outline-gg {
+  @include btn-outline-variant-social($gg, white);
+}
+
+.group-sort-button{
+  .btn-sort{
+    height:40px;
+    min-width: 96px;
+    font-weight: 500;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: $gray-1;
+    border-radius: 6px;
+    margin-right:10px;
+    &.active, &:hover{
+      color: $white;
+      background-color: $secondary-color;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  @include media-breakpoint-down(md){
+    height: 48px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1050;
+    .btn-sort{
+      height: 100%;
+      min-width: 0;
+      flex: 1;
+      margin-right: 0;
+      background:transparent;
+      color: $text-base;
+      border-radius: 0;
+      &.active, &:hover{
+        color: $secondary-color;
+        background-color: transparent;
+        box-shadow: inset 0px -2px 0px $secondary-color;
+      }
+    }
+  }
+}
+
+.btn-loading{
+  background: #FFFFFF;
+  border-radius: 6px;
+  color: $secondary-color;
+  min-height: 30px;
+  padding:0 16px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.group-button-filter{
+  display: none;
+  @include media-breakpoint-down(md){
+    display: flex;
+    width: calc(100% - 50px);
+    position: fixed;
+    bottom: 60px;
+    border-top:1px solid $border-light-grey;
+    background: $white;
+    padding:8px 16px;
+    .btn{
+      flex: 1;
+      &:first-child{
+        margin-right:13px;
+      }
+    }
+  }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

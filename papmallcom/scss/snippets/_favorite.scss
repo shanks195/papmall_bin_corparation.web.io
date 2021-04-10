@@ -1,0 +1,218 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+.b-none {
+    border:none;
+}
+.pr-10 {
+    padding-right:10px;
+}
+.favorite-slider .favorite-box {
+    width: 100%!important;
+}
+
+.favorite-slider .slick-list.draggable .slick-track {
+    width: 100%!important;
+}
+.promotion-tag-none {
+    display: none;
+}
+.review-block {
+    display: block;
+}
+a.product-add-cart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+a.btn-add-cart {
+    width: 142px;
+    height: 48px;
+    img {
+    padding-right: 10px;
+    }
+}
+.pt-29-pl-20-pb-23-pr-20 {
+    padding-top: 29px;
+    padding-left:20px;
+    padding-bottom: 23px;
+    padding-right:20px;
+}
+.infor-comment {
+    padding-top: 29px;
+}
+.product-add-cart {
+    .lastest-price {
+    font-weight: 400;
+    color:#CF2626;
+    font-size: 16px;
+    }
+    .old-price {
+        font-weight: 400;
+        color:#464646;
+        font-size: 16px;
+    }
+    .title-price {
+        font-size: 16px;
+        color:#464646;
+    }
+    h3.product-title {
+        margin-top: 0px!important;
+        font-weight: 500!important;
+        color:#464646;
+        font-size: 16px;
+    }
+    .border-box {
+        width:900px!important;
+        height:12px!important;
+        background-color: #F1F1F1;
+    }
+}
+
+.border-radius-0 {
+    border-radius: 0px;
+}
+span.review {
+    color:#969696;
+    font-weight: 400;
+    font-size: 16px;
+    padding-right: 58px;
+}
+.border-bottom {
+    border-bottom: 1px solid #DDDDDD;
+}
+.product-cart-img img {
+    border-radius:6px;
+}
+.product-cart-information {
+    margin-left: -129px;
+}
+.pt-12 {
+    padding-top: 12px;
+}
+.w-900-h-56 {
+    width:900px!important;
+    height: 56px!important;
+}
+@include media-breakpoint-down(md)  {
+    .header-favorite-follow {
+        background-color: #1f69b2;
+        width: 375px;
+        height:56px;
+        padding:20px 16px  20px 15px;
+        .search-favorite {
+            margin-right: 0px;
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .reset-favorite {
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        .comment-favorite {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        span.title-favorite-follow {
+            margin-left: 32px;
+            color:#ffffff!important;
+            font-size: 18px!important;
+            font-weight: 500!important;
+            }
+    }
+   
+    .promotion-tag-block-moblie {
+        display: block;
+    }
+    .product-add-cart-block-moblie {
+        display: block!important;
+        grid-template-columns: 1fr;
+    }
+    .pagination-favorite-moblie {
+        display: none;
+    }
+    .wine-shop-none-mobile {
+        display: none;
+    }
+    .review-none-mobile {
+        display: none;
+    }
+    .product-add-cart-mobile {
+        display: none;
+    }
+    .product-cart-delete-mobile {
+        display: none;
+    }
+    .voucher-tilte-mobile {
+        padding:0px;
+    }
+    .product-cart-information-mobile {
+        margin:0px;
+    }
+    .img-size-mobile {
+        width: 100%;
+    }
+    .p-mobile-0 {
+        padding:0px!important;
+    }
+    .img-mobile {
+        width: 172px;
+        height: 172px;
+    }
+    .w-mobile-172 {
+        width: 172px!important;
+        height: 304px !important;
+    }
+    .m-mobile {
+        margin-top:17px !important;
+        margin-right:6px !important;
+        margin-bottom: 5px !important;
+        margin-left:10px !important;
+    }
+    .product-add-cart h3.product-title {
+        margin-top: 10px!important;
+        margin-left: 10px!important;
+        margin-right: 10px!important;
+    }
+    .title-price {
+        display: none;
+    }
+    .lastest-price {
+        margin-top: 10px!important;
+        margin-left: 10px!important;
+    }
+    .pt-mobile-9 {
+        padding-top:9px;
+    }
+    .m-mobile-0 {
+        margin:0px!important;
+    }
+    .mr-mobile-35-mb-25-ml-10 {
+        margin-right: 35px!important;
+        margin-bottom: 25px!important;
+        margin-left: 10px!important;
+    }
+    .d-grid-1-mobile {
+        display: grid;
+        grid-template-columns: 0.1fr 1fr;
+    }
+    .mb-mobile-25 {
+        margin-bottom: 25px!important;
+    }
+    .lastest-price-mobile {
+        color:#F37721!important;
+        font-weight: 700!important;
+        font-size: 16px!important;
+    }
+    .sdad {
+        color:#F37721!important;
+        font-weight: 700!important;
+        font-size: 16px!important;
+    }
+}

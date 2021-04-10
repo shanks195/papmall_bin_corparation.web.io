@@ -1,0 +1,32 @@
+.faq-area {
+  padding: 40px 10px 43px;
+  @include media-breakpoint-up(lg) {
+    padding: 60px 0 53px;
+  }
+  &.list {
+    @include media-breakpoint-down(md) {
+      padding-top: 20px;
+    }
+  }
+}
+
+.faq-box-list {
+  h2 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.col-categories-faq {
+  width: 100%;
+  padding: 0 1px;
+  @include media-breakpoint-up(lg) {
+    padding-left: 15px;
+    width: 224px;
+  }
+}

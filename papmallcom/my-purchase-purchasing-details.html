@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Purchase</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="js/select2/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/app.css?v=1" />
+</head>
+
+<body>
+    <header class="header d-none d-lg-block">
+        <div class="top-header">
+            <div class="container">
+                <div class="top-hd-wrapper">
+                    <div class="top-hd-left">
+                        <ul class="top-hd-nav">
+                            <li class="ml-0">
+                                <a href="#" target="_self" title="Seller Center">Seller Center</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_self" title="Contact Us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-hd-right">
+                        <ul class="login-btn-group top-hd-nav">
+                            <li>
+                                <a class="btn-login" href="#" target="_self" title="Sign Up">Sign Up</a>
+                            </li>
+                            <li>
+                                <a class="btn-login" href="#" target="_self" title="Login">Login</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" id="user-toggle" target="_self" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="./images/sx.svg" data-src="./images/avatar-placeholder.png" class="lazyload mr-5" alt="Username" title="Username" />
+                                <span class="text-medium">Username</span>
+                            </a>
+                            <div class="dropdown-box dropdown-menu dropdown-user shadow-1" aria-labelledby="user-toggle">
+                                <ul class="list-style-1">
+                                    <li>
+                                        <a href="#" target="_self" title="My Account">
+                                            <img src="./images/icon-user.svg" title="My Account" alt="My Account" class="mr-10" />
+                                            <img src="./images/icon-user-secondary.svg" title="My Account" alt="My Account" class="active mr-10" />My Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_self" title="My Purchase">
+                                            <img src="./images/icon-purchase.svg" title="My Purchase" alt="My Purchase" class="mr-10" />
+                                            <img src="./images/icon-purchase-secondary.svg" title="My Purchase" alt="My Purchase" class="active mr-10" />My Purchase
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_self" title="Logout">
+                                            <img src="./images/icon-logout.svg" title="Logout" alt="Logout" class="mr-10" />
+                                            <img src="./images/icon-logout-secondary.svg" title="Logout" alt="Logout" class="active mr-10" />Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3 d-flex justify-content-between">
+                        <a href="#" target="_self" title="Logo">
+                            <img src="./images/sx.svg" data-src="./images/logo.svg" alt="Logo" title="Logo" class="d-none d-lg-block lazyload" />
+                            <img src="./images/sx.svg" data-src="./images/logo-mobile.svg" alt="Logo" title="Logo" class="d-block d-lg-none lazyload" />
+                        </a>
+                        <div class="d-block d-lg-none">
+                            <a href="javascript:void(0)" target="_self" title="Search" class="position-relative mr-15 search-toggle d-none">
+                                <img src="./images/sx.svg" data-src="./images/icon-search.svg" alt="Search" title="Search" class="lazyload" />
+                                <span class="hidden-xs">Search</span>
+                            </a>
+                            <a href="#" target="_self" title="Cart" class="position-relative d-inline-block mr-20">
+                                <img src="./images/sx.svg" data-src="./images/icon-cart.svg" alt="Cart" title="Cart" class="lazyload" />
+                                <span class="cart-amount">99+</span>
+                            </a>
+                            <a href="#" target="_self" title="Chat">
+                                <img src="./images/sx.svg" data-src="./images/icon-chat.svg" alt="Chat" title="Chat" class="lazyload" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 mt-xs-15 search-toggle-landing">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <div class="hd-search-box">
+                                    <form class="d-flex">
+                                        <div class="form-group flex-grow-1">
+                                            <input type="text" class="form-control search-text" placeholder="What are you looking for?" />
+                                        </div>
+                                        <div class="form-group w-220 hidden-xs">
+                                            <div class="position-relative">
+                                                <select class="selectCategory">
+                                                    <option></option>
+                                                    <option value="Loại 1">Loại 1</option>
+                                                    <option value="Loại 2">Loại 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="#" target="_self" title="Search" class="btn btn-primary btn-smaller text-16 d-xs-flex">
+                                                <img src="./images/sx.svg" data-src="./images/icon-search-white.svg" alt="Search" title="Search" class="mr-5 lazyload" />
+                                                <span class="hidden-xs">Search</span>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-3 hidden-xs">
+                                <div class="cart-hd-wrapper">
+                                    <a href="#" target="_self" title="Shoping Cart" class="btn btn-outline-secondary btn-icon text-nowrap">
+                                        <img src="./images/icon-cart-secondary.svg" alt="Shoping Cart" title="Shoping Cart" class="mr-10" />
+                                        <img src="./images/icon-cart-white.svg" alt="Shoping Cart" title="Shoping Cart" class="mr-10 active" /> Shoping Cart
+                                        <span class="cart-amount">99+</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20 hidden-xs">
+                    <div class="col-12 col-lg-3 mb-xs-15">
+                        <div class="sidebar-toggle-wrapper is_sidebar_homepage">
+                            <h3 class="text-main text-18 title-icon mb-0 pb-10 sidebar-toggle">
+                                <a href="#" target="_self" title="PRODUCT CATEGORY" class="text-link btn-icon no-transition">
+                                    <img src="./images/icon-menu-main.svg" alt="PRODUCT CATEGORY" title="PRODUCT CATEGORY" class="mr-10" />
+                                    <img src="./images/icon-menu-secondary.svg" alt="PRODUCT CATEGORY" title="PRODUCT CATEGORY" class="active mr-10" /> PRODUCT CATEGORY
+                                </a>
+                            </h3>
+                            <div class="sidebar-toggle-dropdown">
+                                <div id="import_sidebar" class="category-sidebar">
+                                    <ul class="list-style-1 bg-white shadow-1 bd-basic">
+                                        <li>
+                                            <a href="#" target="_self" title="Automotive">
+                                                <img src="./images/icon-automotive.svg" alt="Automotive" title="Automotive" class="mr-10" />
+                                                <img src="./images/icon-automotive-white.svg" alt="Automotive" title="Automotive" class="mr-10 active" /> Automotive
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Car replacement parts">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/car-replacement-parts-thumb.png" alt="Car replacement parts" title="Car replacement parts" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Car replacement
+                                                                parts</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Motorcycles">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/motorcycles-thumb.png" alt="Motorcycles" title="Motorcycles" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Motorcycles</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Scooters">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/scooters-thumb.png" alt="Scooters" title="Scooters" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Scooters</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Oil & Fluids">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/oil-and-fluids-thumb.png" alt="Oil & Fluids" title="Oil & Fluids" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Oil & Fluids</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Car Accessories">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/car-accessories-thumb.png" alt="Car Accessories" title="Car Accessories" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Car Accessories</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Car Care">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Car Care" title="Car Care" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Car Care</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Car Electronics">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/car-electronics-thumb.png" alt="Car Electronics" title="Car Electronics" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Car Electronics</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/car-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Beauty">
+                                                <img src="./images/icon-beauty.svg" title="Beauty" alt="Beauty" class="mr-10" />
+                                                <img src="./images/icon-beauty-white.svg" title="Beauty" alt="Beauty" class="mr-10 active" /> Beauty
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Skincare">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/skincare-thumb.png" alt="Skincare" title="Skincare" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Skincare</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Makeup">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/makeup-thumb.png" alt="Makeup" title="Makeup" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Makeup</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Bath & Body">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/bath-and-body-thumb.png" alt="Bath & Body" title="Bath & Body" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Bath & Body</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Nails">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/nails-thumb.png" alt="Nails" title="Nails" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Nails</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Men's Grooming">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/mens-grooming-thumb.png" alt="Men's Grooming" title="Men's Grooming" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Men's Grooming</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Beauty Devices & Tools">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/beauty-devices-and-tools-thumb.png" alt="Beauty Devices & Tools" title="Beauty Devices & Tools" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Beauty Devices &
+                                                                Tools</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Fragrances">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/fragrances-thumb.png" alt="Fragrances" title="Fragrances" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Fragrances</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/beauty-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Electronics">
+                                                <img src="./images/icon-electronics.svg" title="Electronics" alt="Electronics" class="mr-10" />
+                                                <img src="./images/icon-electronics-white.svg" title="Electronics" alt="Electronics" class="mr-10 active" /> Electronics
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Laptops">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/laptops-thumb.png" alt="Laptops" title="Laptops" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Laptops</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="PC">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pc-thumb.png" alt="PC" title="PC" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">PC</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Printer & Scanner">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/printer-and-scanner-thumb.png" alt="Printer & Scanner" title="Printer & Scanner" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Printer & Scanner</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Gadgets">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/gadgets-thumb.png" alt="Gadgets" title="Gadgets" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Gadgets</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="PC Accessories">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pc-accessories-thumb.png" alt="PC Accessories" title="PC Accessories" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">PC Accessories</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Air Conditioner">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/air-conditioner-thumb.png" alt="Air Conditioner" title="Air Conditioner" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Air Conditioner</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Fan">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/fan-thumb.png" alt="Fan" title="Fan" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Fan</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Smartphones">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/smartphones-thumb.png" alt="Smartphones" title="Smartphones" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Smartphones</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Tablets">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/tablets-thumb.png" alt="Tablets" title="Tablets" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Tablets</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Smartwatches">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/smartwatches-thumb.png" alt="Smartwatches" title="Smartwatches" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Smartwatches</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Camera & Lens">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/camera-and-lens-thumb.png" alt="Camera & Lens" title="Camera & Lens" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Camera & Lens</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Controller">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/controller-thumb.png" alt="Controller" title="Controller" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Controller</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/electronics-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Food & Beverages">
+                                                <img src="./images/icon-food-beverages.svg" title="Food & Beverages" alt="Food & Beverages" class="mr-10" />
+                                                <img src="./images/icon-food-beverages-white.svg" title="Food & Beverages" alt="Food & Beverages" class="mr-10 active" /> Food & Beverages
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Snacks & Sweets">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/snacks-and-sweets-thumb.png" alt="Snacks & Sweets" title="Snacks & Sweets" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Snacks & Sweets</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Beverages">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/beverages-thumb.png" alt="Beverages" title="Beverages" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Beverages</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Frozen Food">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/frozen-food-thumb.png" alt="Frozen Food" title="Frozen Food" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Frozen Food</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Seasonal Goods">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/seasonal-goods-thumb.png" alt="Seasonal Goods" title="Seasonal Goods" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Seasonal Goods</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Meat & Seafood">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/meat-and-seafood-thumb.png" alt="Meat & Seafood" title="Meat & Seafood" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Meat & Seafood</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Bakery">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/bakery-thumb.png" alt="Bakery" title="Bakery" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Bakery</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Fruit & Vegetables">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/fruit-and-vegetables-thumb.png" alt="Fruit & Vegetables" title="Fruit & Vegetables" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Fruit &
+                                                                Vegetables</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Dairy and Eggs">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/dairy-and-eggs-thumb.png" alt="Dairy and Eggs" title="Dairy and Eggs" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Dairy and Eggs</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/food-and-beverages-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Games">
+                                                <img src="./images/icon-games.svg" title="Games" alt="Games" class="mr-10" />
+                                                <img src="./images/icon-games-white.svg" title="Games" alt="Games" class="mr-10 active" /> Games
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Playstation">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/playstation-thumb.png" alt="Playstation" title="Playstation" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Playstation</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Xbox">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/xbox-thumb.png" alt="Xbox" title="Xbox" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Xbox</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Wii">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/wii-thumb.png" alt="Wii" title="Wii" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Wii</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Nintendo">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/nintendo-thumb.png" alt="Nintendo" title="Nintendo" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Nintendo</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="PC Gaming">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pc-gaming-thumb.png" alt="PC Gaming" title="PC Gaming" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">PC Gaming</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Gaming Controller">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/gaming-controller-thumb.png" alt="Gaming Controller" title="Gaming Controller" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Gaming Controller</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Memory Card">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/memory-card-thumb.png" alt="Memory Card" title="Memory Card" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Memory Card</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Gaming Disks">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/gaming-disks-thumb.png" alt="Gaming Disks" title="Gaming Disks" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Gaming Disks</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="PC Gaming Gears">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pc-gaming-gears-thumb.png" alt="PC Gaming Gears" title="PC Gaming Gears" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">PC Gaming Gears</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/games-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Healthcare & Wellness">
+                                                <img src="./images/icon-healthcare-wellness.svg" title="Healthcare & Wellness" alt="Healthcare & Wellness" class="mr-10" />
+                                                <img src="./images/icon-healthcare-wellness-white.svg" title="Healthcare & Wellness" alt="Healthcare & Wellness" class="mr-10 active" /> Healthcare & Wellness
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Supplements">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/supplements-thumb.png" alt="Supplements" title="Supplements" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Supplements</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Food Nutrition">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/food-nutrition-thumb.png" alt="Food Nutrition" title="Food Nutrition" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Food Nutrition</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Weight Management">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/weight-management-thumb.png" alt="Weight Management" title="Weight Management" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Weight Management</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Medications">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/medications-thumb.png" alt="Medications" title="Medications" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Medications</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Family Planning">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/family-planning-thumb.png" alt="Family Planning" title="Family Planning" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Family Planning</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/healthcare-and-wellness-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Home & Living">
+                                                <img src="./images/icon-home-living.svg" title="Home & Living" alt="Home & Living" class="mr-10" />
+                                                <img src="./images/icon-home-living-white.svg" title="Home & Living" alt="Home & Living" class="mr-10 active" /> Home & Living
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Furniture">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/furniture-thumb.png" alt="Furniture" title="Furniture" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Furniture</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Housekeeping">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/housekeeping-thumb.png" alt="Housekeeping" title="Housekeeping" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Housekeeping</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Home Decor">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/home-decor-thumb.png" alt="Home Decor" title="Home Decor" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Home Decor</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Beddings">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/beddings-thumb.png" alt="Beddings" title="Beddings" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Beddings</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Bathroom">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/bathroom-thumb.png" alt="Bathroom" title="Bathroom" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Bathroom</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Kitchen & Dining">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/kitchen-and-dining-thumb.png" alt="Kitchen & Dining" title="Kitchen & Dining" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Kitchen & Dining</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Lighting">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/lighting-thumb.png" alt="Lighting" title="Lighting" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Lighting</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Tools">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/tools-thumb.png" alt="Tools" title="Tools" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Tools</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Housing Utilities">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/housing-utilities-thumb.png" alt="Housing Utilities" title="Housing Utilities" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Housing Utilities</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/home-and-living-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Hobbies & Books">
+                                                <img src="./images/icon-books.svg" title="Hobbies & Books" alt="Hobbies & Books" class="mr-10" />
+                                                <img src="./images/icon-books-white.svg" title="Hobbies & Books" alt="Hobbies & Books" class="mr-10 active" /> Hobbies & Books
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Books">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/books-thumb.png" alt="Books" title="Books" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Books</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Card & Board Games">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/card-and-board-games-thumb.png" alt="Card & Board Games" title="Card & Board Games" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Card & Board
+                                                                Games</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Figures & Model Kits">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/figures-and-model-kits-thumb.png" alt="Figures & Model Kits" title="Figures & Model Kits" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Figures & Model
+                                                                Kits</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Music Instrument">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/music-instrument-thumb.png" alt="Music Instrument" title="Music Instrument" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Music Instrument</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Music & Movies">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/music-and-movies-thumb.png" alt="Music & Movies" title="Music & Movies" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Music & Movies</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/hobbies-and-books-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Kids">
+                                                <img src="./images/icon-stroller.svg" title="Kids" alt="Kids" class="mr-10" />
+                                                <img src="./images/icon-stroller-white.svg" title="Kids" alt="Kids" class="mr-10 active" /> Kids
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Boy Toys">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/boy-toys-thumb.png" alt="Boy Toys" title="Boy Toys" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Boy Toys</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Girl Toys">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/girl-toys-thumb.png" alt="Girl Toys" title="Girl Toys" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Girl Toys</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Schooling Stuffs">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/schooling-stuffs-thumb.png" alt="Schooling Stuffs" title="Schooling Stuffs" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Schooling Stuffs</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Kids Food">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/kids-food-thumb.png" alt="Kids Food" title="Kids Food" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Kids Food</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Boy Clothes">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/boy-clothes-thumb.png" alt="Boy Clothes" title="Boy Clothes" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Boy Clothes</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Girl Clothes">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/girl-clothes-thumb.png" alt="Girl Clothes" title="Girl Clothes" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Girl Clothes</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Babysitting Stuffs">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/babysitting-stuffs-thumb.png" alt="Babysitting Stuffs" title="Babysitting Stuffs" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Babysitting
+                                                                Stuffs</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Baby Stroller">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/baby-stroller-thumb.png" alt="Baby Stroller" title="Baby Stroller" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Baby Stroller</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Boys Accessories">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/boys-accessories-thumb.png" alt="Boys Accessories" title="Boys Accessories" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Boys Accessories</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Girl Accessories">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/girl-accessories-thumb.png" alt="Girl Accessories" title="Girl Accessories" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Girl Accessories</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="For Mom">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/for-mom-thumb.png" alt="For Mom" title="For Mom" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">For Mom</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/kids-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Medical">
+                                                <img src="./images/icon-medical.svg" title="Medical" alt="Medical" class="mr-10" />
+                                                <img src="./images/icon-medical-white.svg" title="Medical" alt="Medical" class="mr-10 active" /> Medical
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Medical Masks">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/medical-masks-thumb.png" alt="Medical Masks" title="Medical Masks" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Medical Masks</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Medical Gadgets">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/medical-gadgets-thumb.png" alt="Medical Gadgets" title="Medical Gadgets" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Medical Gadgets</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Pharmacity">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pharmacity-thumb.png" alt="Pharmacity" title="Pharmacity" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Pharmacity</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/medical-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Men">
+                                                <img src="./images/icon-clothes.svg" title="Men" alt="Men" class="mr-10" />
+                                                <img src="./images/icon-clothes-white.svg" title="Men" alt="Men" class="mr-10 active" /> Men
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Men Clothes">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/men-clothes-thumb.png" alt="Men Clothes" title="Men Clothes" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Men Clothes</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Men Accessories">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/men-accessories-thumb.png" alt="Men Accessories" title="Men Accessories" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Men Accessories</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Men Underwear">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/men-underwear-thumb.png" alt="Men Underwear" title="Men Underwear" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Men Underwear</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Men Shoes">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/men-shoes-thumb.png" alt="Men Shoes" title="Men Shoes" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Men Shoes</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/men-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Pet Supplies">
+                                                <img src="./images/icon-paws.svg" title="Pet Supplies" alt="Pet Supplies" class="mr-10" />
+                                                <img src="./images/icon-paws-white.svg" title="Pet Supplies" alt="Pet Supplies" class="mr-10 active" /> Pet Supplies
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Pet Food">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pet-food-thumb.png" alt="Pet Food" title="Pet Food" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Pet Food</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Pet Accessories">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pet-accessories-thumb.png" alt="Pet Accessories" title="Pet Accessories" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Pet Accessories</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Pet Grooming">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pet-grooming-thumb.png" alt="Pet Grooming" title="Pet Grooming" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Pet Grooming</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Pet Healthcare">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pet-healthcare-thumb.png" alt="Pet Healthcare" title="Pet Healthcare" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Pet Healthcare</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/pet-supplies-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Sports">
+                                                <img src="./images/icon-sports.svg" title="Sports" alt="Sports" class="mr-10" />
+                                                <img src="./images/icon-sports-white.svg" title="Sports" alt="Sports" class="mr-10 active" /> Sports
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Yoga Equipment">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/yoga-equipment-thumb.png" alt="Yoga Equipment" title="Yoga Equipment" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Yoga Equipment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Team Sports Equipment">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/team-sports-equipment-thumb.png" alt="Team Sports Equipment" title="Team Sports Equipment" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Team Sports
+                                                                Equipment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Fitness Equipment">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/fitness-equipment-thumb.png" alt="Fitness Equipment" title="Fitness Equipment" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Fitness Equipment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Boxing & Martial Arts Equipment">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/boxing-and-martial-arts-equipment-thumb.png" alt="Boxing & Martial Arts Equipment" title="Boxing & Martial Arts Equipment" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Boxing & Martial Arts
+                                                                Equipment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Water Sports Equipment">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/water-sports-equipment-thumb.png" alt="Water Sports Equipment" title="Water Sports Equipment" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Water Sports
+                                                                Equipment</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Fishing">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/fishing-thumb.png" alt="Fishing" title="Fishing" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Fishing</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Cycling">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/cycling-thumb.png" alt="Cycling" title="Cycling" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Cycling</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Recovery & Protection">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/recovery-and-protection-thumb.png" alt="Recovery & Protection" title="Recovery & Protection" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Recovery &
+                                                                Protection</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Sports Nutrition ">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/sports-nutrition -thumb.png" alt="Sports Nutrition " title="Sports Nutrition " class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Sports Nutrition</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Sports Bags">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/sports-bags-thumb.png" alt="Sports Bags" title="Sports Bags" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Sports Bags</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/sports-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Services">
+                                                <img src="./images/icon-services.svg" title="Services" alt="Services" class="mr-10" />
+                                                <img src="./images/icon-services-white.svg" title="Services" alt="Services" class="mr-10 active" /> Services
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Online Payment Service">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/online-payment-service-thumb.png" alt="Online Payment Service" title="Online Payment Service" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Online Payment
+                                                                Service</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Banking Service">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/banking-service-thumb.png" alt="Banking Service" title="Banking Service" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Banking Service</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Card Service">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/card-service-thumb.png" alt="Card Service" title="Card Service" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Card Service</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Internet Service">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/internet-service-thumb.png" alt="Internet Service" title="Internet Service" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Internet Service</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/services-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_self" title="Women">
+                                                <img src="./images/icon-dress.svg" title="Women" alt="Women" class="mr-10" />
+                                                <img src="./images/icon-dress-white.svg" title="Women" alt="Women" class="mr-10 active" /> Women
+                                            </a>
+                                            <div class="sidebar-dropdown">
+                                                <div class="row">
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Women Clothes">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/women-clothes-thumb.png" alt="Women Clothes" title="Women Clothes" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Women Clothes</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Women Accessories">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/women-accessories-thumb.png" alt="Women Accessories" title="Women Accessories" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Women Accessories</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Women Underwear">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/women-underwear-thumb.png" alt="Women Underwear" title="Women Underwear" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Women Underwear</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Women Shoes">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/women-shoes-thumb.png" alt="Women Shoes" title="Women Shoes" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Women Shoes</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="Others">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/women-others-thumb.png" alt="Others" title="Others" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">Others</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2 text-center">
+                                                        <a class="d-block text-link hover-y-btn" href="#" target="_self" title="View all">
+                                                            <div class="product-thumb">
+                                                                <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary-lg.svg" alt="View all" title="View all" class="lazyload" />
+                                                            </div>
+                                                            <span class="text-16 my-10 d-block">View all</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <span><strong>Popular keywords:</strong></span>
+                                <a href="#" class="keyword-tag" target="_self" title="Watch">Watch</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Shoes">Shoes</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Kids Mask">Kids Mask</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Dress">Dress</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Skincare">Skincare</a>
+                                <a href="#" class="keyword-tag" target="_self" title="Smartphone">Smartphone</a>
+                            </div>
+                            <div class="col-3">
+                                <div class="notification-wrapper dropdown">
+                                    <a href="javascript:void(0)" target="_self" title="Notification" class="active mr-10 dropdown-toggle d-inline-block" id="notification-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="noti-bell">
+                                            <img src="./images/sx.svg" data-src="./images/icon-bell.svg"
+                                                alt="Notification" title="Notification" class="lazyload" />
+                                        </span> Notification
+                                    </a>
+                                    <div class="dropdown-box dropdown-menu dropdown-notification shadow-1" aria-labelledby="notification-toggle">
+                                        <p class="notification-title">
+                                            <strong>Recently Received Notifications</strong>
+                                        </p>
+                                        <hr class="m-0" />
+                                        <ul class="list-notification">
+                                            <li>
+                                                <a href="#" title="CNY Fashion Sale" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-1.jpg" alt="CNY Fashion Sale" title="CNY Fashion Sale" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">CNY Fashion Sale</p>
+                                                        <p class="noti-text">
+                                                            Looking for CNY outfit ideas? 👚 Shop deals under $8.88, up to 80% OFF Under Armour, adidas & more + Extra 18% Cashback voucher inside 👉
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Welcome to Papmall !" target="_self" class="notification-item noti-seen">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-2.jpg" alt="Welcome to Papmall !" title="Welcome to Papmall !" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">Welcome to Papmall !</p>
+                                                        <p class="noti-text">
+                                                            Hi John Solomon, here's a $5 OFF sitewide voucher for your first purchase 🎉 Shop now 👉
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="CNY Fashion Sale" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-1.jpg" alt="CNY Fashion Sale" title="CNY Fashion Sale" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">CNY Fashion Sale</p>
+                                                        <p class="noti-text">
+                                                            Looking for CNY outfit ideas? 👚 Shop deals under $8.88, up to 80% OFF Under Armour, adidas & more + Extra 18% Cashback voucher inside 👉
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" title="Welcome to Papmall !" target="_self" class="notification-item">
+                                                    <img src="./images/sx.svg" data-src="./images/img-60x60-2.jpg" alt="Welcome to Papmall !" title="Welcome to Papmall !" class="noti-img lazyload" />
+                                                    <div class="noti-content">
+                                                        <p class="noti-title">Welcome to Papmall !</p>
+                                                        <p class="noti-text">
+                                                            Hi John Solomon, here's a $5 OFF sitewide voucher for your first purchase 🎉 Shop now 👉
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="text-center m-0">
+                                            <a class="btn-raw-secondary btn-block py-10" href="#" target="_self" title="View all">
+                                                View all
+                                                <img src="./images/sx.svg"
+                                                    data-src="./images/icon-arrow-right-secondary.svg" alt="View all"
+                                                    title="View all" class="lazyload" />
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" target="_self" title="Help" class="d-inline-block">
+                                    <img src="./images/sx.svg" data-src="./images/icon-help.svg" alt="Help" title="Help" class="lazyload" /> Help
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header-only-title">
+        <a class="btn btn-reset" href="" title="LOGIN" target="_self"><img src="images/icon-arrow-left-white-header.svg" alt="" title=""></a>
+        <h1 class="text-18 mb-0">PURCHASING DETAILS</h1>
+    </header>
+    <main>
+        <div class="container px-lg-15 px-0">
+            <div class="padding-block pt-lg-40 pt-0">
+                <div class="row mx-0 my-account-wrap">
+                    <div class="col-12 col-lg-3 px-0 px-lg-15 hidden-xs" >
+                        <div class="sidebar-my-account">
+                            <!--  top of sidebar on Desktop    -->
+                            <div class="sidebar-account-top mb-25 py-20 d-none d-lg-flex  align-items-center justify-content-center flex-column rounded">
+                                <div class="account-wrap-img mb-20 rounded-circle bg-white position-relative">
+                                    <img src="./images/account-user.png"  alt="account" title="account" class="d-block"/>
+                                    <img src="./images/icon-camera.svg" alt="camera" title="camera" class="d-block"/>
+                                </div>
+                                <p class="account-name mb-0">John Solomon</p>
+                            </div>
+                            <!--   top of sidebar on Mobile  -->
+                            <div class="sidebar-account-top d-block d-lg-none px-10 py-15">
+                                <!-- menu side -->
+                                <div class="menu-side">
+                                    <!-- icons -->
+                                    <div class="icons-wrap d-flex align-items-center justify-content-end mb-10">
+                                        <!-- setting icon -->
+                                        <img src="./images/icon-setting.svg"  alt="setting" title="setting" class="d-block"/>
+                                        <!-- shopping cart icon -->
+                                        <img src="./images/icon-shopping-cart.svg"  alt="shopping" title="shopping" class="d-block ml-20 mr-20"/>
+                                        <!-- chat icon -->
+                                        <img src="./images/icon-chat-white.svg"  alt="chat" title="chat" class="d-block"/>
+                                    </div>
+                                    <!-- user -->
+                                    <div class="user-wrap d-flex align-items-center">
+                                        <div class="bg-white mr-20 rounded-circle">
+                                            <img src="./images/account-user.png"  alt="account user" title="account user" class="d-block"/>
+                                        </div>
+                                        <div class="user-info">
+                                            <p class="name text-white ">John Solomon</p>
+                                            <p class="follow-status text-white mb-0">Follow me: 5 | Following: 10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                            </div>
+                            <!-- middle menu purchase on mobile -->
+                            <div class="menu-middle bg-transparent d-block d-lg-none mt-12 mb-12">
+                                <a href="javascript:void(0)" target="_self" title="my purchase" class="menu-purchase sidebar-item bg-white d-flex align-items-center position-relative">
+                                    <img src="./images/icon-my-purchase.svg" alt="my purchase" title="my purchase"  data-status="normal">
+                                    <img src="./images/icon-my-purchase-active.svg" alt="my purchase" title="my purchase"  data-status="active">
+                                    <span>My Purchase</span>
+                                    <span class="d-inline-block ml-auto mr-10">Purchase history</span>
+                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
+                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
+                                </a>
+                                <div class="status-delivery bg-white d-flex aligin-items-center text-center py-20">
+                                    <!-- item -->
+                                    <div class="item-delivery ">
+                                        <img src="./images/icon-wait.svg"  alt="waiting" title="waiting" class="d-block mx-auto"/>
+                                        <span class="d-block mt-12">Waiting confirm</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="item-delivery ">
+                                        <img src="./images/icon-take.svg"  alt="take" title="take" class="d-block mx-auto"/>
+                                        <span class="d-block mt-12">Waiting take</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="item-delivery ">
+                                        <img src="./images/icon-delivery-free.svg"  alt="delivery" title="delivery" class="d-block mx-auto"/>
+                                        <span class="d-block mt-12">Delivery</span>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="item-delivery ">
+                                        <img src="./images/icon-review.svg"  alt="review" title="review" class="d-block mx-auto"/>
+                                        <span class="d-block mt-12">Review</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bottom of sidebar -->
+                            <div class="sidebar-account-bottom">
+                                <ul class="bg-white bd-basic rounded side-list-account mb-0">
+                                    <!-- my account on desktop-->
+                                    <li class="d-none d-lg-block">
+                                        <!-- add class active here -->
+                                        <a href="#my-account-collapse" target="_self" title="my account" class="dropdown-toggle sidebar-item" data-toggle="collapse" aria-expanded="false">
+                                            <img src="./images/icon-my-account.svg" alt="my account" title="my account" data-status="normal">
+                                            <img src="./images/icon-my-account-active.svg" alt="my account" title="my account"  data-status="active">
+                                            My Account
+                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
+                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                        </a>
+                                        <div class="collapse" data-target="my-account-collapse" id="my-account-collapse">
+                                            <a class="dropdown-item sidebar-item active" href="javascript:void(0)" target="_self" title="profile">Profile</a>
+                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="banks">Banks & Cards</a>
+                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="address">Addresses</a>
+                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="password">Password</a>
+                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="delete account">Delete Account</a>
+                                        </div>
+                                    </li>
+                                    <!-- My account on mobile -->
+                                    <li class="d-block d-lg-none">
+                                        <a href="javascript:void(0)" target="_self" title="my account" data-nextpage="#my-account-sub-list" class="sidebar-item d-flex d-lg-none">
+                                            <img src="./images/icon-my-account.svg" alt="my account" title="my account" data-status="normal">
+                                            <img src="./images/icon-my-account-active.svg" alt="my account" title="my account"  data-status="active">
+                                            My Account
+                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
+                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                        </a>
+                                        <!-- class page-mobile when add class show then it will show and move from right to left -->
+                                        <div class="my-account-sub-list page-mobile" id="my-account-sub-list" >
+                                            <div class="header-account-mobile mb-12">
+                                                <img src="./images/icon-arrow-left-white-header.svg" alt="" title="arrow back" class="arrow-back arrow-back-account-list" role="button">
+                                                <div class="text-center">
+                                                    <p class="text-white mb-0">MY ACCOUNT</p>
+                                                </div>
+                                            </div>
+                                            <a class="d-block sidebar-item bg-white active" href="javascript:void(0)" target="_self" title="profile">
+                                                Profile
+                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
+                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                            </a>
+                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="banks">
+                                                Banks & Cards
+                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
+                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                            </a>
+                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="address">
+                                                Addresses
+                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
+                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                            </a>
+                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="password">
+                                                Password
+                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
+                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                            </a>
+                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="delete account">
+                                                Delete Account
+                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
+                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <!-- my purchase -->
+                                    <li>
+                                        <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item">
+                                            <img src="./images/icon-my-purchase.svg" alt="my purchase" title="my purchase"  data-status="normal">
+                                            <img src="./images/icon-my-purchase-active.svg" alt="my purchase" title="my purchase"  data-status="active">
+                                            My Purchase
+                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
+                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
+                                        </a>
+                                    </li>
+                                    <!-- notification -->
+                                    <li>
+                                        <a href="javascript:void(0)" target="_self" title="notification" class="sidebar-item">
+                                            <img src="./images/icon-notification.svg" alt="notification" title="notification" data-status="normal">
+                                            <img src="./images/icon-notification-active.svg" alt="notification" title="notification" data-status="active">
+                                            Notification
+                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
+                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
+                                        </a>
+                                    </li>
+                                    <!-- my voucher -->
+                                    <li>
+                                        <a href="javascript:void(0)" target="_self" title="my voucher" class="sidebar-item">
+                                            <img src="./images/icon-voucher.svg" alt="my voucher" title="my voucher" data-status="normal">
+                                            <img src="./images/icon-voucher-active.svg" alt="my voucher" title="my voucher" data-status="active">
+                                            My Voucher
+                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
+                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
+                                        </a>
+                                    </li>
+                                    <!-- Favorite & Followed Shop -->
+                                    <li>
+                                        <a href="javascript:void(0)" target="_self" title="favorite" class="sidebar-item">
+                                            <img src="./images/icon-favorite-smaller.svg" alt="favorite" title="favorite" data-status="normal">
+                                            <img src="./images/icon-favorite-smaller-active.svg" alt="favorite" title="favorite" data-status="active">
+                                            Favorite & Followed Shop
+                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
+                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- support and chat on mobile -->
+                            <div class="support-wrap bg-transparent d-block d-lg-none mt-12 mb-50">
+                                <!-- support center -->
+                                <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item bg-white d-flex align-items-center  position-relative">
+                                    <img src="./images/icon-support.svg" alt="my purchase" title="my purchase"  data-status="normal">
+                                    <img src="./images/icon-support-active.svg" alt="my purchase" title="my purchase"  data-status="active">
+                                        Support Center
+                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
+                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
+                                </a>
+                                <!-- chat with papmall -->
+                                <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item bg-white d-flex align-items-center  position-relative">
+                                    <img src="./images/icon-chat.svg" alt="my purchase" title="my purchase"  data-status="normal">
+                                    <img src="./images/icon-chat-secondary.svg" alt="my purchase" title="my purchase"  data-status="active">
+                                        Chat with PAPMALL
+                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
+                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
+                                </a>
+                                <!-- btn log out -->
+                                <div class="px-10 mt-12">
+                                    <button type="button" class="btn w-100" >Logout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 px-0 mypurchase-content ">
+                        <div class="bg-white pt-15 pb-40 rounded hidden-xs">
+                            <h3 class="mb-0 ml-15">TRACK YOUR PRODUCT</h3>
+                            <hr class="mb-0">
+                            <div class="px-60">
+                               <div class="py-30 d-flex align-items-center justify-content-between">
+                                   <div class="item-track-product">
+                                        <div class="box-track-product active d-flex icon-92-round align-items-center justify-content-center">
+                                            <img src="./images/sx.svg" data-src="./images/icon-verified.svg" alt="Shopping" title="Shopping" class="lazyload">
+                                        </div>
+                                        <p class="mt-20 text-medium text-main">Order Verified</p>
+                                        <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
+                                        <div class="line-track-product"></div>
+                                   </div>
+                                   <div class="item-track-product">
+                                        <div class="box-track-product d-flex icon-92-round align-items-center justify-content-center">
+                                            <img src="./images/sx.svg" data-src="./images/icon-delivery-gray.svg" alt="Shopping" title="Shopping" class="lazyload">
+                                        </div>
+                                        <p class="mt-20 text-medium">On Delivery</p>
+                                        <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
+                                        <div class="line-track-product"></div>
+                                    </div>
+                                    <div class="item-track-product">
+                                        <div class="box-track-product d-flex icon-92-round align-items-center justify-content-center">
+                                            <img src="./images/sx.svg" data-src="./images/icon-arrived.svg" alt="Shopping" title="Shopping" class="lazyload">
+                                        </div>
+                                        <p class="mt-20 text-medium">Order Arrived</p>
+                                        <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
+                                        <div class="line-track-product"></div>
+                                   </div>
+                                   <div class="item-track-product">
+                                        <div class="box-track-product d-flex icon-92-round align-items-center justify-content-center ">
+                                            <img src="./images/sx.svg" data-src="./images/icon-order-rating.svg" alt="Shopping" title="Shopping" class="lazyload">
+                                        </div>
+                                        <p class="mt-20 text-medium">Order Rating</p>
+                                        <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="bg-white mt-20 pt-15 pb-40 rounded hidden-xs">
+                            <div class="d-flex justify-content-end">
+                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20">Return/ Refund</a>
+                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20">View Shop</a>
+                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20" data-toggle="modal" data-target="#ProductRating">Product Rating</a>
+                            </div>
+                            <div class="pb-40 px-15 mt-20">
+                               <div class="d-flex">
+                                <div class="py-25 px-15 info-order rounded w-50">
+                                    <div class="row mx-0">
+                                        <div class="col-4 px-0">
+                                            <p class="text-medium-light">Buyer's full name:</p>
+                                            <p class="text-medium-light">Phone Number:</p>
+                                            <p class="text-medium-light">Address:</p>
+                                        </div>
+                                        <div class="col-8 px-0">
+                                            <p class="text-gray-1">NGUYEN VAN LUONG</p>
+                                            <p class="text-date">(+84) 18006169</p>
+                                            <p class="text-date">507B Huynh Tan Phat , Tan Thuan Dong Ward, District 7, Ho Chi Minh City, VN.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="py-25 px-15 info-order rounded ml-20 w-50">
+                                    <div class="row mx-0">
+                                        <div class="col-3 px-0">
+                                            <p class="text-medium-light">Delivery:</p>
+                                            <p class="text-medium-light">Shipping:</p>
+                                            <p class="text-medium-light">Payment:</p>
+                                        </div>
+                                        <div class="col-9 px-0">
+                                            <p class="text-date">Delivered before 19:00 on 18/01/2021</p>
+                                            <p class="text-date">39,000 VND</p>
+                                            <p class="text-date">Cash payment</p>
+                                        </div>
+                                    </div>
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="bg-white mt-20 pt-15 rounded hidden-xs">
+                            <div class="pb-40">
+                                <table class="table table-borderless table-cart mb-0">
+                                    <tbody>
+                                        <tr class="border-0">
+                                            <th width="50%">
+                                                <span class="text-main ml-40">Shoes Shop</span>
+                                            </th>
+                                            <th></th>
+                                            <th class="text-center">Quantity</th>
+                                            <th class="text-center">Price</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <td class="d-flex align-items-lg-center pb-25">
+                                                <div class="checkbox mb-60">
+                                                    <label>
+                                                            <input type="checkbox" />
+                                                            <span class="checkmark rounded mb-0"></span>
+                                                        </label>
+                                                </div>
+                                                <div class="icon-80-round d-inline-block ml-10 mb-20 mr-15 bd-basic rounded flex-shrink-0">
+                                                    <a href="#" title="image-product" target="_self">
+                                                        <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
+                                                    </a>
+                                                </div>
+                                                <div class="d-xs-flex flex-xs-column justify-content-between">
+                                                    <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">Hello Kitty Newborn Baby Cartoon Baby Shoes 0-1Y</a></h3>
+                                                    <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
+                                                        <img
+                                                            src="./images/icon-chatnow-small.svg"
+                                                            alt="chat"
+                                                            title="chat"
+                                                            class=" mr-5"
+                                                        />
+                                                        <img
+                                                            src="./images/icon-chat-now-store-white.svg"
+                                                            alt="chat"
+                                                            title="chat"
+                                                            class=" mr-5 active"
+                                                        />
+                                                    Chat Now
+                                                    </a>
+                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit"/>Visit Shop</a>
+                                                </div>
+                                                
+                                            </td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <span><strong>2</strong></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-red"><strong>$2</strong></span>
+                                            </td>
+                                            <td class="hidden-xs text-center">
+                                                <a href="#" target="_self" title="">
+                                                    <img src="./images/sx.svg" data-src="./images/icon-delete.svg" alt="Delete" title="Delete" class="lazyload" /> Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-0">
+                                            <th width="50%" class="pt-20">
+                                                <span class="text-main ml-40">Tech Shop</span>
+                                            </th>
+                                            <th class="pt-20"></th>
+                                            <th class="text-center pt-20">Quantity</th>
+                                            <th class="text-center pt-20">Price</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr class="mt-25">
+                                            <td class="d-flex align-items-lg-center pb-25"> 
+                                                <div class="checkbox mb-60">
+                                                    <label>
+                                                            <input type="checkbox" />
+                                                            <span class="checkmark rounded mb-0"></span>
+                                                        </label>
+                                                </div>
+                                                <div class="icon-80-round d-inline-block ml-10 mb-20 mr-15 bd-basic rounded flex-shrink-0">
+                                                    <a href="#" title="image-product" target="_self">
+                                                        <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
+                                                    </a>
+                                                </div>
+                                                <div class="d-xs-flex flex-xs-column justify-content-between">
+                                                    <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">RGB Gaming Mouse AW510M Mechanical Gaming Keyboard AW310K</a></h3>
+                                                    <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
+                                                        <img
+                                                            src="./images/icon-chatnow-small.svg"
+                                                            alt="chat"
+                                                            title="chat"
+                                                            class=" mr-5"
+                                                        />
+                                                        <img
+                                                            src="./images/icon-chat-now-store-white.svg"
+                                                            alt="chat"
+                                                            title="chat"
+                                                            class=" mr-5 active"
+                                                        />
+                                                    Chat Now
+                                                    </a>
+                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit"/>Visit Shop</a>
+                                                </div>
+                                                
+                                            </td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <span><strong>2</strong></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span class="text-red"><strong>$2</strong></span>
+                                            </td>
+                                            <td class="hidden-xs text-center">
+                                                <a href="#" target="_self" title="">
+                                                    <img src="./images/sx.svg" data-src="./images/icon-delete.svg" alt="Delete" title="Delete" class="lazyload" /> Delete
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td class="text-right">
+                                                <p>Product's Price:</p>
+                                                <p>Shipping:</p>
+                                                <p><span class="text-red text-medium">Total:</span></p>
+                                            </td>
+                                            <td class="text-center">
+                                                <p class="text-medium">6.0$</p>
+                                                <p class="text-medium">2.0$</p>
+                                                <p><span class="text-red text-medium">8.0$</span></p>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                   
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-lg-none">
+                    <div class="bg-secondary py-25 px-15 d-flex">
+                        <img src="./images/icon-order-complete.svg"  alt="" title="" class="align-self-start" />
+                        <div class="ml-20">
+                            <p class="text-white text-16 text-medium">Order Completed</p>
+                            <p class="text-white">Thank you for Shopping with Papmall!</p>
+                        </div>
+                    </div>
+                    <div class="mt-12 d-lg-none">
+                        <div class="d-flex justify-content-between bg-white py-15 px-10">
+                            <div class="d-flex">
+                                <img src="./images/icon-free-ship.svg"  alt="" title="" class="align-self-start mr-10" />
+                                <div>
+                                    <p class="text-16 text-medium mb-5">Shipping Information</p>
+                                    <p class="text-date">Giao Hang Nhanh - FGQU6K43</p>
+                                    <div class="d-flex align-items-center mb-5">
+                                        <img src="./images/icon-check-thin.svg"  alt="" title="" class="" />
+                                        <p class="text-main mb-0 ml-10">[VN] Delivered</p>
+                                    </div>
+                                    <span class="text-date">10/8/2021</span>
+                                    <span class="text-date ml-10">10:00</span>
+                                </div>
+                            </div>
+                            <a href="#" target="_self" title="" class="text-main text-medium-light">VIEW</a>
+                        </div>
+                        <div class="d-flex justify-content-between mt-12 bg-white py-15 px-10">
+                            <div class="d-flex">
+                                <img src="./images/icon-location-gray.svg"  alt="" title="" class="align-self-start mr-10" />
+                                <div class="w-50">
+                                    <p class="text-16 text-medium mb-15">Delivery Address:</p>
+                                    <p class="text-date text-medium mb-0">Ly Lee Huynh</p>
+                                    <p class="text-date">(+84) 0918 17 55 369</p>
+                                    <p class="text-date">132, My Street, Kingston, New York 12401 United States</p>
+                                </div>
+                            </div>
+                            <a href="#" target="_self" title="" class="text-main text-medium-light">COPY</a>
+                        </div>
+                        <div class="bg-xs-white pt-15 mt-12 d-lg-none">
+                            <div class="d-flex justify-content-between align-items-center px-10 pb-15 border-bottom">
+                                <div class="d-flex align-items-center justify-content-between"><img src="./images/sx.svg" data-src="./images/icon-brand.jpg" alt="" title="" class="lazyload">
+                                        <p class="mb-0 ml-10">Sam Sung Shop</p>
+                                </div>
+                                <div>
+                                    <a href="#" title="" target="_self">
+                                        Visit Shop<img src="./images/sx.svg" data-src="./images/icon-arrow-next-more-store.svg" alt="" title="" class="ml-10 lazyload">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bg-gray-1 pt-15">
+                                <div class="px-10">
+                                    <div class="d-flex">
+                                        <img src="./images/sx.svg" data-src="./images/img-product-brand.jpg" alt="" title="" class="lazyload">
+                                        <div class="ml-10 w-100">
+                                            <p class="text-medium">Smart Tivi Samsung 4K 43 inch</p>
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-date">As pictures show</p>
+                                                <p class="text-date">x 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               <div class="text-16 d-flex justify-content-end px-10 pb-20 border-bottom">
+                                    <span class="m-0 text-line-through">$110,0</span>
+                                    <span class="old-price text-red ml-10"><strong>$50.00</strong></span>
+                               </div>
+                            </div>
+                           <div class="px-10 d-flex justify-content-between py-20 border-bottom hidden-xs">
+                               <p class="text-date mb-0 ml-15 hidden-xs">1 item</p>
+                               <p class="text-16 mb-0 hidden-xs">Order Total: <span class="text-red text-medium ml-10">$100.00</span></p>
+                           </div>
+                           <div class="px-10 py-20 border-bottom d-lg-none d-flex justify-content-between">
+                                <div>
+                                    <p class="text-date">Merchandise Subtotal</p>
+                                    <p class="text-date">Shipping Fee</p>
+                                    <p class="text-date">Shipping Discount Subtotal</p>
+                                    <p class="text-16">Order Total</p>
+                                </div>
+                                <div>
+                                    <p>$50.000</p>
+                                    <p>$700.000</p>
+                                    <p>$700.000</p>
+                                    <p class="text-red text-medium text-16">$50.000</p>
+                                </div>
+                           </div>
+                            <div class="px-10 d-flex justify-content-center align-items-center py-20 bg-gray-1">
+                                <a href="#" target="_self" title="Link" class="btn btn-outline-gray btn-smaller mw-120">
+                                    Product Rating
+                                </a>
+                                <a href="#" target="_self" title="Link" class="btn btn-block btn-secondary text-14 h-40 w-auto mw-lg-200 mw-120 my-5 ml-40">
+                                    Buy Again
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="import_user-control" class="user-control-box shadow"></div>
+    <div class="chat-tool-box d-none">
+        <div class="chat-tool-wrapper">
+            <a href="" target="" title="" class="text-accent text-18 text-medium">
+                <img src="./images/sx.svg" data-src="./images/icon-chat-secondary.svg" alt="Chat" title="Chat" class="lazyload mr-5" /> Chat
+            </a>
+            <span class="chat-tool-amount">1</span>
+        </div>
+    </div>
+    <div class="modal fade hidden-xs" id="ProductRating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-0 d-flex justify-content-end px-35" data-dismiss="modal">
+              <div class="box-close d-flex justify-content-center align-items-center">
+                <a href="#" target="_self">
+                    <img src="./images/icon-close.svg" alt="" title="">
+                </a>
+              </div>
+            </div>
+            <div class="modal-body border-0 px-0">
+                <h1 class="modal-title text-center mb-20" id="exampleModalLongTitle">Rate Product</h1>
+               <div>
+                <form>
+                    <div class="form-group form-large mb-0 px-60">
+                        <input type="text" class="form-control" placeholder="Shoes Kids">
+                    </div>
+                </form>
+                <div class="px-30">
+                    <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
+                    <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
+                    <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
+                    <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
+                    <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
+                    <div class="add-more-image d-inline-flex flex-column justify-content-center align-items-center ml-lg-45">
+                        <a href="#" target="_self" title="" class="py-0"><img src="./images/sx.svg" data-src="./images/icon-add-img.png" alt="" title="" class="lazyload"></a>
+                        <span class="text-main text-12 text-medium mt-5">Add Image</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group form-large mb-0 px-60 mt-20">
+                        <input type="text" class="form-control" placeholder="Leave Review">
+                    </div>
+                </form>
+                <div class="mt-20 pl-lg-60">
+                    <div class="rating-wrapper-title d-block pl-60">
+                        <div class="rating-fill-title" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center pt-40">
+                    <button type="submit" title="" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 my-10">
+                        Submit
+                    </button>
+                </div>
+               </div>
+            </div>
+            <div class="modal-footer border-0 px-60 d-block pb-60">
+                <p class="text-red">*Note:</p>
+                <ol class="pl-15">
+                    <li class="mt-15">Rating must contain no less than 50 character, ("Good Product" is counted as 12 character)</li>
+                    <li class="mt-15">Rating must contain no less than 1 picture.</li>
+                </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer class="footer" id="import_footer">
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.5.min.js"></script>
+    <script src="js/select2/select2.min.js"></script>
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/ls.bgset.min.js"></script>
+    <script src="js/style.js"></script>
+    <script type="text/javascript">
+    $(function() {
+            $("#import_footer").load("import/footer.html");
+            $("#import_user-control").load("import/user-control.html");
+        });
+    $(function() {
+            $("#import_sidebar").load("import/sidebar.html", function () {
+            $(".selectCategory").select2({
+                placeholder: "Product Category",
+            });
+            $("#import_footer").load("import/footer.html");
+            $("#import_user-control").load("import/user-control.html");
+        })
+    });
+    $(".togglePassword").click(function() {
+                let input = $(this).parent().find("input");
+                const type = input.attr("type") === "password" ? "text" : "password";
+                input.attr("type", type);
+                $(this).toggleClass("active");
+            });
+    </script>
+</body>
+
+</html>

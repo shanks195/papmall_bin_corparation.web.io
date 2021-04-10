@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home page</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="js/select2/select2.min.css" />
+        <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" href="css/app.css" />
+    </head>
+    <body>
+        <header id="import_header" class="header shadow"></header>
+        <main>
+            <div class="py-15 pt-xs-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 hidden-xs" id="sidebar-landing"></div>
+                        <div class="col-12 col-lg-9 px-xs-0">
+                            <div id="bannerSlider" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#bannerSlider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#bannerSlider" data-slide-to="1"></li>
+                                    <li data-target="#bannerSlider" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="" target="_self" title="">
+                                            <img src="./images/sx.svg" data-src="./images/banner-1.jpg" class="d-block w-100 rounded bd-radius-xs-0 lazyload" alt="Banner" />
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="" target="_self" title="">
+                                            <img src="./images/sx.svg" data-src="./images/banner-1.jpg" class="d-block w-100 rounded bd-radius-xs-0 lazyload" alt="Banner" />
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="" target="_self" title="">
+                                            <img src="./images/sx.svg" data-src="./images/banner-1.jpg" class="d-block w-100 rounded bd-radius-xs-0 lazyload" alt="Banner" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev hidden-xs" target="_self" href="#bannerSlider" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next hidden-xs" target="_self" href="#bannerSlider" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <div class="slider-home-product overflow-hidden pb-xs-30 mb-0 mt-15 px-xs-15">
+                                <div class="slider-home-product-item">
+                                    <div class="rounded overflow-hidden">
+                                        <a href="#" target="_self" title="On Sales Products First">
+                                            <img src="./images/sx.svg" data-src="./images/sales-products-thumb.jpg" alt="On Sales Products" title="On Sales Products" class="lazyload" />
+                                            <button class="btn btn-secondary btn-block bd-radius-0 text-left">
+                                                On Sales Products First <img src="./images/sx.svg" data-src="./images/icon-arrow-right-white.svg" alt="On Sales Products" title="On Sales Products" class="ml-5 lazyload d-inline-block" />
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-home-product-item">
+                                    <div class="rounded overflow-hidden">
+                                        <a href="#" target="_self" title="On Sales Products 2">
+                                            <img src="./images/sx.svg" data-src="./images/sales-products-thumb.jpg" alt="On Sales Products" title="On Sales Products" class="lazyload" />
+                                            <button class="btn btn-secondary btn-block bd-radius-0 text-left">
+                                                On Sales Products 2<img src="./images/sx.svg" data-src="./images/icon-arrow-right-white.svg" alt="On Sales Products" title="On Sales Products" class="ml-5 lazyload d-inline-block" />
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-home-product-item">
+                                    <div class="rounded overflow-hidden">
+                                        <a href="#" target="_self" title="On Sales Products">
+                                            <img src="./images/sx.svg" data-src="./images/sales-products-thumb.jpg" alt="On Sales Products" title="On Sales Products" class="lazyload" />
+                                            <button class="btn btn-secondary btn-block bd-radius-0 text-left">
+                                                On Sales Products <img src="./images/sx.svg" data-src="./images/icon-arrow-right-white.svg" alt="On Sales Products" title="On Sales Products" class="ml-5 lazyload d-inline-block" />
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-home-product-item">
+                                    <div class="rounded overflow-hidden">
+                                        <a href="#" target="_self" title="Seasonal Products">
+                                            <img src="./images/sx.svg" data-src="./images/seasonal-products-thumb.jpg" alt="Seasonal Products" title="Seasonal Products" class="lazyload" />
+                                            <button class="btn btn-secondary btn-block bd-radius-0 text-left">
+                                                Seasonal Products <img src="./images/sx.svg" data-src="./images/icon-arrow-right-white.svg" alt="Seasonal Products" title="Seasonal Products" class="ml-5 lazyload d-inline-block" />
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slider-home-product-item">
+                                    <div class="rounded overflow-hidden">
+                                        <a href="#" target="_self" title="Healthcare Products">
+                                            <img src="./images/sx.svg" data-src="./images/healthcare-products-thumb.jpg" alt="Healthcare Products" title="Healthcare Products" class="lazyload" />
+                                            <button class="btn btn-secondary btn-block bd-radius-0 text-left">
+                                                Healthcare Products <img src="./images/sx.svg" data-src="./images/icon-arrow-right-white.svg" alt="Healthcare Products" title="Healthcare Products" class="ml-5 lazyload" />
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block pb-10">
+                <div class="container">
+                    <h2 class="title-icon mb-20 text-26 text-lg-32">
+                        <img src="./images/sx.svg" data-src="./images/logo-thumb.svg" alt="Discover PAPMALL.com" title="Discover PAPMALL.com" class="mr-10 lazyload" />
+                        Discover&nbsp;<span class="text-accent">PAP</span><span class="text-main">MALL</span>.com
+                    </h2>
+                    <div class="discover-block overflow-scroll hide-scrollbar">
+                        <div class="discover-item">
+                            <div class="icon-80-round flex-shrink-0 mr-0 mr-lg-10">
+                                <img src="./images/sx.svg" data-src="./images/icon-global-shopping.svg" alt="Global online shopping" title="Global online shopping" class="lazyload" />
+                            </div>
+                            <h3 class="text-xs-12 discover-title">Global online shopping</h3>
+                        </div>
+                        <div class="discover-item">
+                            <div class="icon-80-round flex-shrink-0 mr-0 mr-lg-10">
+                                <img src="./images/sx.svg" data-src="./images/icon-multi-currencies.svg" alt="Shop in 6 different currencies" title="Shop in 6 different currencies" class="lazyload" />
+                            </div>
+                            <h3 class="text-xs-12 discover-title">Shop in 6 different currencies</h3>
+                        </div>
+                        <div class="discover-item">
+                            <div class="icon-80-round flex-shrink-0 mr-0 mr-lg-10">
+                                <img src="./images/sx.svg" data-src="./images/icon-secure-payment.svg" alt="Secure Payment" title="Secure Payment" class="lazyload" />
+                            </div>
+                            <h3 class="text-xs-12 discover-title">Secure Payment</h3>
+                        </div>
+                        <div class="discover-item">
+                            <div class="icon-80-round flex-shrink-0 mr-0 mr-lg-10">
+                                <img src="./images/sx.svg" data-src="./images/icon-customer-service.svg" alt="24/7 customer service" title="24/7 customer service" class="lazyload" />
+                            </div>
+                            <h3 class="text-xs-12 discover-title">24/7 customer service</h3>
+                        </div>
+                        <div class="discover-item">
+                            <div class="icon-80-round flex-shrink-0 mr-0 mr-lg-10">
+                                <img src="./images/sx.svg" data-src="./images/icon-track-package.svg" alt="Track your package" title="Track your package" class="lazyload" />
+                            </div>
+                            <h3 class="text-xs-12 discover-title">Track your package</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block">
+                <div class="container">
+                    <div class="fluid-width">
+                        <div class="topic-title bg-accent">
+                            <h2 class="text-18 text-white">TOP SEARCH PRODUCTS</h2>
+                            <a class="text-white text-medium text-16 flex-center" href="#" target="_self" title="View all">
+                                <span class="hidden-xs">View all</span> <img src="./images/sx.svg" data-src="./images/icon-arrow-right-white.svg" alt="View all" title="View all" class="lazyload ml-5" />
+                            </a>
+                        </div>
+                        <div class="top-search-slider bg-white">
+                            <div class="top-search-product-thumb">
+                                <div class="top-search-item">
+                                    <a href="#" target="_self" title="" class="top-1">
+                                        <img src="./images/sx.svg" data-src="./images/top-search-product-1.jpg" alt="" title="" class="lazyload" />
+                                        <span class="top-label">
+                                            TOP<br />
+                                            1
+                                        </span>
+                                        <span class="top-price">Price: $39</span>
+                                    </a>
+                                    <div>
+                                        <a href="#" target="_self" title="" class="top-2">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-2.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">2</span>
+                                        </a>
+                                        <a href="#" target="_self" title="" class="top-3">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-3.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="mt-15 m-0 text-black">Men T-shirt</h3>
+                            </div>
+                            <div class="top-search-product-thumb">
+                                <div class="top-search-item">
+                                    <a href="#" target="_self" title="" class="top-1">
+                                        <img src="./images/sx.svg" data-src="./images/top-search-product-1.jpg" alt="" title="" class="lazyload" />
+                                        <span class="top-label">
+                                            TOP<br />
+                                            1
+                                        </span>
+                                        <span class="top-price">Price: $39</span>
+                                    </a>
+                                    <div>
+                                        <a href="#" target="_self" title="" class="top-2">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-2.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">2</span>
+                                        </a>
+                                        <a href="#" target="_self" title="" class="top-3">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-3.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="mt-15 m-0 text-black">Women's watches</h3>
+                            </div>
+                            <div class="top-search-product-thumb">
+                                <div class="top-search-item">
+                                    <a href="#" target="_self" title="" class="top-1">
+                                        <img src="./images/sx.svg" data-src="./images/top-search-product-1.jpg" alt="" title="" class="lazyload" />
+                                        <span class="top-label">
+                                            TOP<br />
+                                            1
+                                        </span>
+                                        <span class="top-price">Price: $39</span>
+                                    </a>
+                                    <div>
+                                        <a href="#" target="_self" title="" class="top-2">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-2.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">2</span>
+                                        </a>
+                                        <a href="#" target="_self" title="" class="top-3">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-3.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="mt-15 m-0 text-black">IPhone</h3>
+                            </div>
+                            <div class="top-search-product-thumb">
+                                <div class="top-search-item">
+                                    <a href="#" target="_self" title="" class="top-1">
+                                        <img src="./images/sx.svg" data-src="./images/top-search-product-1.jpg" alt="" title="" class="lazyload" />
+                                        <span class="top-label">
+                                            TOP<br />
+                                            1
+                                        </span>
+                                        <span class="top-price">Price: $39</span>
+                                    </a>
+                                    <div>
+                                        <a href="#" target="_self" title="" class="top-2">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-2.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">2</span>
+                                        </a>
+                                        <a href="#" target="_self" title="" class="top-3">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-3.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-search-product-thumb">
+                                <div class="top-search-item">
+                                    <a href="#" target="_self" title="" class="top-1">
+                                        <img src="./images/sx.svg" data-src="./images/top-search-product-1.jpg" alt="" title="" class="lazyload" />
+                                        <span class="top-label">
+                                            TOP<br />
+                                            1
+                                        </span>
+                                        <span class="top-price">Price: $39</span>
+                                    </a>
+                                    <div>
+                                        <a href="#" target="_self" title="" class="top-2">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-2.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">2</span>
+                                        </a>
+                                        <a href="#" target="_self" title="" class="top-3">
+                                            <img src="./images/sx.svg" data-src="./images/top-search-product-3.png" alt="" title="" class="lazyload" />
+                                            <span class="top-label">3</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block d-block d-lg-none">
+                <div class="container bg-white">
+                    <div class="category-slider pt-20">
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Category">
+                                <div class="product-thumb category-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/category-thumb.svg" alt="Category" title="Category" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Category</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Automotive">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/automotive-thumb.png" alt="Automotive" title="Automotive" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Automotive</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Beauty">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/beauty-thumb.png" alt="Beauty" title="Beauty" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Beauty</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Electronics">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/electronics-thumb.png" alt="Electronics" title="Electronics" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Electronics</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Food & Beverages">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/food-and-beverages-thumb.png" alt="Food & Beverages" title="Food & Beverages" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Food & Beverages</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Games">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/games-thumb.png" alt="Games" title="Games" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Games</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Healthcare & Wellness">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/healthcare-and-wellness-thumb.png" alt="Healthcare & Wellness" title="Healthcare & Wellness" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Healthcare & Wellness</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Home & Living">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/home-and-living-thumb.png" alt="Home & Living" title="Home & Living" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Home & Living</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Hobbies and Books">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/hobbies-and-books-thumb.png" alt="Hobbies and Books" title="Hobbies and Books" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Hobbies and Books</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Kids">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/kids-thumb.png" alt="Kids" title="Kids" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Kids</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Medical">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/medical-thumb.png" alt="Medical" title="Medical" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Medical</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Men">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/men-thumb.png" alt="Men" title="Men" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Men</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Pet Supplies">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/pet-supplies-thumb.png" alt="Pet Supplies" title="Pet Supplies" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Pet Supplies</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Sports">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/sports-thumb.png" alt="Sports" title="Sports" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Sports</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Services">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/services-thumb.png" alt="Services" title="Services" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Services</p>
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <a class="d-block" href="#" target="_self" title="Women">
+                                <div class="product-thumb">
+                                    <img src="./images/sx.svg" data-src="./images/women-thumb.png" alt="Women" title="Women" class="lazyload" />
+                                </div>
+                                <p class="text-16 mt-10">Women</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block pt-20 pb-12 pb-lg-20">
+                <div class="container">
+                    <h2 class="title-icon mb-20 text-26 text-lg-32 text-black">
+                        <img src="./images/sx.svg" data-src="./images/logo-thumb.svg" alt="Discover PAPMALL.com" title="Discover PAPMALL.com" class="mr-10 lazyload" />
+                        Today Recommendation
+                    </h2>
+                    <div class="fluid-width">
+                        <div class="topic-title">
+                            <h2 class="text-18 text-black">BEST SELLERS FOR ELECTRONICS</h2>
+                            <a class="text-accent text-medium text-16 flex-center" href="#" target="_self" title="View all">
+                                <span class="hidden-xs">View all</span> <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary.svg" alt="View all" title="View all" class="lazyload ml-5" />
+                            </a>
+                        </div>
+                        <div class="product-slider bg-white">
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img
+                                            src="./images/sx.svg"
+                                            data-src="./images/home-news-thumb.jpg"
+                                            alt="Lorem Ipsum is simply dummy text of the printerting"
+                                            title="Lorem Ipsum is simply dummy text of the printing"
+                                            class="lazyload"
+                                        />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <span class="lastest-price">$1,078.65</span>
+                                    <span class="old-price">$1269</span>
+                                    <div class="d-flex justify-content-between align-items-center mt-5">
+                                        <div class="promotion-tag">-15%</div>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/banner-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/banner-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="text-accent text-medium text-16 flex-center bg-white py-10 bd-top d-flex d-md-none" href="#" target="_self" title="View all">
+                            View all <img src="./images/icon-arrow-right-secondary.svg" data-src="./images/icon-arrow-right-secondary.svg" alt="View all" title="View all" class="ml-5 ls-is-cached lazyloaded" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block pt-0 pb-12 pb-lg-60">
+                <div class="container">
+                    <div class="fluid-width">
+                        <div class="topic-title">
+                            <h2 class="text-18 text-black">BEST SELLERS FOR HOME & LIVING</h2>
+                            <a class="text-accent text-medium text-16 flex-center" href="#" target="_self" title="View all">
+                                <span class="hidden-xs">View all</span> <img src="./images/sx.svg" data-src="./images/icon-arrow-right-secondary.svg" alt="View all" title="View all" class="lazyload ml-5" />
+                            </a>
+                        </div>
+                        <div class="product-slider bg-white">
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img
+                                            src="./images/sx.svg"
+                                            data-src="./images/product-208x208.jpg"
+                                            alt="Lorem Ipsum is simply dummy text of the printerting"
+                                            title="Lorem Ipsum is simply dummy text of the printing"
+                                            class="lazyload"
+                                        />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <span class="lastest-price">$1,078.65</span>
+                                    <span class="old-price">$1269</span>
+                                    <div class="d-flex justify-content-between align-items-center mt-5">
+                                        <div class="promotion-tag">-15%</div>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/banner-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/banner-1.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-box">
+                                <a href="#" target="_self" title="Lorem Ipsum is simply dummy text of the printing">
+                                    <div class="ratio-box">
+                                        <img src="./images/sx.svg" data-src="./images/product-208x208.jpg" alt="Lorem Ipsum is simply dummy text of the printing" title="Lorem Ipsum is simply dummy text of the printing" class="lazyload" />
+                                    </div>
+                                    <h3 class="product-title mt-10 text-14 text-lg-16">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nisl eu augue rhoncus fringilla. Phasellus rutrum, neque ac egestas posuere, libero augue eleifend massa, vitae vestibulum velit mi
+                                        nec justo. Phasellus sed metus orci. Integer leo purus, lacinia non ante eget, mattis euismod neque. Donec auctor nisi non rhoncus mattis. Nam leo ante, fringilla eget interdum nec, eleifend vel enim.
+                                        Donec sed diam volutpat, rutrum turpis pretium, feugiat arcu. Quisque ut molestie quam.
+                                    </h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="lastest-price">$1,078.65</span>
+                                        <div class="rating-wrapper">
+                                            <div class="rating-fill" style="width: 50%;"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="text-accent text-medium text-16 flex-center bg-white py-10 bd-top d-flex d-md-none" href="#" target="_self" title="View all">
+                            View all <img src="./images/icon-arrow-right-secondary.svg" data-src="./images/icon-arrow-right-secondary.svg" alt="View all" title="View all" class="ml-5 ls-is-cached lazyloaded" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block bg-white">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between mb-20">
+                        <h2 class="title-icon m-0 text-26 text-lg-32 text-black">
+                            <img src="./images/sx.svg" data-src="./images/logo-thumb-bg-gray.svg" alt="Discover PAPMALL.com" title="Discover PAPMALL.com" class="mr-10 lazyload" />
+                            News
+                        </h2>
+                        <a href="#" target="_self" title="Link" class="hidden-xs btn btn-outline-secondary btn-icon text-16 mw-180">
+                            View all
+                            <img src="./images/icon-arrow-right-secondary.svg" alt="Link" title="Link" class="ml-5" />
+                            <img src="./images/icon-arrow-right-white.svg" alt="Link" title="Link" class="active ml-5" />
+                        </a>
+                    </div>
+                    <div class="fluid-width">
+                        <div class="home-news">
+                            <div class="row m-0 flex-nowrap flex-xs-wrap">
+                                <div class="col-12 col-lg-4 p-0">
+                                    <div class="home-news-main h-100">
+                                        <a href="#" target="_self" title="" class="home-news-link">
+                                            <img
+                                                src="./images/sx.svg"
+                                                data-src="./images/home-news-thumb.jpg"
+                                                alt="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                                title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                                class="lazyload w-100 h-100 obfit-cover"
+                                            />
+                                            <div class="overlay"></div>
+                                            <div class="home-news-main-title">
+                                                <span class="news-date text-white text-16 text-medium">22 December 2020</span>
+                                                <h3 class="text-22 text-lg-24 text-white m-0 mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-8 bg-xs-white bg-gray-1 px-0">
+                                    <div class="home-news-slider">
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/home-news-thumb.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/news-thumb.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/banner-1.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/news-thumb.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block d-lg-none text-center mt-20 mb-10">
+                            <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-icon text-16 mw-180">
+                                View all
+                                <img src="./images/icon-arrow-right-secondary.svg" alt="Link" title="Link" class="ml-5" />
+                                <img src="./images/icon-arrow-right-white.svg" alt="Link" title="Link" class="active ml-5" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block bg-white mt-12 mt-lg-0 pb-20 pb-lg-60">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between mb-20">
+                        <h2 class="title-icon text-26 text-lg-32 m-0 text-black">
+                            <img src="./images/sx.svg" data-src="./images/logo-thumb-bg-gray.svg" alt="Discover PAPMALL.com" title="Discover PAPMALL.com" class="mr-10 lazyload" />
+                            Trend
+                        </h2>
+                        <a href="#" target="_self" title="Link" class="hidden-xs btn btn-outline-secondary btn-icon text-16 mw-180">
+                            View all
+                            <img src="./images/icon-arrow-right-secondary.svg" alt="Link" title="Link" class="ml-5" />
+                            <img src="./images/icon-arrow-right-white.svg" alt="Link" title="Link" class="active ml-5" />
+                        </a>
+                    </div>
+                    <div class="fluid-width">
+                        <div class="home-news">
+                            <div class="row m-0 flex-nowrap flex-xs-wrap">
+                                <div class="col-12 col-lg-8 bg-xs-white bg-gray-1 px-0 order-xs-2">
+                                    <div class="home-news-slider">
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/home-news-thumb.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/banner-1.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/news-thumb.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="home-news-item">
+                                            <a href="#" target="_self" title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" class="d-xs-flex home-news-link">
+                                                <div class="home-news-img">
+                                                    <div class="ratio-box">
+                                                        <img src="./images/sx.svg" data-src="./images/news-thumb.jpg" alt="" title="" class="lazyload" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="news-date">22 December 2020</span>
+                                                    <h3 class="text-16 text-medium mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3>
+                                                    <p class="text-gray-1 d-none d-lg-block">
+                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book and It...
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 p-0 order-xs-1">
+                                    <div class="home-news-main h-100">
+                                        <a href="#" target="_self" title="" class="home-news-link">
+                                            <img
+                                                src="./images/sx.svg"
+                                                data-src="./images/home-news-thumb.jpg"
+                                                alt="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                                title="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                                                class="lazyload w-100 h-100 obfit-cover"
+                                            />
+                                            <div class="overlay"></div>
+                                            <div class="home-news-main-title">
+                                                <span class="news-date text-white text-16 text-medium">22 December 2020</span>
+                                                <h3 class="text-22 text-lg-24 text-white m-0 mt-10 home-news-title">Lorem Ipsum has been the industry's standard dummy text ever since the</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block d-lg-none text-center mt-20 mb-10">
+                            <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-icon text-16 mw-180">
+                                View all
+                                <img src="./images/icon-arrow-right-secondary.svg" alt="Link" title="Link" class="ml-5" />
+                                <img src="./images/icon-arrow-right-white.svg" alt="Link" title="Link" class="active ml-5" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="import_user-control" class="user-control-box shadow"></div>
+        <div class="chat-tool-box">
+            <div class="chat-tool-wrapper">
+                <a href="" target="" title="" class="text-accent text-18 text-medium">
+                    <img src="./images/sx.svg" data-src="./images/icon-chat-secondary.svg" alt="Chat" title="Chat" class="lazyload mr-5" />
+                    Chat
+                </a>
+                <span class="chat-tool-amount">1</span>
+            </div>
+        </div>
+        <footer class="footer" id="import_footer"></footer>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.5.min.js"></script>
+        <script src="js/select2/select2.min.js"></script>
+        <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+        <script src="js/lazysizes.min.js"></script>
+        <script src="js/ls.bgset.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#import_header").load("import/header.html");
+                $("#import_footer").load("import/footer.html");
+                $("#import_user-control").load("import/user-control.html");
+            });
+        </script>
+    </body>
+</html>

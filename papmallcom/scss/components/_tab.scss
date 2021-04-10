@@ -1,0 +1,52 @@
+.nav-tabs {
+  flex-wrap: nowrap;
+  border-color: $primary-color;
+  .nav-item {
+    .nav-link {
+      display: inline-block;
+      padding: 15px;
+      border: none;
+      border-radius: 0;
+      white-space: pre;
+      &.active {
+        background-color: $primary-color;
+        color: #fff;
+    }
+    }
+  }
+}
+.tab-focus-values{
+  .nav-tabs {
+    .nav-item {
+      .nav-link-title {
+        .nav-content {
+          padding: 10px 10px 10px 0;
+          border-left: 2px solid transparent;
+          transition: background-color 0.3s;
+        }
+        &.active {
+          h3{
+            color: $secondary-color;
+          }
+          .nav-content{
+            padding: 10px 10px 10px 15px;
+            background-color: $white;
+            border-left: 2px solid $secondary-color;
+          }
+      }
+      @include media-breakpoint-down(md){
+        &.active {
+          h3{
+            color: $secondary-color;
+          }
+          .nav-content{
+            background-color: rgba(243,119,33,0.05);
+            padding: 10px 10px 10px 15px;
+            border-left: 5px solid $secondary-color;
+          }
+      }
+      }
+      }
+    }
+  }
+}
