@@ -15,6 +15,9 @@
 .favorite-slider .slick-list.draggable .slick-track {
     width: 100%!important;
 }
+.voucher-title {
+    padding: 16px 20px 0px 20px!important;
+}
 .promotion-tag-none {
     display: none;
 }
@@ -22,8 +25,7 @@
     display: block;
 }
 a.product-add-cart {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
 }
 a.btn-add-cart {
     width: 142px;
@@ -62,10 +64,14 @@ a.btn-add-cart {
         color:#464646;
         font-size: 16px;
     }
+    h3.product-title-followed {
+        display: none;
+    }
     .border-box {
         width:900px!important;
         height:12px!important;
         background-color: #F1F1F1;
+        
     }
 }
 
@@ -82,7 +88,9 @@ span.review {
     border-bottom: 1px solid #DDDDDD;
 }
 .product-cart-img img {
-    border-radius:6px;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
 }
 .product-cart-information {
     margin-left: -129px;
@@ -94,14 +102,147 @@ span.review {
     width:900px!important;
     height: 56px!important;
 }
+.shop-navigation li a {
+    padding: 11px 49px 12px 50px;
+}
+.pr-23 {
+    padding-right: 23px!important;
+}
+.favorite-no-product {
+    .icon-no-product {
+        display: inline-block;
+        line-height: 76px;
+        margin-bottom: 27px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: rgba(31,105,178,0.15);
+    }
+    .favorite-information-no-product {
+        p.favorite-information-title-no-product {
+            font-weight: 400;
+            color:#464646;
+            font-size: 16px;
+            padding-bottom: 13px;
+        }
+        button.go-shoping-now {
+            color:#ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            padding:16px 35px 16px 36px;
+            border:none;
+            border-radius: 6px;
+            background-color: #f37721;
+        }
+    }
+}
+.followed-shop {
+    background-color: #ffffff;
+    .followed-title-product {
+        display: flex;
+        padding: 12px 20px;
+        align-items: center;
+        
+        .followed-image-product {
+            padding:9px;
+            max-width: 90px;
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 6px;
+            margin-right:15px;
+        }
+        .followed-title-product-store {
+            margin-bottom: 0px!important;
+            font-weight: 500;
+            font-size: 18px;
+            color:#464646;
+            line-height: 130%;
+            display: flex;
+            align-items: center;
+            
+        }
+        
+        .followed-status-product-store {
+            margin-left: auto;
+            padding-top:8px;
+            .followed-status-following {
+                padding-bottom: 10px;
+                span {
+                    color:#464646;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+               
+            }
+            p.followed-visit {
+                margin-left: 14%;
+                color:#1f69b2;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+    .followed-product {
+        .folowed-padding-product{
+            padding:20px 0px 20px 20px;
+            background-color: #ffffff;
+            span.lastest-price {
+                margin-top:10px!important;
+                margin-left: 0px!important;
+                color: #f37721;
+                font-weight: 700;
+                display: inline-block;
+            }
+            span.old-price {
+                color: #969696;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.pr-20 {
+    padding-right: 20px!important;
+}
+.pt-40-pb-56 {
+    padding-top:40px!important;
+    padding-bottom: 56px!important;
+}
+.followed-title-product a {
+    display: flex;
+}
 @include media-breakpoint-down(md)  {
+    .favorite-gray-mobile {
+        background-color: #F1F1F1;
+    }
+    .pl-0-moblie {
+        padding-left:0px!important;
+    }
+    .w-50-mobile {
+        width: 50%!important;
+    }
+    a.text-link.pt-14-pb11-mobile {
+        padding-left: 0px;
+        padding-top: 14px;
+        padding-bottom: 11px;
+        padding-right: 0px;
+    }
+    .p-0-mobile {
+        padding:0px!important;
+    }
+    .row.mt-10.m-0.product-add-cart {
+        margin-top: 17px!important;
+        padding-left: 10px;
+    }
+    .col-6.col-md-3.col-lg-12.m-0.p-0.border-bottom.border-radius-0 {
+        margin-bottom: 10px!important;
+        padding-right:10px!important;
+    }
     .header-favorite-follow {
         background-color: #1f69b2;
-        width: 375px;
-        height:56px;
-        padding:20px 16px  20px 15px;
+        padding: 20px 18px 20px 19px;
         .search-favorite {
-            margin-right: 0px;
+           padding-right: 20px!important;
             img {
                 width: 24px;
                 height: 24px;
@@ -120,7 +261,8 @@ span.review {
             }
         }
         span.title-favorite-follow {
-            margin-left: 32px;
+            margin-right:auto;
+            margin-left: auto;
             color:#ffffff!important;
             font-size: 18px!important;
             font-weight: 500!important;
@@ -132,7 +274,6 @@ span.review {
     }
     .product-add-cart-block-moblie {
         display: block!important;
-        grid-template-columns: 1fr;
     }
     .pagination-favorite-moblie {
         display: none;
@@ -156,14 +297,18 @@ span.review {
         margin:0px;
     }
     .img-size-mobile {
-        width: 100%;
+        max-width: 100%;
+        .img-mobile {
+            width: 100%;
+            height: auto;
+            border-radius:6px 6px 0px 0px;
+        }
     }
     .p-mobile-0 {
         padding:0px!important;
     }
-    .img-mobile {
-        width: 172px;
-        height: 172px;
+    .pt-0-mobile {
+        padding-top:0px!important;
     }
     .w-mobile-172 {
         width: 172px!important;
@@ -176,9 +321,18 @@ span.review {
         margin-left:10px !important;
     }
     .product-add-cart h3.product-title {
+        
         margin-top: 10px!important;
         margin-left: 10px!important;
-        margin-right: 10px!important;
+        color: #464646!important;
+        font-weight: 400!important;
+        
+    }
+    .product-add-cart h3.product-title-followed {
+        display: block!important;
+        color:#464646!important;
+        font-weight: 400!important;
+        margin-bottom: 0px!important;
     }
     .title-price {
         display: none;
@@ -191,10 +345,10 @@ span.review {
         padding-top:9px;
     }
     .m-mobile-0 {
+        width: 100%;
         margin:0px!important;
     }
     .mr-mobile-35-mb-25-ml-10 {
-        margin-right: 35px!important;
         margin-bottom: 25px!important;
         margin-left: 10px!important;
     }
@@ -203,6 +357,7 @@ span.review {
         grid-template-columns: 0.1fr 1fr;
     }
     .mb-mobile-25 {
+        margin-right: 10px;
         margin-bottom: 25px!important;
     }
     .lastest-price-mobile {
@@ -214,5 +369,49 @@ span.review {
         color:#F37721!important;
         font-weight: 700!important;
         font-size: 16px!important;
+    }
+    .border-box {
+        display: none;
+    }
+    .folowed-padding-product-mobile {
+        padding:0px!important;
+        
+    }
+    .pr-10-mobile {
+        margin-bottom: 10px!important;
+        padding-right: 10px!important;
+    }
+    .followed-shop {
+        .bb-gray-mobile {
+            padding:13px 10px !important;
+            border-bottom: 1px solid #DDDDDD;
+            .followed-image-product {
+                
+            }
+            .followed-status-product-store-mobile {
+                margin-left: auto;
+                .title-visit-mobile {
+                    color:#1f69b2!important;
+                    font-weight: 400!important;
+                    line-height: 21px!important;
+                    font-size: 14px!important;
+                    padding-right:11px!important;
+                }
+            }
+        }
+    }
+    .selection-favorite-followed-mobile {
+        display: none;
+    }
+    .product-add-cart .old-price {
+        /* font-weight: 400; */
+        color: #969696!important;
+        
+    }
+    .pt-10-pr10-pb-20-pl-10-mobile {
+        padding:10px 10px 20px 10px!important;
+    } 
+    .mt-10.m-0.product-add-cart.followed-product {
+        margin-left: 10px!important;
     }
 }

@@ -1455,426 +1455,301 @@
     </header>
     <header class="main-header bg-primary d-flex pb-15 d-lg-none align-items-center justify-content-between position-fixed w-100 z-index-10000 header-search">
         <a href="#" title="Back" target="_self">
-            <img src="./images/sx.svg" data-src="./images/icon-arrow-left-white-smaller.svg" alt="GET FREE GIFT(S) WITH MIN. SPEND" title="GET FREE GIFT(S) WITH MIN. SPEND" class="lazyload ml-15">
+            <img src="./images/sx.svg" data-src="./images/icon-arrow-left-white-smaller.svg" alt="" title="" class="lazyload ml-15">
         </a> 
-            <span class="text-18 text-white ml-10 text-uppercase position-relative">Notifications</span>
+            <h1 class="text-18 text-white ml-10 text-uppercase position-relative mb-0">Order Cancel</h1>
             <a href="#" title="Back" target="_self" class="mr-20">
-                <img src="./images/sx.svg" data-src="./images/icon-shopping-cart.svg" alt="Shopping" title="Shopping" class="lazyload">
+                <img src="./images/sx.svg" data-src="./images/icon-shopping-cart.svg" alt="Shopping" title="Shopping" class="lazyload mr-3">
                 <span class="cart-amount-notifications">99+</span>
             </a>
     </header>
     <main>
         <div class="container px-lg-15 px-0">
-            <div class="padding-block pt-lg-40 pt-0">
-                <div class="row mx-0 my-account-wrap">
-                    <div class="col-12 col-lg-3 px-0 px-lg-15" >
-                        <div class="sidebar-my-account">
-                            <!--  top of sidebar on Desktop    -->
-                            <div class="sidebar-account-top mb-25 py-20 d-none d-lg-flex  align-items-center justify-content-center flex-column rounded">
-                                <div class="account-wrap-img mb-20 rounded-circle bg-white position-relative">
-                                    <img src="./images/account-user.png"  alt="account" title="account" class="d-block"/>
-                                    <img src="./images/icon-camera.svg" alt="camera" title="camera" class="d-block"/>
+           <div class="padding-block pt-lg-40 pt-0">
+              <div class="row mx-0 my-account-wrap">
+                 <div class="col-12 col-lg-3 px-0 px-lg-15" ></div>
+                 <div class="col-lg-9 px-0 mypurchase-content ">
+                    <div class="bg-white pt-15 pb-lg-40 pb-0 rounded">
+                       <div class="d-flex justify-content-between px-15 flex-xs-column">
+                          <h1 class="mb-lg-0 mb-10 text-18">TRACK YOUR PRODUCT</h1>
+                          <p class="mb-0 text-16"> Order ID: 2021PMOrder123456 <span class="text-red">| Cancelled</span></p>
+                       </div>
+                       <hr class="mb-0">
+                       <div class="px-60 hidden-xs">
+                          <div class="py-30 d-flex align-items-center justify-content-between position-relative overflow-hidden">
+                             <div class="item-track-product">
+                                <div class="box-track-product active d-flex align-items-center justify-content-center mr-0">
+                                   <img src="./images/sx.svg" data-src="./images/icon-order.svg" alt="Shopping" title="Shopping" class="lazyload">
                                 </div>
-                                <p class="account-name mb-0">John Solomon</p>
-                            </div>
-                            <!--   top of sidebar on Mobile  -->
-                            <div class="sidebar-account-top d-block d-lg-none px-10 py-15">
-                                <!-- menu side -->
-                                <div class="menu-side">
-                                    <!-- icons -->
-                                    <div class="icons-wrap d-flex align-items-center justify-content-end mb-10">
-                                        <!-- setting icon -->
-                                        <img src="./images/icon-setting.svg"  alt="setting" title="setting" class="d-block"/>
-                                        <!-- shopping cart icon -->
-                                        <img src="./images/icon-shopping-cart.svg"  alt="shopping" title="shopping" class="d-block ml-20 mr-20"/>
-                                        <!-- chat icon -->
-                                        <img src="./images/icon-chat-white.svg"  alt="chat" title="chat" class="d-block"/>
-                                    </div>
-                                    <!-- user -->
-                                    <div class="user-wrap d-flex align-items-center">
-                                        <div class="bg-white mr-20 rounded-circle">
-                                            <img src="./images/account-user.png"  alt="account user" title="account user" class="d-block"/>
-                                        </div>
-                                        <div class="user-info">
-                                            <p class="name text-white ">John Solomon</p>
-                                            <p class="follow-status text-white mb-0">Follow me: 5 | Following: 10</p>
-                                        </div>
-                                    </div>
+                                <h3 class="mt-20 text-16 text-main text-center">Ordered</h3>
+                                <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
+                             </div>
+                             <div class="line-track-cancel active">
+                             </div>
+                             <div class="box-info-cancel text-center">
+                                <img src="./images/icon-close.svg" alt="" title="">
+                                <p class="mb-0 text-red text-16 text-medium-light mt-10">You have order canceled </p>
+                                <button type="submit" title="" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 mt-25">
+                                Buy again
+                                </button>
+                             </div>
+                             <div class="item-track-product">
+                                <div class="box-track-product active d-flex align-items-center justify-content-center mr-0">
+                                   <img src="./images/sx.svg" data-src="./images/icon-cancel-order.svg" alt="Shopping" title="Shopping" class="lazyload">
                                 </div>
-                                <!--  -->
-                            </div>
-                            <!-- middle menu purchase on mobile -->
-                            <div class="menu-middle bg-transparent d-block d-lg-none mt-12 mb-12">
-                                <a href="javascript:void(0)" target="_self" title="my purchase" class="menu-purchase sidebar-item bg-white d-flex align-items-center position-relative">
-                                    <img src="./images/icon-my-purchase.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                    <img src="./images/icon-my-purchase-active.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                    <span>My Purchase</span>
-                                    <span class="d-inline-block ml-auto mr-10">Purchase history</span>
-                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                </a>
-                                <div class="status-delivery bg-white d-flex aligin-items-center text-center py-20">
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-wait.svg"  alt="waiting" title="waiting" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Waiting confirm</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-take.svg"  alt="take" title="take" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Waiting take</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-delivery-free.svg"  alt="delivery" title="delivery" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Delivery</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-review.svg"  alt="review" title="review" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Review</span>
-                                    </div>
+                                <h3 class="mt-20 text-16 text-main text-center">Cancelled</h3>
+                                <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="bg-light-dark px-15 py-20 d-lg-none">
+                          <div class="d-flex">
+                             <img src="./images/sx.svg" data-src="./images/icon-cancel-order-white.svg" alt="Shopping" title="Shopping" class="lazyload h-40">
+                             <div class="ml-20">
+                                <p class="text-white">Order Cancel</p>
+                                <p class="text-white">Thank you for Shopping with Papmall!</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="bg-white mt-20 pt-15 pb-40 rounded hidden-xs">
+                       <div class="d-flex justify-content-end">
+                          <a href="#" title="" target="_self" class="btn btn-view-details active hidden-xs mr-20">Return/ Refund</a>
+                          <a href="#" title="" target="_self" class="btn btn-view-details active hidden-xs mr-20">View Shop</a>
+                          <a href="#" title="" target="_self" class="btn btn-view-details active hidden-xs mr-20" data-toggle="modal" data-target="#ProductRating">Product Rating</a>
+                       </div>
+                       <div class="d-flex px-20 mt-20 flex-xs-column">
+                            <div class="info-order px-15 py-20 rounded w-50 w-xs-100">
+                                <div class="row mx-0">
+                                <div class="col-4 px-0">
+                                    <p class="text-medium-light">Buyer's full name:</p>
+                                    <p class="text-medium-light">Phone Number:</p>
+                                    <p class="text-medium-light">Address:</p>
+                                </div>
+                                <div class="col-8 px-0">
+                                    <p class="text-gray-1">NGUYEN VAN LUONG</p>
+                                    <p class="text-date">(+84) 18006169</p>
+                                    <p class="text-date mb-0">507B Huynh Tan Phat , Tan Thuan Dong Ward, District 7, Ho Chi Minh City, VN.</p>
+                                </div>
                                 </div>
                             </div>
-                            <!-- bottom of sidebar -->
-                            <div class="sidebar-account-bottom">
-                                <ul class="bg-white bd-basic rounded side-list-account mb-0">
-                                    <!-- my account on desktop-->
-                                    <li class="d-none d-lg-block">
-                                        <!-- add class active here -->
-                                        <a href="#my-account-collapse" target="_self" title="my account" class="dropdown-toggle sidebar-item" data-toggle="collapse" aria-expanded="false">
-                                            <img src="./images/icon-my-account.svg" alt="my account" title="my account" data-status="normal">
-                                            <img src="./images/icon-my-account-active.svg" alt="my account" title="my account"  data-status="active">
-                                            My Account
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                        </a>
-                                        <div class="collapse" data-target="my-account-collapse" id="my-account-collapse">
-                                            <a class="dropdown-item sidebar-item active" href="javascript:void(0)" target="_self" title="profile">Profile</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="banks">Banks & Cards</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="address">Addresses</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="password">Password</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="delete account">Delete Account</a>
-                                        </div>
-                                    </li>
-                                    <!-- My account on mobile -->
-                                    <li class="d-block d-lg-none">
-                                        <a href="javascript:void(0)" target="_self" title="my account" data-nextpage="#my-account-sub-list" class="sidebar-item d-flex d-lg-none">
-                                            <img src="./images/icon-my-account.svg" alt="my account" title="my account" data-status="normal">
-                                            <img src="./images/icon-my-account-active.svg" alt="my account" title="my account"  data-status="active">
-                                            My Account
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                        </a>
-                                        <!-- class page-mobile when add class show then it will show and move from right to left -->
-                                        <div class="my-account-sub-list page-mobile" id="my-account-sub-list" >
-                                            <div class="header-account-mobile mb-12">
-                                                <img src="./images/icon-arrow-left-white-header.svg" alt="" title="arrow back" class="arrow-back arrow-back-account-list" role="button">
-                                                <div class="text-center">
-                                                    <p class="text-white mb-0">MY ACCOUNT</p>
-                                                </div>
+                            <div class="py-25 px-15 info-order rounded ml-lg-20 ml-0 w-50 w-xs-100 d-flex justify-content-center align-items-center">
+                                <p class="text-date">No  information shipping</p>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="mt-12 d-lg-none">
+                        <div class="d-flex justify-content-center align-items-center bg-white py-15 px-10">
+                                <p class="text-date mb-0">No  information shipping</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mt-12 bg-white py-15 px-10 d-lg-none">
+                        <div class="d-flex">
+                            <img src="./images/icon-location-gray.svg"  alt="" title="" class="align-self-start mr-10" />
+                            <div class="w-50">
+                                <p class="text-16 text-medium mb-15">Delivery Address:</p>
+                                <p class="text-date text-medium mb-0">Ly Lee Huynh</p>
+                                <p class="text-date">(+84) 0918 17 55 369</p>
+                                <p class="text-date">132, My Street, Kingston, New York 12401 United States</p>
+                            </div>
+                        </div>
+                        <a href="#" target="_self" title="" class="text-main text-medium-light">COPY</a>
+                    </div>
+                    <div class="bg-white mt-20 pt-15 rounded rounded-xs-0 hidden-xs">
+                        <div class="pb-40">
+                            <table class="table table-borderless table-cart mb-0">
+                                <tbody>
+                                    <tr class="border-0">
+                                        <th width="50%">
+                                            <a href="#" title="" target="_self" class="text-main ml-40 hover-secondary">Shoes Shop</a>
+                                        </th>
+                                        <th></th>
+                                        <th class="text-center">Quantity</th>
+                                        <th class="text-center">Price</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="d-flex align-items-lg-center pb-25">
+                                            <div class="checkbox mb-60">
+                                                <label>
+                                                        <input type="checkbox" />
+                                                        <span class="checkmark rounded mb-0"></span>
+                                                    </label>
                                             </div>
-                                            <a class="d-block sidebar-item bg-white active" href="javascript:void(0)" target="_self" title="profile">
-                                                Profile
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                            <div class="icon-80-round d-inline-block ml-10 mb-20 mr-15 bd-basic rounded flex-shrink-0">
+                                                <a href="#" title="image-product" target="_self">
+                                                    <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
+                                                </a>
+                                            </div>
+                                            <div class="d-xs-flex flex-xs-column justify-content-between">
+                                                <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">Hello Kitty Newborn Baby Cartoon Baby Shoes 0-1Y</a></h3>
+                                                <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
+                                                    <img
+                                                        src="./images/icon-chat-now-store.svg"
+                                                        alt="chat"
+                                                        title="chat"
+                                                        class=" mr-5"
+                                                    />
+                                                    <img
+                                                        src="./images/icon-chat-now-store-white.svg"
+                                                        alt="chat"
+                                                        title="chat"
+                                                        class=" mr-5 active"
+                                                    />
+                                                Chat Now
+                                                </a>
+                                                <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit" class="mr-5">Visit Shop</a>
+                                            </div>
+                                            
+                                        </td>
+                                        <td></td>
+                                        <td class="text-center">
+                                            <span><strong>2</strong></span>
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="text-red"><strong>$2</strong></span>
+                                        </td>
+                                        <td class="hidden-xs text-center">
+                                            <a href="#" target="_self" title="">
+                                                <img src="./images/sx.svg" data-src="./images/icon-delete.svg" alt="Delete" title="Delete" class="lazyload" /> Delete
                                             </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="banks">
-                                                Banks & Cards
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-0">
+                                        <th width="50%" class="pt-20">
+                                            <a href="#" title="" target="_self" class="text-main ml-40 hover-secondary">Tech Shop</a>
+                                        </th>
+                                        <th class="pt-20"></th>
+                                        <th class="text-center pt-20">Quantity</th>
+                                        <th class="text-center pt-20">Price</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr class="mt-25">
+                                        <td class="d-flex align-items-lg-center pb-25"> 
+                                            <div class="checkbox mb-60">
+                                                <label>
+                                                        <input type="checkbox" />
+                                                        <span class="checkmark rounded mb-0"></span>
+                                                    </label>
+                                            </div>
+                                            <div class="icon-80-round d-inline-block ml-10 mb-20 mr-15 bd-basic rounded flex-shrink-0">
+                                                <a href="#" title="image-product" target="_self">
+                                                    <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
+                                                </a>
+                                            </div>
+                                            <div class="d-xs-flex flex-xs-column justify-content-between">
+                                                <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">RGB Gaming Mouse AW510M Mechanical Gaming Keyboard AW310K</a></h3>
+                                                <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
+                                                    <img
+                                                        src="./images/icon-chat-now-store.svg"
+                                                        alt="chat"
+                                                        title="chat"
+                                                        class=" mr-5"
+                                                    />
+                                                    <img
+                                                        src="./images/icon-chat-now-store-white.svg"
+                                                        alt="chat"
+                                                        title="chat"
+                                                        class=" mr-5 active"
+                                                    />
+                                                Chat Now
+                                                </a>
+                                                <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit" class="mr-5">Visit Shop</a>
+                                            </div>
+                                            
+                                        </td>
+                                        <td></td>
+                                        <td class="text-center">
+                                            <span><strong>2</strong></span>
+                                        </td>
+                                        <td class="text-center">
+                                            <span class="text-red"><strong>$2</strong></span>
+                                        </td>
+                                        <td class="hidden-xs text-center">
+                                            <a href="#" target="_self" title="">
+                                                <img src="./images/sx.svg" data-src="./images/icon-delete.svg" alt="Delete" title="Delete" class="lazyload" /> Delete
                                             </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="address">
-                                                Addresses
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="password">
-                                                Password
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="delete account">
-                                                Delete Account
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <!-- my purchase -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item">
-                                            <img src="./images/icon-my-purchase.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                            <img src="./images/icon-my-purchase-active.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                            My Purchase
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                    <!-- notification -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="notification" class="sidebar-item">
-                                            <img src="./images/icon-notification.svg" alt="notification" title="notification" data-status="normal">
-                                            <img src="./images/icon-notification-active.svg" alt="notification" title="notification" data-status="active">
-                                            Notification
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                    <!-- my voucher -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="my voucher" class="sidebar-item">
-                                            <img src="./images/icon-voucher.svg" alt="my voucher" title="my voucher" data-status="normal">
-                                            <img src="./images/icon-voucher-active.svg" alt="my voucher" title="my voucher" data-status="active">
-                                            My Voucher
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                    <!-- Favorite & Followed Shop -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="favorite" class="sidebar-item">
-                                            <img src="./images/icon-favorite-smaller.svg" alt="favorite" title="favorite" data-status="normal">
-                                            <img src="./images/icon-favorite-smaller-active.svg" alt="favorite" title="favorite" data-status="active">
-                                            Favorite & Followed Shop
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- support and chat on mobile -->
-                            <div class="support-wrap bg-transparent d-block d-lg-none mt-12 mb-50">
-                                <!-- support center -->
-                                <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item bg-white d-flex align-items-center  position-relative">
-                                    <img src="./images/icon-support.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                    <img src="./images/icon-support-active.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                        Support Center
-                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                </a>
-                                <!-- chat with papmall -->
-                                <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item bg-white d-flex align-items-center  position-relative">
-                                    <img src="./images/icon-chat.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                    <img src="./images/icon-chat-secondary.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                        Chat with PAPMALL
-                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                </a>
-                                <!-- btn log out -->
-                                <div class="px-10 mt-12">
-                                    <button type="button" class="btn w-100" >Logout</button>
-                                </div>
-                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-right">
+                                            <p>Product's Price:</p>
+                                            <p>Shipping:</p>
+                                            <p><span class="text-red text-medium">Total:</span></p>
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="text-medium">6.0$</p>
+                                            <p class="text-medium">2.0$</p>
+                                            <p><span class="text-red text-medium">8.0$</span></p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="col-lg-9 px-0 mypurchase-content ">
-                        <div class="bg-white pt-15 pb-40 rounded">
-                            <div class="d-flex justify-content-between px-15">
-                                <h2 class="mb-0 tet-18">TRACK YOUR PRODUCT</h2>
-                                <p class="mb-0 text-16"> Order ID: 2021PMOrder123456 <span class="text-red">| Cancelled</span></p>
+                    <div class="bg-xs-white pt-15 mt-12 d-lg-none">
+                        <div class="d-flex justify-content-between align-items-center px-10 pb-15 border-bottom">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="#" title="" target="_self"><img src="./images/sx.svg" data-src="./images/icon-brand.jpg" alt="" title="" class="lazyload"></a>
+                                <a href="#" title="" target="_self" class="ml-10 text-16">Sam Sung Shop</a>
                             </div>
-                            
-                            <hr class="mb-0">
-                            <div class="px-60">
-                               <div class="py-30 d-flex align-items-center justify-content-between position-relative overflow-hidden">
-                                   <div class="item-track-product">
-                                        <div class="box-track-product active d-flex align-items-center justify-content-center mr-0">
-                                            <img src="./images/sx.svg" data-src="./images/icon-order.svg" alt="Shopping" title="Shopping" class="lazyload">
-                                        </div>
-                                        <p class="mt-20 text-medium text-main text-center">Ordered</p>
-                                        <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
-                                       
-                                   </div>
-                                   <div class="line-track-cancel active">
-                                   </div>
-                                   <div class="box-info-cancel text-center">
-                                        <img src="./images/icon-close.svg" alt="" title="">
-                                        <p class="mb-0 text-red text-16 text-medium-light mt-10">You have order canceled </p>
-                                        <button type="submit" title="" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 mt-25">
-                                            Buy again
-                                        </button>
-                                   </div>
-                                   <div class="item-track-product">
-                                        <div class="box-track-product active d-flex align-items-center justify-content-center mr-0">
-                                            <img src="./images/sx.svg" data-src="./images/icon-cancel-order.svg" alt="Shopping" title="Shopping" class="lazyload">
-                                        </div>
-                                        <p class="mt-20 text-medium text-main text-center">Cancelled</p>
-                                        <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
-                                    </div>
-                               </div>
+                            <div>
+                                <a href="#" title="" target="_self">
+                                    Visit Shop<img src="./images/sx.svg" data-src="./images/icon-arrow-next-more-store.svg" alt="" title="" class="ml-10 lazyload">
+                                </a>
                             </div>
                         </div>
-                        <div class="bg-white mt-20 pt-15 pb-40 rounded">
-                            <div class="d-flex justify-content-end">
-                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20">Return/ Refund</a>
-                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20">View Shop</a>
-                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20" data-toggle="modal" data-target="#ProductRating">Product Rating</a>
-                            </div>
-                            <div class="pb-40 px-15 mt-20">
-                               <div class="d-flex">
-                                <div class="py-25 px-15 info-order rounded w-50">
-                                    <div class="row mx-0">
-                                        <div class="col-4 px-0">
-                                            <p class="text-medium-light">Buyer's full name:</p>
-                                            <p class="text-medium-light">Phone Number:</p>
-                                            <p class="text-medium-light">Address:</p>
-                                        </div>
-                                        <div class="col-8 px-0">
-                                            <p class="text-gray-1">NGUYEN VAN LUONG</p>
-                                            <p class="text-date">(+84) 18006169</p>
-                                            <p class="text-date">507B Huynh Tan Phat , Tan Thuan Dong Ward, District 7, Ho Chi Minh City, VN.</p>
+                        <div class="bg-gray-1 pt-15">
+                            <div class="px-10">
+                                <div class="d-flex">
+                                    <a href="#" target="_self" title=""><img src="./images/sx.svg" data-src="./images/img-product-brand.jpg" alt="" title="" class="lazyload"></a>
+                                    <div class="ml-10 w-100">
+                                        <h3 class="text-16"><a href="#" target="_self" title="" class="hover-secondary">27" T55 Curved Monitor</a></h3>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="text-date">As pictures show</p>
+                                            <p class="text-date">x 1</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="py-25 px-15 info-order rounded ml-20 w-50 d-flex justify-content-center align-items-center">
-                                    <p class="text-date">No  information shipping</p>
-                                </div>
-                               </div>
                             </div>
+                           <div class="text-16 d-flex justify-content-end px-10 pb-20 border-bottom">
+                                <span class="m-0 text-line-through">$110,0</span>
+                                <span class="old-price text-red ml-10"><strong>$50.00</strong></span>
+                           </div>
                         </div>
-                        <div class="bg-white mt-20 pt-15 rounded">
-                            <div class="pb-40">
-                                <table class="table table-borderless table-cart mb-0">
-                                    <tbody>
-                                        <tr class="border-0">
-                                            <th width="50%">
-                                                <span class="text-main ml-40">Shoes Shop</span>
-                                            </th>
-                                            <th></th>
-                                            <th class="text-center">Quantity</th>
-                                            <th class="text-center">Price</th>
-                                            <th></th>
-                                        </tr>
-                                        <tr>
-                                            <td class="d-flex align-items-lg-center pb-25">
-                                                <div class="checkbox mb-60">
-                                                    <label>
-                                                            <input type="checkbox" />
-                                                            <span class="checkmark rounded mb-0"></span>
-                                                        </label>
-                                                </div>
-                                                <div class="icon-80-round d-inline-block ml-10 mb-20 mr-15 bd-basic rounded flex-shrink-0">
-                                                    <a href="#" title="image-product" target="_self">
-                                                        <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
-                                                    </a>
-                                                </div>
-                                                <div class="d-xs-flex flex-xs-column justify-content-between">
-                                                    <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">Hello Kitty Newborn Baby Cartoon Baby Shoes 0-1Y</a></h3>
-                                                    <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
-                                                        <img
-                                                            src="./images/icon-chatnow-small.svg"
-                                                            alt="chat"
-                                                            title="chat"
-                                                            class=" mr-5"
-                                                        />
-                                                        <img
-                                                            src="./images/icon-chat-now-store-white.svg"
-                                                            alt="chat"
-                                                            title="chat"
-                                                            class=" mr-5 active"
-                                                        />
-                                                    Chat Now
-                                                    </a>
-                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit"/>Visit Shop</a>
-                                                </div>
-                                                
-                                            </td>
-                                            <td></td>
-                                            <td class="text-center">
-                                                <span><strong>2</strong></span>
-                                            </td>
-                                            <td class="text-center">
-                                                <span class="text-red"><strong>$2</strong></span>
-                                            </td>
-                                            <td class="hidden-xs text-center">
-                                                <a href="#" target="_self" title="">
-                                                    <img src="./images/sx.svg" data-src="./images/icon-delete.svg" alt="Delete" title="Delete" class="lazyload" /> Delete
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr class="border-0">
-                                            <th width="50%" class="pt-20">
-                                                <span class="text-main ml-40">Tech Shop</span>
-                                            </th>
-                                            <th class="pt-20"></th>
-                                            <th class="text-center pt-20">Quantity</th>
-                                            <th class="text-center pt-20">Price</th>
-                                            <th></th>
-                                        </tr>
-                                        <tr class="mt-25">
-                                            <td class="d-flex align-items-lg-center pb-25"> 
-                                                <div class="checkbox mb-60">
-                                                    <label>
-                                                            <input type="checkbox" />
-                                                            <span class="checkmark rounded mb-0"></span>
-                                                        </label>
-                                                </div>
-                                                <div class="icon-80-round d-inline-block ml-10 mb-20 mr-15 bd-basic rounded flex-shrink-0">
-                                                    <a href="#" title="image-product" target="_self">
-                                                        <img src="./images/sx.svg" data-src="./images/car-care-thumb.png" alt="Sony Center" title="Sony Center" class="lazyload" />
-                                                    </a>
-                                                </div>
-                                                <div class="d-xs-flex flex-xs-column justify-content-between">
-                                                    <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">RGB Gaming Mouse AW510M Mechanical Gaming Keyboard AW310K</a></h3>
-                                                    <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
-                                                        <img
-                                                            src="./images/icon-chatnow-small.svg"
-                                                            alt="chat"
-                                                            title="chat"
-                                                            class=" mr-5"
-                                                        />
-                                                        <img
-                                                            src="./images/icon-chat-now-store-white.svg"
-                                                            alt="chat"
-                                                            title="chat"
-                                                            class=" mr-5 active"
-                                                        />
-                                                    Chat Now
-                                                    </a>
-                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit"/>Visit Shop</a>
-                                                </div>
-                                                
-                                            </td>
-                                            <td></td>
-                                            <td class="text-center">
-                                                <span><strong>2</strong></span>
-                                            </td>
-                                            <td class="text-center">
-                                                <span class="text-red"><strong>$2</strong></span>
-                                            </td>
-                                            <td class="hidden-xs text-center">
-                                                <a href="#" target="_self" title="">
-                                                    <img src="./images/sx.svg" data-src="./images/icon-delete.svg" alt="Delete" title="Delete" class="lazyload" /> Delete
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="text-right">
-                                                <p>Product's Price:</p>
-                                                <p>Shipping:</p>
-                                                <p><span class="text-red text-medium">Total:</span></p>
-                                            </td>
-                                            <td class="text-center">
-                                                <p class="text-medium">6.0$</p>
-                                                <p class="text-medium">2.0$</p>
-                                                <p><span class="text-red text-medium">8.0$</span></p>
-                                            </td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                   
-                                </table>
+                       <div class="px-10 d-flex justify-content-between py-20 border-bottom hidden-xs">
+                           <p class="text-date mb-0 ml-15 hidden-xs">1 item</p>
+                           <p class="text-16 mb-0 hidden-xs">Order Total: <span class="text-red text-medium ml-10">$100.00</span></p>
+                       </div>
+                       <div class="px-10 py-20 border-bottom d-lg-none d-flex justify-content-between">
+                            <div>
+                                <p class="text-date">Merchandise Subtotal</p>
+                                <p class="text-date">Shipping Fee</p>
+                                <p class="text-date">Shipping Discount Subtotal</p>
+                                <p class="text-16">Order Total</p>
                             </div>
+                            <div>
+                                <p>$50.000</p>
+                                <p>$700.000</p>
+                                <p>$700.000</p>
+                                <p class="text-red text-medium text-16">$50.000</p>
+                            </div>
+                       </div>
+                        <div class="px-10 d-flex justify-content-end align-items-center py-20 bg-gray-1">
+                            <a href="#" target="_self" title="Link" class="btn btn-block btn-secondary text-14 h-40 w-auto mw-lg-200 mw-120 my-5 ml-40">
+                                Buy Again
+                            </a>
                         </div>
                     </div>
-                </div>
-                
-            </div>
+                 </div>
+                 
+              </div>
+           </div>
         </div>
-    </main>
+     </main>
     <div id="import_user-control" class="user-control-box shadow"></div>
     <div class="chat-tool-box d-none">
         <div class="chat-tool-wrapper">
@@ -1884,7 +1759,7 @@
             <span class="chat-tool-amount">1</span>
         </div>
     </div>
-    <div class="modal fade" id="ProductRating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade hidden-xs" id="ProductRating" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header border-0 d-flex justify-content-end px-35" data-dismiss="modal">
@@ -1895,7 +1770,7 @@
               </div>
             </div>
             <div class="modal-body border-0 px-0">
-                <h1 class="modal-title text-center mb-20" id="exampleModalLongTitle">Rate Product</h1>
+                <h2 class="modal-title text-center mb-20 text-32" id="exampleModalLongTitle">Rate Product</h2>
                <div>
                 <form>
                     <div class="form-group form-large mb-0 px-60">
@@ -1909,7 +1784,8 @@
                     <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
                     <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
                     <div class="add-more-image d-inline-flex flex-column justify-content-center align-items-center ml-lg-45">
-                        <a href="#" target="_self" title="" class="py-0"><img src="./images/sx.svg" data-src="./images/icon-add-img.png" alt="" title="" class="lazyload"></a>
+                        <input type="file" name="myfile-rating-modal" id="myfile-rating-modal">
+                        <a href="#" target="_self" title="" class="py-0" id="myfile-upload-modal"><img src="./images/sx.svg" data-src="./images/icon-add-img.png" alt="" title="" class="lazyload"></a>
                         <span class="text-main text-12 text-medium mt-5">Add Image</span>
                     </div>
                 </div>
@@ -1924,7 +1800,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center pt-40">
-                    <button type="submit" title="" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 my-10">
+                    <button type="submit" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 my-10">
                         Submit
                     </button>
                 </div>
@@ -1963,6 +1839,10 @@
             $("#import_footer").load("import/footer.html");
             $("#import_user-control").load("import/user-control.html");
         })
+        $('#myfile-upload-modal').click(function(e){
+                e.preventDefault();
+                $('#myfile-rating-modal').click();
+            })
     });
     $(".togglePassword").click(function() {
                 let input = $(this).parent().find("input");

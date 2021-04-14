@@ -15,7 +15,7 @@
 <header id="import_header" class="header shadow hidden-xs"></header>
 <header class="header-only-title">
     <a class="btn btn-reset" href="my-voucher-use.html" title="LOGIN" target="_self"><img src="images/icon-arrow-left-white-header.svg" alt="" title=""></a>
-    MY VOUCHER
+    <h1 class="m-0">MY VOUCHER</h1>
 </header>
 <main>
     <div class="py-40 pt-xs-0">
@@ -280,9 +280,9 @@
                     <div class="account-voucher position-relative rounded bg-white">
                         <!-- on desktop -->
                         <div class="account-profile-desktop  rounded p-sm-0  d-lg-block pb-20">
-                            <div class="voucher-main">
+                            <div class="voucher-main voucher-main-mobile">
                                 <!-- LOGO and title -->
-                                <div class="profile-title mb-10 d-flex align-items-start pt-pl-20 voucher-title">
+                                <div class="profile-title mb-10 d-flex align-items-start  voucher-title p-0-mobile m-mobile-0">
                                     <img data-src="./images/icon-profile-logo.svg" class="lazyload mr-10" alt="logo" title="logo" class="d-block mr-10">
                                     <div class="intro">
                                         <h1 class="title mb-0 black-2">My Voucher</h1>
@@ -298,9 +298,9 @@
                                         <div class="form-group form-large mb-30 mb-lg-50 form-voucher ">
                                             <input type="text" placeholder="Please enter voucher code" class="form-control">
                                         </div>
-                                        <a href="#" target="_self" title="redeem" class="redeem btn-icon black-1 btn-bataner rounded text-14">
+                                        <button class="redeem btn-icon black-1 btn-bataner rounded text-14">
                                             Redeem
-                                        </a>
+                                        </button>
                                     </form>
                                 </div>
                                 <div class="form-add-voucher-1">
@@ -308,160 +308,228 @@
                                         <div class="form-group form-large form-add">
                                             <input type="text" placeholder="Add PAPMALL voucher code" class="form-control mw-40">
                                         </div>
-                                        <a href="#" target="_apply" title="apply" class="apply">
+                                        <button  class="apply">
                                             Apply
-                                        </a>
+                                        </button>
                                     </form>
                                 </div>
                                 <!-- List table voucher -->
-                                <div class="row table-voucher" id="voucher">
-                                    <div class="col-12 text-center">
-                                        <div class="table m-0 w860-h88 ml-23 mt-23">
-                                            <div class="list-t d-flex justify-content-between">
-                                                <div class="pt11-pr81-pb-12-pl80 pt11-pr81-pb-12-pl80-mobile"><a class="active all-moblie"  data-toggle="list" href="#list-all" role="tab" aria-controls="All">All</a></div>
-                                                <div class="pt11-pr72-pb-12-pl71 pt11-pr72-pb-12-pl71-moible mr-296" ><a class="shop-moblie black-1" data-toggle="list" href="#list-all" role="tab" aria-controls="All">Shop</a></div>
-                                                <div ></div>
+                                <div class="d-flex flex-wrap table-voucher" id="voucher">
+                                    <div class="col-12 text-center table-left-voucher table-left-voucher-mobile">
+                                        <div class="table">
+                                            <div class="list-t d-flex voucher-list-top">
+                                                <a class="active all-moblie"  target="_self" title="All" data-toggle="list" href="#list-all" role="tab" aria-controls="All">All</a>
+                                                <a class="shop-moblie black-1" target="_self" title="shop" data-toggle="list" href="#list-all" role="tab" aria-controls="All">Shop</a>
+                                                <a href="#list-all"></a>
                                             </div>        
-                                            <div class="list-t border-top d-flex justify-content-between ">
-                                                <div  class="border-moblie vaild-mobile pt-8-pr59-pb-8-pl60"><a href="my-voucher-valid.html" class="active " data-toggle="list" href="#list-vaild" role="tab" aria-controls="vaild">Valid (6)</a></div>
-                                                <div class="border-moblie pt-8-pr76-pb-8-pl76 mr-67"><a href="my-voucher-use.html"  class="use-moblie  black-1 w-400" data-toggle="list" href="#list-use" role="tab" aria-controls="use">Used</a></div>
-                                                <div  class="border-moblie pt-8-pr0-pb-8-pl0 ml-0-mr-129"><a href="my-voucher-expired.html" class="invalid-mobile  black-1 w-400" data-toggle="list" href="#list-invalid-voucher" role="tab" aria-controls="invalid-voucher">Invalid Voucher</a></div>
+                                            <div class="list-t border-top d-flex">
+                                                <a href="my-voucher-valid.html" target="_self" title="Valid" class="border-mobile active pt-13-pb-14" data-toggle="list" href="#list-vaild" role="tab" aria-controls="vaild">Valid (6)</a>
+                                                <a href="my-voucher-use.html"  target="_self" title="used" class="border-mobile black-1 pt-13-pb-14" data-toggle="list" href="#list-use" role="tab" aria-controls="use">Used</a>
+                                                <a href="my-voucher-expired.html" target="_self" title="Invalid voucher"  class="border-mobile black-1 pt-13-pb-14" data-toggle="list" href="#list-invalid-voucher" role="tab" aria-controls="invalid-voucher">Invalid Voucher</a>
                                                 
                                             </div>
                                         </div>     
                                     </div>
-                                    <div class="voucher-information padding-mobile-0-1-20-10 background-gray col-12">
-                                        <div class="col-12  col-lg-12 ">
-                                            <ul class="list-unstyled list-voucher-2 m-0 voucher">
-                                                <li class="list-voucher-item pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class="lazyload" />
+                                    <div class="voucher-information background-gray col-12">
+                                        <div class="mt-20">
+                                            <div class="voucher-center ">
+                                                <div class="list-unstyled list-voucher-2  voucher  row">
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="list-voucher-item pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/svg/logo-voucher-2.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>
+                                                            
+                                                                <div class="d-flex flex-d-c">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
+                                                    <div class="col-lg-12 col-xl-6">
+                                                        <div class="list-voucher-item red pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo-2 mr-lg-15 flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/avatar-shop.png" data-src="./images/avatar-shop.png" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c ">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>                                                  
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item red pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo-2 mr-lg-15 flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/avatar-shop.png" data-src="./images/avatar-shop.png" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c ">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item red pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo-2 mr-lg-15 flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/avatar-shop.png" data-src="./images/avatar-shop.png" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c ">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item red pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo-2 mr-lg-15 flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/avatar-shop.png" data-src="./images/avatar-shop.png" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c ">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item red pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo-2 mr-lg-15 flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/avatar-shop.png" data-src="./images/avatar-shop.png" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c ">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item red pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo-2 mr-lg-15 flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/avatar-shop.png" data-src="./images/avatar-shop.png" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c ">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/svg/logo-voucher-2.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </li>
-                                                <li class="list-voucher-item red pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo-2 mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/avatar-shop.png" alt="" title="" class="lazyload" />
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/svg/logo-voucher-2.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
+                                                    <div class="col-lg-12 col-xl-6 ">
+                                                        <div class="list-voucher-item pr-0 pr-lg-15 mb-12">
+                                                            <div class="list-voucher-logo flex-shrink-0">
+                                                                <div class="circle">
+                                                                    <img src="./images/svg/logo-voucher-2.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class=" lazyloaded">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 pl-10 background-white">
+                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> 
+                                                                    <span class="use"> 
+                                                                        <a href="my-voucher-click-used.html" target="_selt" title="use">Use<span class="click-use"><img src="./images/svg/Icon_Arrow Right.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class=" lazyloaded"></span></a>
+                                                                    </span>
+                                                                </p>                                                            
+                                                                <div class="d-flex flex-d-c">
+                                                                    <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
+                                                                    <a href="#" target="_self" title="Terms &amp; Conditions" class=" text-xs-12 text-14  text-main ml-auto ml-0-mobile">Terms &amp; Conditions</a>                                                        </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </li>
-                                                <li class="list-voucher-item pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class="lazyload" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-voucher-item red pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo-2 mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/avatar-shop.png" alt="" title="" class="lazyload" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                
-                                            </ul>
-                                            
+                                                </div>  
+                                            </div>          
                                         </div>
-                                        <div class="col-12  col-lg-12 ">
-                                            <ul class="list-unstyled list-voucher-2 m-0 voucher">
-                                                <li class="list-voucher-item pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class="lazyload" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-voucher-item red pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo-2 mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/avatar-shop.png" alt="" title="" class="lazyload" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-voucher-item pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/svg/logo-voucher-2.svg" alt="" title="" class="lazyload" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-voucher-item red pr-0 pr-lg-15 mt-12">
-                                                    <div class="list-voucher-logo-2 mr-10 mr-lg-15 flex-shrink-0">
-                                                        <div class="circle">
-                                                            <img src="./images/sx.svg" data-src="./images/avatar-shop.png" alt="" title="" class="lazyload" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex-grow-1 pr-21">
-                                                        <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex"><strong>$30 off Min. Spend $1,000</strong> <span class="use">Use<span class="click-use"> <a href="my-voucher-click-used.html"><img src="./images/sx.svg" data-src="./images/svg/Icon_Arrow Right.svg" alt="" title="" class="lazyload"></a></span></span></p>
-                                                       
-                                                        <div class="d-flex flex-xs-column">
-                                                            <p class="text-gray-1 m-lg-0 text-14 text-xs-12 mb-5">Valid Till: 31.01.2021 </p>
-                                                            <a href="#" target="_self" title="Terms & Conditions" style="margin-left: auto;" class="text-primary text-xs-12 text-14  text-main">Terms & Conditions</a>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            
-                                        </div>
+                                        
                                         <div class="nomore">
                                             <p>No more vouchers found</p>
                                         </div>
@@ -683,9 +751,7 @@
         $("[data-backpage]").on("click", function(e){
             $($(this).data("backpage")).removeClass("show")
         })
-        $(".border-moblie").on("click", function(e){
-            e.currentTarget.classList.add("vaild-mobile");
-        })
+       
     });
    
 </script>

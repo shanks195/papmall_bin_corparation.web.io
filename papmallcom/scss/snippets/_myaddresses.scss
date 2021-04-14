@@ -2,13 +2,18 @@
 	margin-top:204px;
 }
 .address-content{
-	max-width: 900px;
+	//max-width: 900px;
 	color: #767676;
 	//background-color:#ffffff;
 	border-radius: 6px;
 	line-height: 24px;
 	font-size: 16px;
 	font-weight: 400;
+}
+.address-content-bg{
+	@include media-breakpoint-down(md){
+		background-color: #F1F1F1!important;
+	}
 }
 .address-detail{
 	max-width: 800px;
@@ -19,10 +24,12 @@
 	float: right;
 }
 .address-popup{
-	max-width: 640px;
 	border-radius: 6px;
 	height: 664px;
 	margin-top: 220px;
+	@include media-breakpoint-up(xl){
+		max-width: 640px!important;
+	}
 }
 .address-delete{
 	border-radius: 6px;
@@ -51,8 +58,8 @@
 	margin-left: 150px;
 	@include media-breakpoint-down(md){
 		width: auto!important;
-		margin-left: 10px!important;
-		margin-right: 10px!important;
+		//margin-left: 10px!important;
+		//margin-right: 10px!important;
 		margin-top: 140px!important;
 		max-width: 320px!important;
 	}
@@ -68,5 +75,26 @@
 		min-height: 700px!important;
 	}
 }
-
-
+.my-xs-10{
+	@include media-breakpoint-down(md){
+		margin-top: 10px!important;
+		margin-bottom: 10px!important;
+	}
+}
+.mx-lg-50{
+	@include media-breakpoint-up(md){
+		margin-left: 50px!important;
+		margin-right: 50px!important;
+	}
+}
+.modal-xs-white{
+	@include media-breakpoint-down(md){
+		background-color: #FFFFFF!important;
+	}
+}
+.mx-xs-30{
+	@include media-breakpoint-down(md){
+		margin-right: 30px!important;
+		margin-left: 30px!important;
+	}
+}

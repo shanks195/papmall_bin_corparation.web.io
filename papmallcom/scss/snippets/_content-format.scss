@@ -54,3 +54,23 @@
         }
     }
 }
+.lg-outer .lg-thumb {
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-lager.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.product-thumnails-slider .slick-slide{
+    & .ratio-box-1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+.zoomLens {
+    width: 120px !important;
+    height: 120px !important;
+}

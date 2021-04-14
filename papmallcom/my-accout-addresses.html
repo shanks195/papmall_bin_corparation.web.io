@@ -21,8 +21,8 @@
     <h1 class="mb-0 text-18">ADDRESSES</h1>
 </header>
 <main>
-    <div class="container px-0 pt-lg-40">
-        <div class="row mx-0">
+    <div class="container pt-lg-40 px-xs-0">
+        <div class="row mx-0 mb-lg-50">
             <div class="col-12 col-lg-3 px-0 px-lg-15 hidden-xs" >
                 <div class="sidebar-my-account">
                     <div class="sidebar-account-desktop d-none d-lg-block">
@@ -277,151 +277,149 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-9 px-xs-0 p-0 col-xs-12 mb-lg-50">
+            <div class="col-12 col-lg-9 px-xs-0 p-0 col-xs-12">
                 <div class="address-content">
-                    <table class="w-100 p-0 mb-0">
-                        <thead>
-                        <tr>
-                            <td class="p-20 hidden-xs bg-white">
-                                <a href="#" target="_blank" title="Papmall">
-                                    <h1 class="title-main backgr-gray hidden-xs" style="float: left">My Addresses</h1></a>
-                                <button class="btn btn-secondary mr-10 hidden-xs float-right" name="btnNew" id="btnNew" type="button" data-toggle="modal" data-target="#popupnew">
-                                    <img src="./images/icon-plus-white.svg" alt="new address" title="new address" class="mr-10">Add A New Address</button>
-                            </td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="row px-50 m-0 px-xs-0 bg-white pt-xs-10">
-                            <td class="col-md-4 hidden-xs border-top pt-lg-30 border-xs-0 text-gray-1">Your Full Name</td>
-                            <td class="col-sm-12 col-md-8 col-xs-12 border-top text-black text-medium pt-lg-30 border-xs-0" colspan="2">Name Demo 1
+                    <div class="w-100 p-0 mb-0 rounded bg-white address-content-bg">
+                        <div class="profile-title mb-30 d-flex align-items-start p-20 hidden-xs">
+                            <img src="./images/icon-profile-logo.svg" data-src="./images/icon-profile-logo.svg" class="lazyload d-block mr-10" alt="logo" title="logo" />
+                            <div class="d-flex justify-content-between w-100 pb-30 border-bottom">
+                                <div class="intro">
+                                    <h1 class="title mb-0 title-main">My Addresses</h1>
+                                </div>
+                                <button class="btn btn-block btn-secondary text-16 w-auto mw-lg-200 ml-auto" data-toggle="modal" data-target="#popupnew">
+                                    <img src="./images/icon-banks-cards-add.svg" alt="add new address" title="add new address" class="mr-10">
+                                    Add A New Address
+                                </button>
+                            </div>
+                        </div>
+                        <div class="border-bottom mx-lg-50 pb-lg-30 border-xs-0 mt-xs-10 bg-white px-xs-15 pb-xs-20">
+                        <div class="d-flex m-0 pt-xs-20">
+                            <div class="col-md-4 hidden-xs border-xs-0 text-gray-1">Your Full Name</div>
+                            <div class="col-sm-12 col-md-8 col-xs-12 text-black text-medium px-xs-0">Name Demo 1
                                 <div class="float-right" style="text-align: end">
                                     <button name="btndefault" class="mr-10 border-0 d-flex d-lg-none text-accent bg-white">[Default]</button>
-                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"><span class="hidden-xs ml-10">Change</span></button>
+                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyload"><span class="hidden-xs ml-10">Change</span></button>
                                     <button name="btndelete" data-toggle="modal" data-target="#popupdel" title="delete" class="border-0 hidden-xs bg-white text-accent">
-                                        <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete" /> Deleted</button>
+                                        <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete"/> Deleted</button>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 px-xs-0 py-20 bg-white">
-                            <td class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</td>
-                            <td class="col-md-8 col-xs-12 col-sm-12 border-0 text-black">
+                            </div>
+                        </div>
+                        <div class="d-flex m-0 px-xs-0 py-20 bg-white">
+                            <div class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</div>
+                            <div class="col-md-8 col-xs-12 col-sm-12 border-0 text-black px-xs-0">
                                 <a href="tel:8491755369" title="+8491755369" target="_self">(+84)917 55 369</a>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 pb-30 px-xs-0 bg-white mb-xs-10">
-                            <td class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</td>
-                            <td class="col-md-8 col-xs-12 border-0 col-sm-12 text-black" colspan="2">132 Mystress KingDom
-                                <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"></button>
-                                <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round pr-1"></span>
-                                </label>
-                                    Set as Default</div>
-                            </td>
-                        </tr>
-                        </tbody>
-                        <tbody>
-                        <tr class="row px-50 m-0 px-xs-0 bg-white pt-xs-10">
-                            <td class="col-md-4 hidden-xs border-top pt-lg-30 border-xs-0 text-gray-1">Your Full Name</td>
-                            <td class="col-sm-12 col-md-8 col-xs-12 border-top text-black text-medium pt-lg-30 border-xs-0" colspan="2">Name Demo 1
-                                <div class="float-right" style="text-align: end">
-                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/Icon_Edit_Adr.png" alt="Edit" title="Edit" ><span class="hidden-xs ml-10">Change</span></button>
-                                    <button name="btndelete" data-toggle="modal" data-target="#popupdel" title="delete" class="border-0 hidden-xs bg-white text-accent">
-                                        <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete" /> Deleted</button>
+                            </div>
+                        </div>
+                        <div class="d-flex m-0 px-xs-0 bg-white">
+                            <div class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</div>
+                                <div class="col-md-8 col-xs-12 border-0 col-sm-12 text-black px-xs-0 text-break">132 Mystress KingDom
+                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyload"></button>
+                                    <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round pr-1"></span>
+                                    </label>
+                                        Set as Default</div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 px-xs-0 py-20 bg-white">
-                            <td class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</td>
-                            <td class="col-md-8 col-xs-12 col-sm-12 border-0 text-black">
-                                <a href="tel:8491755369" title="+8491755369" target="_self">(+84)917 55 369</a>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 pb-30 px-xs-0 bg-white mb-xs-10">
-                            <td class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</td>
-                            <td class="col-md-8 col-xs-12 border-0 col-sm-12 text-black" colspan="2">132 Mystress KingDom
-                                <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/Icon_Edit_Adr.png" alt="Edit" title="Edit" ></button>
-                                <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round pr-1"></span>
-                                </label>
-                                    Set as Default</div>
-                            </td>
-                        </tr>
-                        </tbody>
-                        <tbody>
-                        <tr class="row px-50 m-0 px-xs-0 bg-white pt-xs-10">
-                            <td class="col-md-4 hidden-xs border-top pt-lg-30 border-xs-0 text-gray-1">Your Full Name</td>
-                            <td class="col-sm-12 col-md-8 col-xs-12 border-top text-black text-medium pt-lg-30 border-xs-0" colspan="2">Name Demo 1
-                                <div class="float-right" style="text-align: end">
-                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/Icon_Edit_Adr.png" alt="Edit" title="Edit" ><span class="hidden-xs ml-10">Change</span></button>
-                                    <button name="btndelete" data-toggle="modal" data-target="#popupdel" title="delete" class="border-0 hidden-xs bg-white text-accent">
-                                        <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete" /> Deleted</button>
+                            </div>
+                        </div>
+                        <div class="border-bottom mx-lg-50 pb-lg-30 border-xs-0 mt-xs-10 bg-white px-xs-15 pb-xs-20 pt-lg-30">
+                            <div class="d-flex m-0 pt-xs-20">
+                                <div class="col-md-4 hidden-xs border-xs-0 text-gray-1 ">Your Full Name</div>
+                                <div class="col-sm-12 col-md-8 col-xs-12 text-black text-medium px-xs-0">Name Demo 1
+                                    <div class="float-right" style="text-align: end">
+                                        <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"><span class="hidden-xs ml-10">Change</span></button>
+                                        <button name="btndelete" data-toggle="modal" data-target="#popupdel" title="delete" class="border-0 hidden-xs bg-white text-accent">
+                                            <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete" /> Deleted</button>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 px-xs-0 py-20 bg-white">
-                            <td class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</td>
-                            <td class="col-md-8 col-xs-12 col-sm-12 border-0 text-black">
-                                <a href="tel:8491755369" title="+8491755369" target="_self">(+84)917 55 369</a>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 pb-30 px-xs-0 bg-white mb-xs-10">
-                            <td class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</td>
-                            <td class="col-md-8 col-xs-12 border-0 col-sm-12 text-black" colspan="2">132 Mystress KingDom
-                                <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/Icon_Edit_Adr.png" alt="Edit" title="Edit" ></button>
-                                <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round pr-1"></span>
-                                </label>
-                                    Set as Default</div>
-                            </td>
-                        </tr>
-                        </tbody>
-                        <tbody>
-                        <tr class="row px-50 m-0 px-xs-0 bg-white pt-xs-10">
-                            <td class="col-md-4 hidden-xs border-top pt-lg-30 border-xs-0 text-gray-1">Your Full Name</td>
-                            <td class="col-sm-12 col-md-8 col-xs-12 border-top text-black text-medium pt-lg-30 border-xs-0" colspan="2">Name Demo 1
-                                <div class="float-right" style="text-align: end">
-                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/Icon_Edit_Adr.png" alt="Edit" title="Edit" ><span class="hidden-xs ml-10">Change</span></button>
-                                    <button name="btndelete" data-toggle="modal" data-target="#popupdel" title="delete" class="border-0 hidden-xs bg-white text-accent">
-                                        <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete" /> Deleted</button>
+                            </div>
+                            <div class="d-flex m-0 px-xs-0 py-20 bg-white">
+                                <div class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</div>
+                                <div class="col-md-8 col-xs-12 col-sm-12 border-0 text-black px-xs-0">
+                                    <a href="tel:8491755369" title="+8491755369" target="_self">(+84)917 55 369</a>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 px-xs-0 py-20 bg-white">
-                            <td class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</td>
-                            <td class="col-md-8 col-xs-12 col-sm-12 border-0 text-black">
-                                <a href="tel:8491755369" title="+8491755369" target="_self">(+84)917 55 369</a>
-                            </td>
-                        </tr>
-                        <tr class="row px-50 m-0 pb-30 px-xs-0 bg-white mb-xs-10">
-                            <td class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</td>
-                            <td class="col-md-8 col-xs-12 border-0 col-sm-12 text-black" colspan="2">132 Mystress KingDom
-                                <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/Icon_Edit_Adr.png" alt="Edit" title="Edit" ></button>
-                                <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round pr-1"></span>
-                                </label>
-                                    Set as Default</div>
-                            </td>
-                        </tr>
-                        </tbody>
+                            </div>
+                            <div class="d-flex m-0 px-xs-0 bg-white">
+                                <div class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</div>
+                                <div class="col-md-8 col-xs-12 border-0 col-sm-12 text-black px-xs-0 text-break">132 Mystress KingDom
+                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"></button>
+                                    <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
+                                        <input type="checkbox">
+                                        <span class="slider round pr-1"></span>
+                                    </label>
+                                        Set as Default</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom mx-lg-50 pb-lg-30 border-xs-0 mt-xs-10 bg-white px-xs-15 pb-xs-20 pt-lg-30">
+                            <div class="d-flex m-0 pt-xs-20">
+                                <div class="col-md-4 hidden-xs border-xs-0 text-gray-1 ">Your Full Name</div>
+                                <div class="col-sm-12 col-md-8 col-xs-12 text-black text-medium px-xs-0">Name Demo 1
+                                    <div class="float-right" style="text-align: end">
+                                        <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"><span class="hidden-xs ml-10">Change</span></button>
+                                        <button name="btndelete" data-toggle="modal" data-target="#popupdel" title="delete" class="border-0 hidden-xs bg-white text-accent">
+                                            <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete" /> Deleted</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex m-0 px-xs-0 py-20 bg-white">
+                                <div class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</div>
+                                <div class="col-md-8 col-xs-12 col-sm-12 border-0 text-black px-xs-0">
+                                    <a href="tel:8491755369" title="+8491755369" target="_self">(+84)917 55 369</a>
+                                </div>
+                            </div>
+                            <div class="d-flex m-0 px-xs-0 bg-white">
+                                <div class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</div>
+                                <div class="col-md-8 col-xs-12 border-0 col-sm-12 text-black px-xs-0 text-break">132 Mystress KingDom
+                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"></button>
+                                    <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
+                                        <input type="checkbox">
+                                        <span class="slider round pr-1"></span>
+                                    </label>
+                                        Set as Default</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-lg-50 pb-lg-30 border-xs-0 mt-xs-10 bg-white px-xs-15 pb-xs-20 pt-lg-30">
+                            <div class="d-flex m-0 pt-xs-20">
+                                <div class="col-md-4 hidden-xs border-xs-0 text-gray-1 ">Your Full Name</div>
+                                <div class="col-sm-12 col-md-8 col-xs-12 text-black text-medium px-xs-0">Name Demo 1
+                                    <div class="float-right" style="text-align: end">
+                                        <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 hidden-xs bg-white text-main" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"><span class="hidden-xs ml-10">Change</span></button>
+                                        <button name="btndelete" data-toggle="modal" data-target="#popupdel" title="delete" class="border-0 hidden-xs bg-white text-accent">
+                                            <img src="./images/icon-delete-adr.svg" data-src="./images/icon-delete-adr.svg" alt="Delete" title="Delete" /> Deleted</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex m-0 px-xs-0 py-20 bg-white">
+                                <div class="col-md-4 hidden-xs border-0 text-gray-1">Phone Number</div>
+                                <div class="col-md-8 col-xs-12 col-sm-12 border-0 text-black px-xs-0">
+                                    <a href="tel:8491755369" title="+8491755369" target="_self">(+84)917 55 369</a>
+                                </div>
+                            </div>
+                            <div class="d-flex m-0 px-xs-0 bg-white">
+                                <div class="col-md-4 hidden-xs  border-0 text-gray-1">Addresses</div>
+                                <div class="col-md-8 col-xs-12 border-0 col-sm-12 text-black px-xs-0 text-break">132 Mystress KingDom
+                                    <button name="btnchange" data-toggle="modal" data-target="#popupadd" class="mr-10 border-0 d-flex d-lg-none float-right bg-white" title="edit"><img src="./images/icon_edit_adr.png" alt="Edit" title="Edit" class="lazyloaded"></button>
+                                    <div style="text-align: end" class="float-right hidden-xs"><label class="switch mr-1">
+                                        <input type="checkbox">
+                                        <span class="slider round pr-1"></span>
+                                    </label>
+                                        Set as Default</div>
+                                </div>
+                            </div>
+                        </div>
                         <!--Add New in mobile-->
-                        <tr class="d-lg-none">
-                            <td>
-                                <div class="row mx-0">
-                                    <button class="col-xs-6 d-xs-flex border-0 py-10 w-100 bg-white" name="btnNew" type="button" data-toggle="modal" data-target="#popupnew"><img src="./images/icon-plus.svg" alt="new address" title="new address" class="ml-10 mr-10 my-auto p-10 border"><span class="my-auto">Add A New Address</span></button>
-                                </div>
-                            </td>
-                        </tr>
+                        <div class="d-lg-none border-xs-0 mt-xs-10 bg-white mx-lg-50">
+                                    <button class="d-xs-flex border-0 py-10 w-100 bg-white" name="btnNew" type="button" data-toggle="modal" data-target="#popupnew"><img src="./images/icon-plus.svg" alt="new address" title="new address" class="ml-10 mr-10 my-auto p-10 border"><span class="my-auto">Add A New Address</span></button>
+                        </div>
                         <!--End Add New in mobile-->
-                    </table>
+                    </div>
                 </div>
             </div>
             <!--popup add-->
-            <div class="modal fade p-0 z-index-10000" tabindex="-1" id="popupadd" >
-                <div class="container px-0 modal-dialog m-0">
+            <div class="modal fade p-0 z-index-10000 modal-xs-white" tabindex="-1" id="popupadd" >
+                <div class="container px-0 modal-dialog my-0 mx-auto">
                     <div class="row mx-0">
                         <div class="col-12 col-lg-3 px-0 px-lg-15 hidden-xs" >
                         </div>
@@ -432,26 +430,26 @@
                                 </a>
                                 <h1 class="mb-0 text-18">CHANGE ADDRESSES</h1>
                             </header>
-                            <form class="mt-xs-0 col-xs-12 px-lg-60 rounded-xs-0 bg-white address-popup modal-content px-xs-15" role="dialog" action="">
+                            <form class="mt-xs-0 col-xs-12 px-lg-60 rounded-xs-0 border-xs-0 address-popup modal-content px-xs-15" action="">
                                 <h2 class="pb-lg-20 hidden-xs pt-lg-60">Change Address</h2>
                                 <div data-title="Name" class="col-xs-12 pt-xs-20 form-group form-large w-100 mx-xs-10">
-                                    <input class="form-control" type="text" value="Name Demo 1" required/>
+                                    <input title="Name" class="form-control" type="text" value="Name Demo 1" required/>
                                 </div>
                                 <div class="form-group form-large w-100">
                                     <div class="position-relative h-48">
                                         <div class="intl-tel-input allow-dropdown">
-                                            <input maxlength="20" class="form-control" type="text" name="txtPhone" autocomplete="off" value="(+84)012345678" />
+                                            <input title="Phone" maxlength="20" class="form-control" type="text" name="txtPhone" autocomplete="off" value="(+84)012345678" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class=" form-group form-large w-100" data-title="Code">
-                                    <input class="form-control " type="text" value="23798"/>
+                                    <input class="form-control" title="Code" type="text" value="23798"/>
                                 </div>
                                 <div class=" form-group form-large w-100" data-title="Address">
-                                    <input  class="text-wrap form-control" type="text" value="137 My Street, King Ton, New York"/>
+                                    <input  class="text-wrap form-control" title="Address" type="text" value="137 My Street, King Ton, New York"/>
                                 </div>
                                 <div class=" form-group form-large w-100" data-title="Tag">
-                                    <input class="form-control" type="text" value="#15"/>
+                                    <input class="form-control" title="Tag" type="text" value="#15"/>
                                 </div>
                                 <div class="border-0  pt-10 form-check-inline hidden-xs form-group form-large w-100" data-title="Default" >
                                     <div class="checkbox">
@@ -462,7 +460,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="form-control  border-0 text-center hidden-xs form-group form-large w-100" data-title="Button">
+                                <div class="form-control border-0 text-center hidden-xs form-group form-large w-100" data-title="Button">
                                     <button class="btn btn-gray mx-2 text-16 mw-lg-200 mw-xs-120" type="button" name="Cancel" data-dismiss="modal" data-target="_self">Cancel</button>
                                     <button class="btn btn-secondary mx-2 text-16 mw-lg-200 mw-xs-120" type="submit" name="Submit" data-target="_self">Submit</button>
                                 </div>
@@ -473,8 +471,8 @@
                                     <span class="slider round pr-1"></span>
                                 </label>
                                 </div>
-                                <div class="form-control  border-0 p-0 text-center d-lg-none mx-auto form-group form-large w-100" data-title="Button">
-                                    <button class="btn col-12 w-100 my-5 btn-outline-secondary btn-icon" type="submit" name="Delete" data-target="_seft">Delete Addresses</button>
+                                <div class="form-control border-0 p-0 text-center d-lg-none mx-auto form-group form-large w-100" data-title="Button">
+                                    <button class="btn col-12 w-100 my-5 btn-outline-secondary btn-icon" type="button" name="Delete" data-target="#popupdel" data-toggle="modal">Delete Addresses</button>
                                     <button class="btn btn-secondary col-12 w-100 my-5" type="submit" name="Submit" data-target="_seft">Submit</button>
                                 </div>
                                 <!--End Change in mobile-->
@@ -486,17 +484,17 @@
             <!--end add-->
             <!--popup del-->
             <div class="modal fade p-0 z-index-10000" tabindex="-1" id="popupdel" >
-                <div class="container px-0 modal-dialog m-0">
-                    <div class="row mx-0">
+                <div class="container px-0 modal-dialog m-xs-0">
+                    <div class="row mx-0 mx-xs-30">
                         <div class="col-12 col-lg-3 px-0 px-lg-15" >
                         </div>
-                        <div class="col-12 col-lg-9 px-xs-0 bg-white address-delete">
-                            <form class="col-xs-12 mx-auto form-large form-group" role="dialog" action="">
+                        <div class="col-12 col-lg-9 px-xs-0 bg-white address-delete mx-auto">
+                            <form class="col-xs-12 modal-content mx-auto border-0" action="">
                                 <p class="pb-20 text-center text-medium text-18 mt-60">Are you sure delete your account?</p>
-                                <div class="form-control border-0 p-0 text-center" data-title="Button">
-                                    <button class="btn btn-gray text-16 mw-lg-200 mw-xs-120 mr-lg-20 mr-xs-10" type="button" name="Cancel" data-dismiss="modal">Cancel</button>
-                                    <button class="btn btn-secondary float-righ text-16 mw-lg-200 mw-xs-120" type="submit" name="Submit" data-target="_self">Yes</button>
-                                </div>
+                                    <div class="form-control border-0 p-0 text-center form-large form-group" data-title="Button">
+                                        <button class="btn btn-gray mw-lg-200 mw-xs-120 mr-lg-20 mr-xs-10 text-16" type="button" name="Cancel" data-dismiss="modal">Cancel</button>
+                                        <button class="btn btn-secondary mw-lg-200 mw-xs-120 text-16" type="submit" name="Submit" data-target="_self">Yes</button>
+                                    </div>
                             </form>
                         </div>
                     </div>
@@ -504,8 +502,8 @@
             </div>
             <!--end del-->
             <!--popup add new-->
-            <div class="modal fade p-0 z-index-10000" tabindex="-1" id="popupnew" >
-                <div class="container px-0 modal-dialog m-0">
+            <div class="modal fade p-0 z-index-10000 modal-xs-white" tabindex="-1" id="popupnew" >
+                <div class="container px-0 modal-dialog mx-auto my-0">
                     <div class="row mx-0">
                         <div class="col-12 col-lg-3 px-0 px-lg-15" >
                         </div>
@@ -516,7 +514,7 @@
                                 </a>
                                 <h1 class="mb-0 text-18">ADD A NEW ADDRESSES</h1>
                             </header>
-                            <form class="mt-xs-0 col-xs-12 px-lg-60 px-xs-15 rounded-xs-0 address-popup bg-white modal-content" role="dialog" action="">
+                            <form class="mt-xs-0 col-xs-12 px-lg-60 px-xs-15 rounded-xs-0 address-popup bg-white modal-content border-xs-0" action="">
                                 <h2 class=" pb-20 hidden-xs pt-lg-60">Add A New Addresses</h2>
                                 <div data-title="Name" class=" col-xs-12 pt-xs-20 form-group form-large w-100">
                                     <input class="form-control" type="text" placeholder="Full Name"/>

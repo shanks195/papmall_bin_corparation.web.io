@@ -21,9 +21,8 @@
     <h1 class="mb-0 text-18">REQUEST ACCOUNT DELETION</h1>
 </header>
 <main>
-    <div class="py-40 pt-xs-0">
-        <div class="container">
-            <div class="row">
+        <div class="container pt-lg-40 px-xs-0">
+            <div class="row mx-0 mb-lg-50">
                 <div class="col-12 col-lg-3 px-0 px-lg-15 hidden-xs" >
                     <div class="sidebar-my-account">
                         <div class="sidebar-account-desktop d-none d-lg-block">
@@ -278,11 +277,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-9 px-0 bg-white mt-xs-10">
-                    <div class="account-password position-relative rounded bg-white">
-                        <div class="acccout-password-desktop position-relative d-flex rounded p-20 d-lg-block p-xs-0 m-xs-0">
+                <div class="col-12 col-lg-9 px-0 bg-white mt-xs-10 rounded">
+                    <div class="account-password position-relative bg-white rounded">
+                        <div class="position-relative d-flex p-20 d-lg-block p-xs-0 m-xs-0">
                             <div class="profile-title mb-40 d-flex align-items-start hidden-xs">
-                                <img data-src="./images/icon-profile-logo.svg" class="lazyload mr-10" alt="logo" title="logo" class="d-block mr-10">
+                                <img src="./images/icon-profile-logo.svg" data-src="./images/icon-profile-logo.svg" class="lazyload mr-10 d-block" alt="logo" title="logo">
                                 <div class="d-flex justify-content-between w-100 pb-10 border-bottom">
                                     <div class="intro">
                                         <h1 class="title mb-0">Request Account Deletion</h1>
@@ -290,8 +289,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="password-inputs mx-xs-0 w-xs-100">
-                                <form class="mt-xs-10" action="">
+                            <div class="password-inputs w-xs-100 modal-xs-white m-xs-0">
+                                <form class="mt-xs-10 mx-xs-0" action="">
                                     <div class="form-group form-large form-password mb-20">
                                         <input type="password" class="form-control w-xs-100" placeholder="Enter Your Password">
                                         <a href="javascript:void(0)" class="togglePassword active"> </a>
@@ -308,8 +307,8 @@
                                     </div>
                                     <div class="d-flex mb-20 hidden-xs">
                                         <div class="form-group form-large form-password mr-10 authorize-input">
-                                            <input type="password" class="form-control" placeholder="Authorize Code">
-                                            <a href="javascript:void(0)" class="togglePassword active"> </a>
+                                            <input type="text" class="form-control" placeholder="Authorize Code">
+                                            <!--<a href="javascript:void(0)" class="togglePassword active"> </a>-->
                                         </div>
                                         <button type="button" class="btn btn-gray authorize-send-btn text-16">
                                             Send Authorize Code To Your Phone
@@ -326,24 +325,22 @@
                                 </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!--popup delete-->
     <div class="modal fade p-0 z-index-10000" tabindex="-1" id="popupdel" >
-        <div class="container px-0 modal-dialog m-0">
-            <div class="row mx-0">
+        <div class="container px-0 modal-dialog m-xs-0">
+            <div class="row mx-0 mx-xs-30">
                 <div class="col-12 col-lg-3 px-0 px-lg-15" >
                 </div>
-                <div class="col-12 col-lg-9 px-xs-0 bg-white address-delete-account mx-xs-0">
-                    <form class="col-xs-12 form-large form-group" role="dialog" action="">
+                <div class="col-12 col-lg-9 px-xs-0 bg-white address-delete mx-auto">
+                    <form class="col-xs-12 modal-content mx-auto border-0" action="">
                         <p class="pb-20 text-center text-medium text-18 mt-60">Are you sure delete your account?</p>
-                        <div class="form-control border-0 p-0 text-center" data-title="Button">
-                            <button class="btn btn-gray text-16 mw-lg-200 mr-lg-20 mr-xs-10 mw-xs-120" type="button" name="Cancel" data-dismiss="modal">Cancel</button>
-                            <button class="btn btn-secondary float-righ text-16 mw-lg-200 mw-xs-120" type="submit" name="Submit" data-target="_self">Yes</button>
+                        <div class="form-control border-0 p-0 text-center form-large form-group" data-title="Button">
+                            <button class="btn btn-gray mw-lg-200 mw-xs-120 mr-lg-20 mr-xs-10 text-16" type="button" name="Cancel" data-dismiss="modal">Cancel</button>
+                            <button class="btn btn-secondary mw-lg-200 mw-xs-120 text-16" type="submit" name="Submit" data-target="_self">Yes</button>
                         </div>
                     </form>
                 </div>
@@ -353,7 +350,7 @@
     <!--end popup delete-->
     <!--popup auth-->
     <div class="modal fade p-0 z-index-1000 d-lg-none" tabindex="-1" id="popupauthdel">
-        <div class="container px-0 modal-dialog m-0 rounded-xs-0">
+        <div class="container px-0 modal-dialog my-0 mx-auto rounded-xs-0">
             <div class="row mx-0">
                 <header class="header-only-title">
                     <a href="#" title="Back" target="_self" class="back-info btn-reset">
@@ -367,7 +364,7 @@
                             <p class="text-center text-16">Enter the verification code sent to your phone number</p>
                             <p class="text-18 text-medium text-center mb-20">(+84) 909123456</p>
                             <div class="form-group form-resend position-relative form-large">
-                                <input type="number" placeholder="Verification Code" class="form-control">
+                                <input type="number" placeholder="Verification Code" class="form-control" maxlength="8">
                                 <span class="text-16 text-gray-1 position-resend">RESEND (8)</span>
                             </div>
                         </div>
@@ -411,14 +408,14 @@
         // page mobile open
         $("[data-nextpage]").on("click", function(e){
             $($(this).data("nextpage")).addClass("show")
-        })
+        });
         // page mobile back(close);
         $("[data-backpage]").on("click", function(e){
             $($(this).data("backpage")).removeClass("show")
-        })
+        });
         // Hide show password
         $(".togglePassword").click(function () {
-            let input = $(this).parent().find("input");
+            var input = $(this).parent().find("input");
             const type = input.attr("type") === "password" ? "text" : "password";
             input.attr("type", type);
             $(this).toggleClass("active");
@@ -426,14 +423,14 @@
         // Save success
         $(".save-success").on("click", function(e) {
             $(".change-pass-success").addClass("show");
-        })
+        });
         $(".change-pass-success").on("click", function(e){
             if(!e.target.classList.contains("btn")) return;
             $(this).removeClass("show");
-        })
+        });
         $(".change-pass-success-back").on("click", function(e) {
             $("#passwordAuthorizeCode, #manageYourPassword").removeClass("show");
-        })
+        });
     });
 </script>
 </body>

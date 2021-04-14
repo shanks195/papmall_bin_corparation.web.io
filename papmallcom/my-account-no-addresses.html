@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="js/select2/select2.min.css" />
     <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/intlTelInput.min.css" />
     <link rel="stylesheet" href="css/app.css?v=1" />
 </head>
 
@@ -22,8 +23,8 @@
     <h1 class="mb-0 text-18">ADDRESSES</h1>
 </header>
 <main>
-    <div class="container px-0 pt-lg-60">
-        <div class="row mx-0">
+    <div class="container pt-lg-40 px-xs-0">
+        <div class="row mx-0 mb-lg-50">
             <div class="col-12 col-lg-3 px-0 px-lg-15 hidden-xs" >
                 <div class="sidebar-my-account">
                     <div class="sidebar-account-desktop d-none d-lg-block">
@@ -278,49 +279,47 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-9 px-xs-0 p-0 col-md-12 max-h-700 bg-white">
+            <div class="col-12 col-lg-9 px-xs-0 p-0 col-md-12 bg-white mt-xs-10 rounded">
                 <div class="address-content">
-                    <table class="w-100 p-0 mb-0">
-                        <thead>
-                        <tr>
-                            <td class="p-20 hidden-xs bg-white">
-                                <a href="#" target="_blank" title="Papmall">
-                                    <h1 class="title-main backgr-gray hidden-xs" style="float: left">My Addresses</h1></a>
-                                <button class="btn btn-secondary mr-10 hidden-xs float-right" name="btnNew" id="btnNew" type="button" data-toggle="modal" data-target="#popupnew">
-                                    <img src="./images/icon-plus-white.svg" alt="new address" title="new address" class="mr-10">Add A New Address</button>
-                            </td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="row mx-0 justify-content-center hidden-xs">
-                            <td class="col-md-10 text-center mt-lg-60 col-xs-12 " >
-                                <div class="mx-auto mb-24 media mt-xs-0 mr-xs-10"  >
+                    <div class="w-100 p-0 mb-0 rounded bg-white address-content-bg">
+                        <div class="profile-title mb-30 d-flex align-items-start p-20 hidden-xs">
+                            <img src="./images/icon-profile-logo.svg" data-src="./images/icon-profile-logo.svg" class="lazyload d-block mr-10" alt="logo" title="logo" >
+                            <div class="d-flex justify-content-between w-100 pb-30 border-bottom">
+                                <div class="intro">
+                                    <h1 class="title mb-0 title-main">My Addresses</h1>
+                                </div>
+                                <button class="btn btn-block btn-secondary text-16 w-auto mw-lg-200 ml-auto" data-toggle="modal" data-target="#popupnew">
+                                    <img src="./images/icon-banks-cards-add.svg" alt="add new address" title="add new address" class="mr-10">
+                                    Add A New Address
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mx-0 justify-content-center hidden-xs">
+                            <div class="col-md-10 text-center pt-lg-30 col-xs-12">
+                                <div class="mx-auto mb-24 media mt-xs-0 mr-xs-10">
                                     <img class="col-xs-6 mx-auto my-auto" src="./images/icon-no-location.svg" alt="no-location" title="no-location">
                                 </div>
                                 <p class="hidden-xs">You don't have addresses yet</p>
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                         <!--No location in mobile-->
-                        <tr class="row mx-0 d-lg-none">
-                            <td class="col-md-10 col-xs-12 " >
+                        <div class="row mx-0 d-lg-none bg-white">
+                            <div class="col-md-10 col-xs-12" >
                                 <div class="media mt-xs-0 h-80">
                                     <img class="col-xs-3 mr-20 max-w-68 ml-0 my-auto" src="./images/icon-no-location.svg" alt="no-location" title="no-location">
                                     <button class="col-xs-9 d-xs-flex border-0 py-10 w-100 bg-white my-auto" name="btnNew" type="button" data-toggle="modal" data-target="#popupnew"><img src="./images/icon-plus-primary.svg" alt="new address" title="new address" class="mr-10"><span class="my-auto text-main">Add A New Address</span></button>
                                 </div>
-
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                         <!--End No location in mobile-->
-                        </tbody>
-                    </table>
+                    </div>
                 </div>
             </div>
             <!--popup add new-->
-            <div class="modal fade p-0 z-index-10000" tabindex="-1" id="popupnew" >
-                <div class="container px-0 modal-dialog m-0">
+            <div class="modal fade p-0 z-index-10000 modal-xs-white" tabindex="-1" id="popupnew" >
+                <div class="container px-0 modal-dialog mx-auto my-0">
                     <div class="row mx-0">
-                        <div class="col-12 col-lg-3 px-0 px-lg-15" >
-                        </div>
+                        <div class="col-12 col-lg-3 px-0 px-lg-15" ></div>
                         <div class="col-12 col-lg-9 px-xs-0">
                             <header class="header-only-title">
                                 <a href="javascript:history.back()"  title="Back" target="_self" class="back-info btn-reset">
@@ -328,7 +327,7 @@
                                 </a>
                                 <h1 class="mb-0 text-18">ADD A NEW ADDRESSES</h1>
                             </header>
-                            <form class="mt-xs-0 col-xs-12 px-lg-60 px-xs-15 rounded-xs-0 address-popup bg-white modal-content" role="dialog" action="">
+                            <form class="mt-xs-0 col-xs-12 px-lg-60 px-xs-15 rounded-xs-0 address-popup bg-white modal-content border-xs-0" action="">
                                 <h2 class=" pb-20 hidden-xs pt-lg-60">Add A New Addresses</h2>
                                 <div data-title="Name" class=" col-xs-12 pt-xs-20 form-group form-large w-100">
                                     <input class="form-control" type="text" placeholder="Full Name"/>
@@ -341,7 +340,7 @@
                                     </div>
                                 </div>
                                 <div class=" form-group form-large w-100" data-title="Code">
-                                    <input class="form-control " type="text" placeholder="Postal Code"/>
+                                    <input class="form-control" type="text" placeholder="Postal Code"/>
                                 </div>
                                 <div class=" form-group form-large w-100" data-title="Address">
                                     <input  class="text-wrap form-control" type="text" placeholder="Building, Street, etc..."/>
@@ -349,16 +348,16 @@
                                 <div class=" form-group form-large w-100" data-title="Tag">
                                     <input class="form-control" type="text" placeholder="#Unit no"/>
                                 </div>
-                                <div class="border-0  pt-10 form-check-inline hidden-xs form-group form-large w-100" data-title="Default" >
+                                <div class="border-0 pt-10 form-check-inline hidden-xs form-group form-large w-100" data-title="Default" >
                                     <div class="checkbox">
-                                        <label for="checkbox-2" class="text-16">
-                                            <input id="checkbox-2" type="checkbox" />
+                                        <label class="text-16">
+                                            <input type="checkbox" />
                                             <span class="checkmark rounded mb-0"></span>
                                             Set As Default Addresses
                                         </label>
                                     </div>
                                 </div>
-                                <div class="form-control  border-0 text-center hidden-xs form-group form-large w-100" data-title="Button">
+                                <div class="form-control border-0 text-center hidden-xs form-group form-large w-100" data-title="Button">
                                     <button class="btn btn-gray mx-2 text-16 mw-lg-200 mw-xs-120" type="button" name="Cancel" data-dismiss="modal">Cancel</button>
                                     <button class="btn btn-secondary mx-2 text-16 mw-lg-200 mw-xs-120" type="submit" name="Submit" data-target="_self">Submit</button>
                                 </div>
@@ -390,6 +389,18 @@
 <script src="js/slick-1.8.1/slick/slick.min.js"></script>
 <script src="js/lazysizes.min.js"></script>
 <script src="js/ls.bgset.min.js"></script>
+<script src="js/intlTelInput.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var profileTel = $("input[name=txtPhone]");
+        profileTel.intlTelInput({
+            autoPlaceholder: "on",
+            initialCountry: "vn",
+            formatOnDisplay: true,
+            utilsScript: "js/utils.min.js"
+        });
+    });
+</script>
 <script type="text/javascript">
     $(function () {
         $("#import_header").load("import/header.html");

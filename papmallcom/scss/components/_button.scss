@@ -21,16 +21,25 @@ $btn-height: 48px;
 }
 
 .btn-view-details {
-  background-color: #f1f1f1;
-  color: inherit;
+  background-color: #F37721;
+  color: #FFF;
   height: 40px;
   padding: 0 10px;
   &:hover{
-      background-color: #F37721;
-      color: #FFF;
+    color: $white;
   }
-  &:focus {
-    box-shadow: 0 0 0 0.2rem lighten(#CCC, 10%);
+  &.active{
+    background-color: #f1f1f1;
+    color: #464646;
+  }
+  &.active:hover{
+    background-color: #F37721;
+    color: #FFF;
+  }
+  &:focus{
+    box-shadow: none;
+    background-color: $orange;
+    color: $white;
   }
 }
 

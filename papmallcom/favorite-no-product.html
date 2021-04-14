@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Account</title>
+    <title>Favorite & Followed Store</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="js/select2/select2.min.css" />
@@ -13,9 +13,11 @@
 </head>
 <body>
 <header id="import_header" class="header shadow hidden-xs"></header>
-<header class="header-only-title">
-    <a class="btn btn-reset" href="my-voucher-use.html" title="LOGIN" target="_self"><img src="images/icon-arrow-left-white-header.svg" alt="" title=""></a>
-    <h1 class="m-0">MY VOUCHER</h1>
+<header class="header-favorite-follow d-flex justify-content-between">
+        <a class=" reset-favorite" href="my-voucher-use.html" title="LOGIN" target="_self"><img src="images/icon-arrow-left-white-header.svg" alt="favorite & follow" title="favorite & follow"></a>
+        <span class="title-favorite-follow">FARVORITE & FOLLOW...</span> 
+       <a class=" search-favorite"  title="search" target="_self"><img src="images/svg/icon search.svg" alt="search favorite  & follow" title="search favorite  & follow"></a> 
+       <a class="comment-favorite"  title="comment" target="_self"><img src="images/svg/Vector.svg" alt="comment favorite  & follow" title="comment favorite  & follow"></a> 
 </header>
 <main>
     <div class="py-40 pt-xs-0">
@@ -67,7 +69,7 @@
                                         </a>
                                     </li>
                                     <!-- notification -->
-                                    <li>
+                                    <li >
                                         <a href="javascript:void(0)" target="_self" title="notification" class="sidebar-item">
                                             <img src="./images/icon-notification.svg" alt="notification" title="notification" data-status="normal">
                                             <img src="./images/icon-notification-active.svg" alt="notification" title="notification" data-status="active">
@@ -77,7 +79,7 @@
                                         </a>
                                     </li>
                                     <!-- my voucher -->
-                                    <li>
+                                    <li class="d-lg-block"> 
                                         <a href="javascript:void(0)" target="_self" title="my voucher" class="sidebar-item">
                                             <img src="./images/icon-voucher.svg" alt="my voucher" title="my voucher" data-status="normal">
                                             <img src="./images/icon-voucher-active.svg" alt="my voucher" title="my voucher" data-status="active">
@@ -128,12 +130,12 @@
                                 <!--  -->
                             </div>
                             <!-- middle menu purchase on mobile -->
-                            <div class="menu-middle bg-transparent d-block d-lg-none mb-12 mb-12">
+                            <div class="menu-middle bg-transparent d-block d-lg-none mt-12 mb-12">
                                 <a href="javascript:void(0)" target="_self" title="my purchase" class="menu-purchase sidebar-item bg-white d-flex align-items-center position-relative">
                                     <img src="./images/icon-my-purchase.svg" alt="my purchase" title="my purchase"  data-status="normal">
                                     <img src="./images/icon-my-purchase-active.svg" alt="my purchase" title="my purchase"  data-status="active">
                                     <span>My Purchase</span>
-                                    <span class="d-inline-block ml-auto ">Purchase history</span>
+                                    <span class="d-inline-block ml-auto mr-10">Purchase history</span>
                                     <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
                                     <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
                                 </a>
@@ -141,22 +143,22 @@
                                     <!-- item -->
                                     <div class="item-delivery ">
                                         <img src="./images/icon-wait.svg"  alt="waiting" title="waiting" class="d-block mx-auto"/>
-                                        <span class="d-block mb-12">Waiting confirm</span>
+                                        <span class="d-block mt-12">Waiting confirm</span>
                                     </div>
                                     <!-- item -->
                                     <div class="item-delivery ">
                                         <img src="./images/icon-take.svg"  alt="take" title="take" class="d-block mx-auto"/>
-                                        <span class="d-block mb-12">Waiting take</span>
+                                        <span class="d-block mt-12">Waiting take</span>
                                     </div>
                                     <!-- item -->
                                     <div class="item-delivery ">
                                         <img src="./images/icon-delivery-free.svg"  alt="delivery" title="delivery" class="d-block mx-auto"/>
-                                        <span class="d-block mb-12">Delivery</span>
+                                        <span class="d-block mt-12">Delivery</span>
                                     </div>
                                     <!-- item -->
                                     <div class="item-delivery ">
                                         <img src="./images/icon-review.svg"  alt="review" title="review" class="d-block mx-auto"/>
-                                        <span class="d-block mb-12">Review</span>
+                                        <span class="d-block mt-12">Review</span>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +252,7 @@
                                 </ul>
                             </div>
                             <!-- support and chat on mobile -->
-                            <div class="support-wrap bg-transparent d-block d-lg-none mb-12 mb-50">
+                            <div class="support-wrap bg-transparent d-block d-lg-none mt-12 mb-50">
                                 <!-- support center -->
                                 <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item bg-white d-flex align-items-center  position-relative">
                                     <img src="./images/icon-support.svg" alt="my purchase" title="my purchase"  data-status="normal">
@@ -268,7 +270,7 @@
                                     <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
                                 </a>
                                 <!-- btn log out -->
-                                <div class="px-10 mb-12">
+                                <div class="px-10 mt-12">
                                     <button type="button" class="btn w-100" >Logout</button>
                                 </div>
                             </div>
@@ -277,216 +279,67 @@
                 </div>
                 <div class="col-12 col-lg-9 px-xs-0 ">
                     <!--my voucher -->
-                    <div class="account-voucher position-relative rounded bg-white">
+                    <div class="favorite account-voucher position-relative rounded bg-white">
                         <!-- on desktop -->
-                        <div class="account-profile-desktop  rounded d-lg-block ">
-                            <div class="voucher-main voucher-main-mobile">
+                        <div class="account-profile-desktop  rounded p-sm-0  d-lg-block ">
+                            <div class="profile-main voucher-title voucher-tilte-mobile p-0-mobile">
                                 <!-- LOGO and title -->
-                                <div class="profile-title mb-10 d-flex align-items-start pt-pl-20 voucher-title p-0-mobile m-mobile-0">
+                                <div class="profile-title  d-flex align-items-start">
                                     <img data-src="./images/icon-profile-logo.svg" class="lazyload mr-10" alt="logo" title="logo" class="d-block mr-10">
                                     <div class="intro">
-                                        <h1 class="title mb-0 black-2">My Voucher</h1>
+                                        <h1 class="title mb-0">Favorite & Followed Store</h1>
                                         
                                     </div>
                                 </div>
-                                
-                                <!-- form  add voucher-->
-                                <!-- form  add voucher-->
-                                <div class="form-add-voucher rounded">
-                                    <form class="form-voucher-pc"> 
-                                        <h5 class="title-add-voucher black-1">Add Voucher</h5>
-                                        <div class="form-group form-large mb-30 mb-lg-50 form-voucher ">
-                                            <input type="text" placeholder="Please enter voucher code" class="form-control">
-                                        </div>
-                                        <button class="redeem btn-icon black-1 btn-bataner rounded text-14">
-                                            Redeem
-                                        </button>
-                                    </form>
-                                </div>
-                                <div class="form-add-voucher-1">
-                                    <form class="form-voucher-mobile"> 
-                                        <div class="form-group form-large form-add">
-                                            <input type="text" placeholder="Add PAPMALL voucher code" class="form-control mw-40">
-                                        </div>
-                                        <button  class="apply">
-                                            Apply
-                                        </button>
-                                    </form>
-                                </div>
-                                <!-- List table voucher -->
-                                <div class="d-flex flex-wrap table-voucher" id="voucher">
-                                    <div class="col-12 text-center table-left-voucher table-left-voucher-mobile">
-                                        <div class="table">
-                                            <div class="list-t d-flex voucher-list-top">
-                                                <a class="active all-moblie"  data-toggle="list" href="#list-all" role="tab" aria-controls="All">All</a>
-                                                <a class="shop-moblie  black-1" data-toggle="list" href="#list-all" role="tab" aria-controls="All">Shop</a>
-                                                <a href="#list-all"></a>
-                                            </div>        
-                                            <div class="list-t border-top d-flex">
-                                                <a href="my-voucher-valid.html" class="border-mobile black-1 pt-13-pb-14 " data-toggle="list" href="#list-vaild" role="tab" aria-controls="vaild">Vaild (6)</a>
-                                                <a href="my-voucher-use.html" class="border-mobile  pt-13-pb-14 " data-toggle="list" href="#list-use" role="tab" aria-controls="use">Used</a>
-                                                <a href="my-voucher-expired.html" class="border-mobile black-1 active pt-13-pb-14 " data-toggle="list" href="#list-invalid-voucher" role="tab" aria-controls="invalid-voucher">Invalid Voucher</a>
+                                <!-- selection favorite -->
+                                <div class=" p-xs-0 position-relative selection-favorited favorite-mobile-followed">
+                                    <ul class="list-unstyled shop-navigation m-0 overflow-scroll hide-scrollbar">
+                                        <li class="active w-50-mobile">
+                                            <a href="" target="_self" title="Favorite" class="text-link pt-14-pb11-mobile">Favorite (6)</a>
+                                        </li>
+                                        <li class="w-50-mobile">
+                                            <a href="" target="_self" title="Followed-shop" class="text-link pt-14-pb11-mobile">Followed Shop (12)</a>
+                                        </li>            
+                                    </ul>
+                                </div>  
+                            </div>
+                                  
+                        </div>   
+                    </div>
+                    
+                    <div class="wine-shop">
+                        <div class="pt-12">
+                          
+                            <div class="col-lg-12 p-0">
+                               <!-- product flash sale -->
+                                <div class="mt-10 m-0 product-add-cart pl-0-moblie ">
+                                    <div class=" wine-shop">
+                                        <div class="row mr-0 ml-0">
+                                            <div class="mt-20 col-lg-12 p-0 followed-shop rounded favorite-gray-mobile">
+                                                <div class="favorite-no-product text-center pt-40-pb-56">
+                                                    <div class="icon-no-product">
+                                                        <img src="./images/sx.svg"
+                                                        data-src="./images/icon-no-product.svg"
+                                                        alt="icon no product"
+                                                        title="icon no product"
+                                                        class="lazyload">
+                                                    </div>
+                                                    <div class="favorite-information-no-product">
+                                                        <p class="favorite-information-title-no-product">You haven’t like any product yet</p>
+                                                        <button type="button" class="go-shoping-now"> Go Shopping Now</button>
+                                                    </div>
+                                                </div>
                                                 
                                             </div>
-                                        </div>     
-                                    </div>
-                                    <div class="voucher-information padding-mobile-0-1-20-10 background-gray col-12">
-                                        <div class="mt-20">
-                                            <div class="voucher-center ">
-                                                <div class="list-unstyled list-voucher-2  voucher  row">
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="list-voucher-item  pr-2 pr-0  mb-12 disabled">
-                                                            <div class="list-voucher-logo   flex-shrink-0">
-                                                                <img src="./images/sx.svg" data-src="./images/avatar-shop-3.png" alt="" title="" class="lazyload" />
-                                                            </div>
-                                
-                                                            <div class="flex-grow-1 brown-mobile">
-                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex" style="
-                                                                align-items: center;
-                                                                justify-content: space-between;
-                                                            ">
-                                                                <span style="padding-right: 15px;font-size: 16px;font-weight: 500;">$30 off Min. Spend $1,000</span> <span class="used"><a class="used-a">Expired</a></span></p>
-                                                                    <div class="text-14 text-xs-12 d-flex flex-xs-column">
-                                                                        <p class="text-gray-1 m-0">Valid Till: 31.01.2021</p>
-                                                                        <a href="#" target="_self" title="Terms & Conditions" class="ml-lg-20 ml-0 text-primary">Terms & Conditions</a>
-                                                                    </div>
-                                                                    
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="list-voucher-item  pr-2 pr-0  mb-12 disabled">
-                                                            <div class="list-voucher-logo   flex-shrink-0">
-                                                                <img src="./images/sx.svg" data-src="./images/avatar-shop-3.png" alt="" title="" class="lazyload" />
-                                                            </div>
-                                
-                                                            <div class="flex-grow-1 brown-mobile">
-                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex" style="
-                                                                align-items: center;
-                                                                justify-content: space-between;
-                                                            ">
-                                                            <span style="padding-right: 15px;font-size: 16px;font-weight: 500;">$30 off Min. Spend $1,000</span> <span class="used"><a class="used-a">Expired</a></span></p>
-                                                                <div class="text-14 text-xs-12 d-flex flex-xs-column">
-                                                                    <p class="text-gray-1 m-0">Valid Till: 31.01.2021</p>
-                                                                    <a href="#" target="_self" title="Terms & Conditions" class="ml-lg-20 ml-0 text-primary">Terms & Conditions</a>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6 ">
-                                                        <div class="list-voucher-item  pr-2 pr-0  mb-12 disabled">
-                                                            <div class="list-voucher-logo   flex-shrink-0">
-                                                                <img src="./images/sx.svg" data-src="./images/avatar-shop-3.png" alt="" title="" class="lazyload" />
-                                                            </div>
-                                
-                                                            <div class="flex-grow-1 brown-mobile">
-                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex" style="
-                                                                align-items: center;
-                                                                justify-content: space-between;
-                                                            ">
-                                                            <span style="padding-right: 15px;font-size: 16px;font-weight: 500;">$30 off Min. Spend $1,000</span> <span class="used"><a class="used-a">Expired</a></span></p>
-                                                                <div class="text-14 text-xs-12 d-flex flex-xs-column">
-                                                                    <p class="text-gray-1 m-0">Valid Till: 31.01.2021</p>
-                                                                    <a href="#" target="_self" title="Terms & Conditions" class="ml-lg-20 ml-0 text-primary">Terms & Conditions</a>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="list-voucher-item  pr-2 pr-0  mb-12 disabled">
-                                                            <div class="list-voucher-logo   flex-shrink-0">
-                                                                <img src="./images/sx.svg" data-src="./images/avatar-shop-3.png" alt="" title="" class="lazyload" />
-                                                            </div>
-                                
-                                                            <div class="flex-grow-1 brown-mobile">
-                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex" style="
-                                                                align-items: center;
-                                                                justify-content: space-between;
-                                                            ">
-                                                            <span style="padding-right: 15px;font-size: 16px;font-weight: 500;">$30 off Min. Spend $1,000</span> <span class="used"><a class="used-a">Expired</a></span></p>
-                                                                <div class="text-14 text-xs-12 d-flex flex-xs-column">
-                                                                    <p class="text-gray-1 m-0">Valid Till: 31.01.2021</p>
-                                                                    <a href="#" target="_self" title="Terms & Conditions" class="ml-lg-20 ml-0 text-primary">Terms & Conditions</a>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="list-voucher-item  pr-2 pr-0  mb-12 disabled">
-                                                            <div class="list-voucher-logo   flex-shrink-0">
-                                                                <img src="./images/sx.svg" data-src="./images/avatar-shop-3.png" alt="" title="" class="lazyload" />
-                                                            </div>
-                                
-                                                            <div class="flex-grow-1 brown-mobile">
-                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex" style="
-                                                                align-items: center;
-                                                                justify-content: space-between;
-                                                            ">
-                                                            <span style="padding-right: 15px;font-size: 16px;font-weight: 500;">$30 off Min. Spend $1,000</span> <span class="used"><a class="used-a">Expired</a></span></p>
-                                                                <div class="text-14 text-xs-12 d-flex flex-xs-column">
-                                                                    <p class="text-gray-1 m-0">Valid Till: 31.01.2021</p>
-                                                                    <a href="#" target="_self" title="Terms & Conditions" class="ml-lg-20 ml-0 text-primary">Terms & Conditions</a>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="list-voucher-item  pr-2 pr-0  mb-12 disabled">
-                                                            <div class="list-voucher-logo   flex-shrink-0">
-                                                                <img src="./images/sx.svg" data-src="./images/avatar-shop-3.png" alt="" title="" class="lazyload" />
-                                                            </div>
-                                
-                                                            <div class="flex-grow-1 brown-mobile">
-                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex" style="
-                                                                align-items: center;
-                                                                justify-content: space-between;
-                                                            ">
-                                                            <span style="padding-right: 15px;font-size: 16px;font-weight: 500;">$30 off Min. Spend $1,000</span> <span class="used"><a class="used-a">Expired</a></span></p>
-                                                                <div class="text-14 text-xs-12 d-flex flex-xs-column">
-                                                                    <p class="text-gray-1 m-0">Valid Till: 31.01.2021</p>
-                                                                    <a href="#" target="_self" title="Terms & Conditions" class="ml-lg-20 ml-0 text-primary">Terms & Conditions</a>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-xl-6">
-                                                        <div class="list-voucher-item  pr-2 pr-0  mb-12 disabled">
-                                                            <div class="list-voucher-logo   flex-shrink-0">
-                                                                <img src="./images/sx.svg" data-src="./images/avatar-shop-3.png" alt="" title="" class="lazyload" />
-                                                            </div>
-                                
-                                                            <div class="flex-grow-1 brown-mobile">
-                                                                <p class="m-lg-0 text-14 text-lg-16 mb-5 d-flex" style="
-                                                                align-items: center;
-                                                                justify-content: space-between;
-                                                            ">
-                                                            <span style="padding-right: 15px;font-size: 16px;font-weight: 500;">$30 off Min. Spend $1,000</span> <span class="used"><a class="used-a">Expired</a></span></p>
-                                                                <div class="text-14 text-xs-12 d-flex flex-xs-column">
-                                                                    <p class="text-gray-1 m-0">Valid Till: 31.01.2021</p>
-                                                                    <a href="#" target="_self" title="Terms & Conditions" class="ml-lg-20 ml-0 text-primary">Terms & Conditions</a>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>   
-                                            </div>      
-                                        </div>
-  
-                                        <div class="nomore">
-                                            <p>No more vouchers found</p>
                                         </div>
                                     </div>
-                                  </div>
+                                </div>
+                                
                             </div>
-                            <div class="profile-change"></div>
                         </div>
+                    </div>
+                     
+                    
                         <!-- on mobile -->
                         <div class="account-profile-mobile d-block d-lg-none">
                             <!-- class page-mobile when add class show then it will show and move from right to left -->
@@ -501,7 +354,7 @@
                                             <label for="editImgProfile" class="lable-edit">
                                                 Edit
                                             </label>
-                                            <input type="file" class="d-none" name="file-img" id="editImgProfile">
+                                            <input type="file"  name="file-img" id="editImgProfile">
                                         </div>
                                         <a href="javascript:void(0)" title="edit" target="_self" class="edit-btn">Tab to change</a>
                                     </div>
@@ -568,7 +421,7 @@
                                 <div class="form-group text-center px-10 py-0">
                                     <p class="m-0 mb-16">Please enter a new shop name.</p>
                                     <input type="text" name="shopname" value="" class="form-control">
-                                    <button class="btn btn-block btn-secondary text-16 w-100 mb-12" data-toggle="modal" data-target="#changeShopName">Done</button>
+                                    <button class="btn btn-block btn-secondary text-16 w-100 mt-20" data-toggle="modal" data-target="#changeShopName">Done</button>
                                 </div>
                             </div>
                         </div>
@@ -602,11 +455,11 @@
                                 <div class="gender-selection text-center rounded  ">
                                     <h3 class="title">Choose Gender</h3>
                                     <label for="gender-user-female" data-dismiss="modal" class="d-block gender-item">Female</label>
-                                    <input type="radio"  value="female"  id="gender-user-female">
+                                    <input type="radio" value="female"  id="gender-user-female">
                                     <label for="gender-user-male" data-dismiss="modal" class="d-block gender-item">Male</label>
                                     <input type="radio"  value="male" id="gender-user-male">
                                     <label for="gender-user-other" data-dismiss="modal" class="d-block gender-item">Other</label>
-                                    <input type="radio"  value="other" id="gender-user-other">
+                                    <input type="radio" value="other" id="gender-user-other">
                                 </div>
                               
                             </div>
@@ -663,7 +516,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="text-right mb-12">
+                                    <div class="text-right mt-20">
                                         <a href="javascript:void(0)" target="_self" title="Cancel" data-dismiss="modal">Cancel</a>
                                         <a href="javascript:void(0)" target="_self" title="Finished" data-dismiss="modal" class="text-secondary finished">Finished</a>
                                     </div>
@@ -671,7 +524,10 @@
                               
                             </div>
                         </div>
-                    </div>
+                        </div>
+
+                        
+                        
                 </div>
             </div>
         </div>
@@ -698,8 +554,8 @@
         $("[data-backpage]").on("click", function(e){
             $($(this).data("backpage")).removeClass("show")
         })
-        $(".border-moblie").on("click", function(e){
-            e.currentTarget.classList.add("vaild-mobile");
+        $("li").on("click", function(e){
+            e.currentTarget.classList.add("active");
         })
     });
 </script>

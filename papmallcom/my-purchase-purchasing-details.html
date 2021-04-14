@@ -1461,210 +1461,10 @@
         <div class="container px-lg-15 px-0">
             <div class="padding-block pt-lg-40 pt-0">
                 <div class="row mx-0 my-account-wrap">
-                    <div class="col-12 col-lg-3 px-0 px-lg-15 hidden-xs" >
-                        <div class="sidebar-my-account">
-                            <!--  top of sidebar on Desktop    -->
-                            <div class="sidebar-account-top mb-25 py-20 d-none d-lg-flex  align-items-center justify-content-center flex-column rounded">
-                                <div class="account-wrap-img mb-20 rounded-circle bg-white position-relative">
-                                    <img src="./images/account-user.png"  alt="account" title="account" class="d-block"/>
-                                    <img src="./images/icon-camera.svg" alt="camera" title="camera" class="d-block"/>
-                                </div>
-                                <p class="account-name mb-0">John Solomon</p>
-                            </div>
-                            <!--   top of sidebar on Mobile  -->
-                            <div class="sidebar-account-top d-block d-lg-none px-10 py-15">
-                                <!-- menu side -->
-                                <div class="menu-side">
-                                    <!-- icons -->
-                                    <div class="icons-wrap d-flex align-items-center justify-content-end mb-10">
-                                        <!-- setting icon -->
-                                        <img src="./images/icon-setting.svg"  alt="setting" title="setting" class="d-block"/>
-                                        <!-- shopping cart icon -->
-                                        <img src="./images/icon-shopping-cart.svg"  alt="shopping" title="shopping" class="d-block ml-20 mr-20"/>
-                                        <!-- chat icon -->
-                                        <img src="./images/icon-chat-white.svg"  alt="chat" title="chat" class="d-block"/>
-                                    </div>
-                                    <!-- user -->
-                                    <div class="user-wrap d-flex align-items-center">
-                                        <div class="bg-white mr-20 rounded-circle">
-                                            <img src="./images/account-user.png"  alt="account user" title="account user" class="d-block"/>
-                                        </div>
-                                        <div class="user-info">
-                                            <p class="name text-white ">John Solomon</p>
-                                            <p class="follow-status text-white mb-0">Follow me: 5 | Following: 10</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--  -->
-                            </div>
-                            <!-- middle menu purchase on mobile -->
-                            <div class="menu-middle bg-transparent d-block d-lg-none mt-12 mb-12">
-                                <a href="javascript:void(0)" target="_self" title="my purchase" class="menu-purchase sidebar-item bg-white d-flex align-items-center position-relative">
-                                    <img src="./images/icon-my-purchase.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                    <img src="./images/icon-my-purchase-active.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                    <span>My Purchase</span>
-                                    <span class="d-inline-block ml-auto mr-10">Purchase history</span>
-                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                </a>
-                                <div class="status-delivery bg-white d-flex aligin-items-center text-center py-20">
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-wait.svg"  alt="waiting" title="waiting" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Waiting confirm</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-take.svg"  alt="take" title="take" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Waiting take</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-delivery-free.svg"  alt="delivery" title="delivery" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Delivery</span>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="item-delivery ">
-                                        <img src="./images/icon-review.svg"  alt="review" title="review" class="d-block mx-auto"/>
-                                        <span class="d-block mt-12">Review</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- bottom of sidebar -->
-                            <div class="sidebar-account-bottom">
-                                <ul class="bg-white bd-basic rounded side-list-account mb-0">
-                                    <!-- my account on desktop-->
-                                    <li class="d-none d-lg-block">
-                                        <!-- add class active here -->
-                                        <a href="#my-account-collapse" target="_self" title="my account" class="dropdown-toggle sidebar-item" data-toggle="collapse" aria-expanded="false">
-                                            <img src="./images/icon-my-account.svg" alt="my account" title="my account" data-status="normal">
-                                            <img src="./images/icon-my-account-active.svg" alt="my account" title="my account"  data-status="active">
-                                            My Account
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                        </a>
-                                        <div class="collapse" data-target="my-account-collapse" id="my-account-collapse">
-                                            <a class="dropdown-item sidebar-item active" href="javascript:void(0)" target="_self" title="profile">Profile</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="banks">Banks & Cards</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="address">Addresses</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="password">Password</a>
-                                            <a class="dropdown-item sidebar-item" href="javascript:void(0)" target="_self" title="delete account">Delete Account</a>
-                                        </div>
-                                    </li>
-                                    <!-- My account on mobile -->
-                                    <li class="d-block d-lg-none">
-                                        <a href="javascript:void(0)" target="_self" title="my account" data-nextpage="#my-account-sub-list" class="sidebar-item d-flex d-lg-none">
-                                            <img src="./images/icon-my-account.svg" alt="my account" title="my account" data-status="normal">
-                                            <img src="./images/icon-my-account-active.svg" alt="my account" title="my account"  data-status="active">
-                                            My Account
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                        </a>
-                                        <!-- class page-mobile when add class show then it will show and move from right to left -->
-                                        <div class="my-account-sub-list page-mobile" id="my-account-sub-list" >
-                                            <div class="header-account-mobile mb-12">
-                                                <img src="./images/icon-arrow-left-white-header.svg" alt="" title="arrow back" class="arrow-back arrow-back-account-list" role="button">
-                                                <div class="text-center">
-                                                    <p class="text-white mb-0">MY ACCOUNT</p>
-                                                </div>
-                                            </div>
-                                            <a class="d-block sidebar-item bg-white active" href="javascript:void(0)" target="_self" title="profile">
-                                                Profile
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="banks">
-                                                Banks & Cards
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="address">
-                                                Addresses
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="password">
-                                                Password
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                            <a class="d-block sidebar-item bg-white " href="javascript:void(0)" target="_self" title="delete account">
-                                                Delete Account
-                                                <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="arrow-right"/>
-                                                <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="arrow-right"/>
-                                            </a>
-                                        </div>
-                                    </li>
-                                    <!-- my purchase -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item">
-                                            <img src="./images/icon-my-purchase.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                            <img src="./images/icon-my-purchase-active.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                            My Purchase
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                    <!-- notification -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="notification" class="sidebar-item">
-                                            <img src="./images/icon-notification.svg" alt="notification" title="notification" data-status="normal">
-                                            <img src="./images/icon-notification-active.svg" alt="notification" title="notification" data-status="active">
-                                            Notification
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                    <!-- my voucher -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="my voucher" class="sidebar-item">
-                                            <img src="./images/icon-voucher.svg" alt="my voucher" title="my voucher" data-status="normal">
-                                            <img src="./images/icon-voucher-active.svg" alt="my voucher" title="my voucher" data-status="active">
-                                            My Voucher
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                    <!-- Favorite & Followed Shop -->
-                                    <li>
-                                        <a href="javascript:void(0)" target="_self" title="favorite" class="sidebar-item">
-                                            <img src="./images/icon-favorite-smaller.svg" alt="favorite" title="favorite" data-status="normal">
-                                            <img src="./images/icon-favorite-smaller-active.svg" alt="favorite" title="favorite" data-status="active">
-                                            Favorite & Followed Shop
-                                            <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                            <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- support and chat on mobile -->
-                            <div class="support-wrap bg-transparent d-block d-lg-none mt-12 mb-50">
-                                <!-- support center -->
-                                <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item bg-white d-flex align-items-center  position-relative">
-                                    <img src="./images/icon-support.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                    <img src="./images/icon-support-active.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                        Support Center
-                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                </a>
-                                <!-- chat with papmall -->
-                                <a href="javascript:void(0)" target="_self" title="my purchase" class="sidebar-item bg-white d-flex align-items-center  position-relative">
-                                    <img src="./images/icon-chat.svg" alt="my purchase" title="my purchase"  data-status="normal">
-                                    <img src="./images/icon-chat-secondary.svg" alt="my purchase" title="my purchase"  data-status="active">
-                                        Chat with PAPMALL
-                                    <img src="./images/icon-arrow-right-base-black.svg" alt="arrow" title="arrow" data-status="normal" class="d-lg-none arrow-right"/>
-                                    <img src="./images/icon-arrow-right-base-black-active.svg" alt="arrow" title="arrow" data-status="active" class="d-lg-none arrow-right"/>
-                                </a>
-                                <!-- btn log out -->
-                                <div class="px-10 mt-12">
-                                    <button type="button" class="btn w-100" >Logout</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-12 col-lg-3 px-0 px-lg-15 hidden-xs" ></div>
                     <div class="col-lg-9 px-0 mypurchase-content ">
                         <div class="bg-white pt-15 pb-40 rounded hidden-xs">
-                            <h3 class="mb-0 ml-15">TRACK YOUR PRODUCT</h3>
+                            <h1 class="mb-0 ml-15 text-18">TRACK YOUR PRODUCT</h1>
                             <hr class="mb-0">
                             <div class="px-60">
                                <div class="py-30 d-flex align-items-center justify-content-between">
@@ -1672,15 +1472,15 @@
                                         <div class="box-track-product active d-flex icon-92-round align-items-center justify-content-center">
                                             <img src="./images/sx.svg" data-src="./images/icon-verified.svg" alt="Shopping" title="Shopping" class="lazyload">
                                         </div>
-                                        <p class="mt-20 text-medium text-main">Order Verified</p>
+                                        <h3 class="mt-20 text-main text-16">Order Verified</h3>
                                         <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
-                                        <div class="line-track-product"></div>
+                                        <div class="line-track-product active"></div>
                                    </div>
                                    <div class="item-track-product">
-                                        <div class="box-track-product d-flex icon-92-round align-items-center justify-content-center">
+                                        <div class="box-track-product active d-flex icon-92-round align-items-center justify-content-center">
                                             <img src="./images/sx.svg" data-src="./images/icon-delivery-gray.svg" alt="Shopping" title="Shopping" class="lazyload">
                                         </div>
-                                        <p class="mt-20 text-medium">On Delivery</p>
+                                        <h3 class="mt-20 text-16">On Delivery</h3>
                                         <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
                                         <div class="line-track-product"></div>
                                     </div>
@@ -1688,7 +1488,7 @@
                                         <div class="box-track-product d-flex icon-92-round align-items-center justify-content-center">
                                             <img src="./images/sx.svg" data-src="./images/icon-arrived.svg" alt="Shopping" title="Shopping" class="lazyload">
                                         </div>
-                                        <p class="mt-20 text-medium">Order Arrived</p>
+                                        <h3 class="mt-20 text-16">Order Arrived</h3>
                                         <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
                                         <div class="line-track-product"></div>
                                    </div>
@@ -1696,7 +1496,7 @@
                                         <div class="box-track-product d-flex icon-92-round align-items-center justify-content-center ">
                                             <img src="./images/sx.svg" data-src="./images/icon-order-rating.svg" alt="Shopping" title="Shopping" class="lazyload">
                                         </div>
-                                        <p class="mt-20 text-medium">Order Rating</p>
+                                        <h3 class="mt-20 text-18">Order Rating</h3>
                                         <p class="mt-10 text-12 text-date">10:29 20-10-2021</p>
                                     </div>
                                </div>
@@ -1704,9 +1504,9 @@
                         </div>
                         <div class="bg-white mt-20 pt-15 pb-40 rounded hidden-xs">
                             <div class="d-flex justify-content-end">
-                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20">Return/ Refund</a>
-                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20">View Shop</a>
-                                <a href="#" title="" target="_self" class="btn btn-view-details hidden-xs mr-20" data-toggle="modal" data-target="#ProductRating">Product Rating</a>
+                                <a href="#" title="" target="_self" class="btn btn-view-details active hidden-xs mr-20">Return/ Refund</a>
+                                <a href="#" title="" target="_self" class="btn btn-view-details active hidden-xs mr-20">View Shop</a>
+                                <a href="#" title="" target="_self" class="btn btn-view-details active hidden-xs mr-20" data-toggle="modal" data-target="#ProductRating">Product Rating</a>
                             </div>
                             <div class="pb-40 px-15 mt-20">
                                <div class="d-flex">
@@ -1747,7 +1547,7 @@
                                     <tbody>
                                         <tr class="border-0">
                                             <th width="50%">
-                                                <span class="text-main ml-40">Shoes Shop</span>
+                                                <a href="#" title="" target="_self" class="text-main ml-40 hover-secondary">Shoes Shop</a>
                                             </th>
                                             <th></th>
                                             <th class="text-center">Quantity</th>
@@ -1771,7 +1571,7 @@
                                                     <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">Hello Kitty Newborn Baby Cartoon Baby Shoes 0-1Y</a></h3>
                                                     <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
                                                         <img
-                                                            src="./images/icon-chatnow-small.svg"
+                                                            src="./images/icon-chat-now-store.svg"
                                                             alt="chat"
                                                             title="chat"
                                                             class=" mr-5"
@@ -1784,7 +1584,7 @@
                                                         />
                                                     Chat Now
                                                     </a>
-                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit"/>Visit Shop</a>
+                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit" class="mr-5">Visit Shop</a>
                                                 </div>
                                                 
                                             </td>
@@ -1803,7 +1603,7 @@
                                         </tr>
                                         <tr class="border-0">
                                             <th width="50%" class="pt-20">
-                                                <span class="text-main ml-40">Tech Shop</span>
+                                                <a href="#" title="" target="_self" class="text-main ml-40 hover-secondary">Tech Shop</a>
                                             </th>
                                             <th class="pt-20"></th>
                                             <th class="text-center pt-20">Quantity</th>
@@ -1827,7 +1627,7 @@
                                                     <h3 class="text-16"><a href="#" title="image-product" target="_self" class="hover-secondary">RGB Gaming Mouse AW510M Mechanical Gaming Keyboard AW310K</a></h3>
                                                     <a href="#" target="_self" title="Link" class="btn btn-outline-secondary btn-smaller btn-icon text-lg-16 text-14 mr-10 mr-lg-15 mt-2 text-14 w-114">
                                                         <img
-                                                            src="./images/icon-chatnow-small.svg"
+                                                            src="./images/icon-chat-now-store.svg"
                                                             alt="chat"
                                                             title="chat"
                                                             class=" mr-5"
@@ -1840,7 +1640,7 @@
                                                         />
                                                     Chat Now
                                                     </a>
-                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit"/>Visit Shop</a>
+                                                    <a class="btn btn-outline-gray btn-smaller mt-2 " href="#" title="" target="_self"><img src="images/icon-store-product.svg" title="visit" alt="visit" class="mr-5">Visit Shop</a>
                                                 </div>
                                                 
                                             </td>
@@ -1918,8 +1718,9 @@
                         </div>
                         <div class="bg-xs-white pt-15 mt-12 d-lg-none">
                             <div class="d-flex justify-content-between align-items-center px-10 pb-15 border-bottom">
-                                <div class="d-flex align-items-center justify-content-between"><img src="./images/sx.svg" data-src="./images/icon-brand.jpg" alt="" title="" class="lazyload">
-                                        <p class="mb-0 ml-10">Sam Sung Shop</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a href="#" title="" target="_self"><img src="./images/sx.svg" data-src="./images/icon-brand.jpg" alt="" title="" class="lazyload"></a>
+                                    <a href="#" title="" target="_self" class="ml-10 text-16">Sam Sung Shop</a>
                                 </div>
                                 <div>
                                     <a href="#" title="" target="_self">
@@ -1930,9 +1731,9 @@
                             <div class="bg-gray-1 pt-15">
                                 <div class="px-10">
                                     <div class="d-flex">
-                                        <img src="./images/sx.svg" data-src="./images/img-product-brand.jpg" alt="" title="" class="lazyload">
+                                        <a href="#" target="_self" title=""><img src="./images/sx.svg" data-src="./images/img-product-brand.jpg" alt="" title="" class="lazyload"></a>
                                         <div class="ml-10 w-100">
-                                            <p class="text-medium">Smart Tivi Samsung 4K 43 inch</p>
+                                            <h3 class="text-16"><a href="#" target="_self" title="" class="hover-secondary">27" T55 Curved Monitor</a></h3>
                                             <div class="d-flex justify-content-between">
                                                 <p class="text-date">As pictures show</p>
                                                 <p class="text-date">x 1</p>
@@ -1964,12 +1765,81 @@
                                 </div>
                            </div>
                             <div class="px-10 d-flex justify-content-center align-items-center py-20 bg-gray-1">
-                                <a href="#" target="_self" title="Link" class="btn btn-outline-gray btn-smaller mw-120">
+                                <a href="#" target="_self" title="Link" class="btn btn-outline-gray btn-smaller mw-120" data-nextpage="#product-rating">
                                     Product Rating
                                 </a>
                                 <a href="#" target="_self" title="Link" class="btn btn-block btn-secondary text-14 h-40 w-auto mw-lg-200 mw-120 my-5 ml-40">
                                     Buy Again
                                 </a>
+                            </div>
+                            <div class="page-mobile d-lg-none product-rating mypurchase-content" id="product-rating">
+                                <div class="header-account-mobile">
+                                    <img src="./images/icon-arrow-left-white-header.svg" alt="" title="arrow back" class="arrow-back arrow-back-account-list" role="button" data-backpage="#product-rating">
+                                    <div class="text-center">
+                                        <p class="text-white mb-0">PRODUCT RATING</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded rounded-xs-0">
+                                    <ul class="nav nav-pills list-unstyled shop-navigation m-0 overflow-scroll hide-scrollbar flex-nowrap" id="pills-tab" role="tablist">
+                                        <li class="nav-item w-50">
+                                            <a class="nav-link active" id="pills-reviewshop-tab" data-toggle="pill" href="#pills-reviewshop" role="tab" aria-controls="pills-reviewshop" aria-selected="true" target="_self" title=""><span>Review Shop</span> </a>
+                                        </li>
+                                        <li class="nav-item w-50">
+                                            <a class="nav-link" id="pills-reviewbuy-tab" data-toggle="pill" href="#pills-reviewbuy" role="tab" aria-controls="pills-reviewbuy" aria-selected="false" target="_self" title="">Review Buyer</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                  <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active bg-xs-white mt-12 py-20" id="pills-reviewshop" role="tabpanel" aria-labelledby="pills-reviewshop-tab">
+                                        <h2 class="text-16 text-center">Rate Product</h2>
+                                        <div>
+                                         <form class="px-10">
+                                             <div class="form-group form-large mb-0">
+                                                 <input type="text" class="form-control" placeholder="Shoes Kids">
+                                             </div>
+                                         </form>
+                                         <div class="pr-10">
+                                             <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20 icon-xs-80 rounded-xs-0 ml-10" />
+                                             <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20 icon-xs-80 rounded-xs-0 ml-10" />
+                                             <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20 icon-xs-80 rounded-xs-0 ml-10" />
+                                             <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20 icon-xs-80 rounded-xs-0 ml-10" />
+                                             <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20 icon-xs-80 rounded-xs-0 ml-10" />
+                                             <div class="box-no-image d-inline-flex flex-column justify-content-center align-items-center ml-10 mt-20 d-lg-none">
+                                                <a href="#" target="_self" title="" class="py-0"><img src="./images/sx.svg" data-src="./images/icon-no-image.svg" alt="" title="" class="lazyload"></a>
+                                                <span class="text-date text-12 mt-5">no images</span>
+                                            </div>
+                                             <div class="add-more-image d-inline-flex flex-column justify-content-center align-items-center ml-10 mt-20">
+                                                <input type="file" id="myfile-mobile" name="myfile-mobile">
+                                                 <a href="#" target="_self" title="" class="py-0" id="myfile-upload-mobile"><img src="./images/sx.svg" data-src="./images/icon-add-img.png" alt="" title="" class="lazyload"></a>
+                                                 <span class="text-main text-12 text-medium mt-5">Add Image</span>
+                                             </div>
+                                         </div>
+                                         <form class="px-10">
+                                             <div class="form-group form-large mb-0 mt-20">
+                                                 <input type="text" class="form-control" placeholder="Leave Review...">
+                                             </div>
+                                         </form>
+                                         <div class="mt-20 px-10">
+                                             <div class="rating-wrapper-title d-block">
+                                                 <div class="rating-fill-title" style="width: 80%;"></div>
+                                             </div>
+                                         </div>
+                                         <div class="d-flex justify-content-center pt-40">
+                                             <button type="submit" title="" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 my-10">
+                                                 Submit
+                                             </button>
+                                         </div>
+                                         <div class="px-10 mt-40">
+                                            <p class="text-red">*Note:</p>
+                                            <ol class="pl-15">
+                                                <li class="mt-15">Rating must contain no less than 50 character, ("Good Product" is counted as 12 character)</li>
+                                                <li class="mt-15">Rating must contain no less than 1 picture.</li>
+                                            </ol>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-reviewbuy" role="tabpanel" aria-labelledby="pills-reviewbuy-tab">...</div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -1997,7 +1867,7 @@
               </div>
             </div>
             <div class="modal-body border-0 px-0">
-                <h1 class="modal-title text-center mb-20" id="exampleModalLongTitle">Rate Product</h1>
+                <h2 class="modal-title text-center mb-20 text-32" id="exampleModalLongTitle">Rate Product</h2>
                <div>
                 <form>
                     <div class="form-group form-large mb-0 px-60">
@@ -2011,7 +1881,8 @@
                     <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
                     <img src="./images/sx.svg" data-src="./images/img-product-rate.jpg" alt="" title="" class="lazyload ml-lg-30 mt-20" />
                     <div class="add-more-image d-inline-flex flex-column justify-content-center align-items-center ml-lg-45">
-                        <a href="#" target="_self" title="" class="py-0"><img src="./images/sx.svg" data-src="./images/icon-add-img.png" alt="" title="" class="lazyload"></a>
+                        <input type="file" name="myfile-rating-modal" id="myfile-rating-modal">
+                        <a href="#" target="_self" title="" class="py-0" id="myfile-upload-modal"><img src="./images/sx.svg" data-src="./images/icon-add-img.png" alt="" title="" class="lazyload"></a>
                         <span class="text-main text-12 text-medium mt-5">Add Image</span>
                     </div>
                 </div>
@@ -2026,7 +1897,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center pt-40">
-                    <button type="submit" title="" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 my-10">
+                    <button type="submit" class="btn btn-block btn-secondary text-lg-16 text-14 w-200 my-10">
                         Submit
                     </button>
                 </div>
@@ -2062,8 +1933,20 @@
             $(".selectCategory").select2({
                 placeholder: "Product Category",
             });
-            $("#import_footer").load("import/footer.html");
-            $("#import_user-control").load("import/user-control.html");
+            $("[data-nextpage]").on("click", function(e){
+            $($(this).data("nextpage")).addClass("show")
+            })
+            $("[data-backpage]").on("click", function(e){
+                $($(this).data("backpage")).removeClass("show")
+            })
+        })
+        $('#myfile-upload-modal').click(function(e){
+                e.preventDefault();
+                $('#myfile-rating-modal').click();
+        })
+        $('#myfile-upload-mobile').click(function(e){
+            e.preventDefault();
+            $('#myfile-mobile').click();
         })
     });
     $(".togglePassword").click(function() {
