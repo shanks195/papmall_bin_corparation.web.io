@@ -1,8 +1,42 @@
 .cart-hd-wrapper {
+	text-align: right;
+	position: relative;
 	a:hover {
 		.cart-amount {
 			background-color: $white;
 			color: $secondary-color;
+		}
+	}
+	&:hover{
+		.dropdown-cart{
+			display: block;
+		}
+	}
+	.dropdown-cart{
+		box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+		border-radius: 6px;
+		border: none;
+		top: 49px;
+		right: 0;
+		left: auto;
+		min-width: 460px;
+		max-height: 70vh;
+		overflow: auto;
+		.dropdown-item{
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			border-top: 1px solid #DDDDDD;
+			min-height: 48px;
+			color: #464646;
+			&:active{
+				color: #464646;
+				text-decoration: none;
+				background-color: #f8f9fa;
+			}
+			img{
+				max-width:48px;
+			}
 		}
 	}
 }
